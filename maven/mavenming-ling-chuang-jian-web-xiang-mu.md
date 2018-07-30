@@ -27,5 +27,5 @@ mvn archetype:create -s E:\.m2\settings.xml -DgroupId=com.learn -DartifactId=Lea
 </html>
 ```
 
-执行mvn install，并将target下面的LearnNew.war放于tomcat的webapps下面，启动tomcat，通过浏览器访问:[http://localhost:8080/LearnNew/将会看到熟悉的：”Hello](http://localhost:8080/LearnNew/将会看到熟悉的：”Hello) World!“
+执行mvn install，并将target下面的LearnNew.war放于tomcat的webapps下面，启动tomcat，通过浏览器访问: http://localhost:8080/LearnNew/     将会看到熟悉的：”Hello World!“
 
