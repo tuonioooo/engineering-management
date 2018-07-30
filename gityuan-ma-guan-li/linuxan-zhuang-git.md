@@ -93,8 +93,6 @@ $ sudo make prefix=/usr/local install
 
 安装界面如下所示：
 
-
-
 ![](http://www.runoob.com/wp-content/uploads/2015/02/18333fig0107-tn.png "18333fig0107-tn")
 
 ---
@@ -125,7 +123,7 @@ Git 提供了一个叫做 git config 的工具，专门用来配置或读取相�
   `/etc/gitconfig`
   中的同名变量。
 
-在 Windows 系统上，Git 会找寻用户主目录下的 .gitconfig 文件。主目录即 $HOME 变量指定的目录，一般都是 C:\Documents and Settings\$USER。
+在 Windows 系统上，Git 会找寻用户主目录下的 .gitconfig 文件。主目录即 $HOME 变量指定的目录，一般都是 C:\Documents and Settings$USER。
 
 此外，Git 还会尝试找寻 /etc/gitconfig 文件，只不过看当初 Git 装在什么目录，就以此作为根目录来定位。
 
@@ -134,22 +132,8 @@ Git 提供了一个叫做 git config 的工具，专门用来配置或读取相�
 配置个人的用户名称和电子邮件地址：
 
 ```
-$ git config 
---
-global
- user
-.
-name 
-"runoob"
-
-$ git config 
---
-global
- user
-.
-email test@runoob
-.
-com
+$ git config --global user.name "runoob"
+$ git config --global user.email test@runoob.com
 ```
 
 如果用了**--global**选项，那么更改的配置文件就是位于你用户主目录下的那个，以后你所有的项目都会默认使用这里配置的用户信息。
@@ -221,7 +205,7 @@ com
 ```
 vim 
 ~/.
-gitconfig 
+gitconfig
 ```
 
 显示内容如下所示：
