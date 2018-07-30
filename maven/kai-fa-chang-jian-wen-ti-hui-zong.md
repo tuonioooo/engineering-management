@@ -70,9 +70,7 @@ at org.codehaus.classworlds.Launcher.main(Launcher.java:375)
 
 它的意思是你可以设置一些Maven参数，我们就在注释下面加入一行：
 
-set MAVEN\_OPTS= -Xms128m -Xmx512m
-
-之后，当你运行Maven命令如 mvn -version 的时候，你会看到如下的输出：
+set MAVEN\_OPTS= -Xms128m -Xmx512m之后，当你运行Maven命令如 mvn -version 的时候，你会看到如下的输出：
 
 E:\test&gt;mvn -version
 
@@ -94,23 +92,11 @@ MAVEN\_OPTS=-Xmx512m
 
 export JAVA\_HOME MAVEN\_HOME MAVEN\_OPTS JAVA\_BIN PATH CLASSPATH
 
-如果你使用Hudson
-
-
-
-
-
-用 Hudson + Maven做持续集成，并不幸也遇到了类似的错误，那么上述两种方式都将不再起作用了，因为Hudson使用自己的maven-agent来启动Maven，不会去调用Maven的脚本，自然相应的配置也就无效了。
+如果你使用Hudson用 Hudson + Maven做持续集成，并不幸也遇到了类似的错误，那么上述两种方式都将不再起作用了，因为Hudson使用自己的maven-agent来启动Maven，不会去调用Maven的脚本，自然相应的配置也就无效了。
 
 好在Hudson也给为我们提供了配置点，在Hudson的项目配置页面中，有一块Build区域，这里我们已经设置了Root Pom和Goals。注意该区域的右下角有一个"Advanced..."按钮，点击会看到MAVEN\_OPTS输入框，这里输入"-Xmx512m"就OK了。
 
-m2eclipse中
-
-
-
-
-
-类似以上的方法都会失效，所幸m2eclipse提供了配置点。步骤如下：
+m2eclipse中类似以上的方法都会失效，所幸m2eclipse提供了配置点。步骤如下：
 
 项目上右击 -&gt; Run As -&gt; Run Configurations -&gt; Maven Build 上右击 -&gt; New
 
