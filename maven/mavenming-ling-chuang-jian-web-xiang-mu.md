@@ -6,7 +6,9 @@
 
 或者使用自定义的仓库配置文件
 
-** **
+```
+mvn archetype:create -s E:\.m2\settings.xml -DgroupId=com.learn -DartifactId=LearnNew -DarchetypeArtifactId=maven-archetype-webapp
+```
 
 **执行结果如下：**
 
@@ -16,14 +18,14 @@
 
 ![](file:///C:/Users/tony/AppData/Local/Temp/enhtmlclip/Image%285%29.jpg)
 
-打开index.jsp 就能看到 
+打开index.jsp 就能看到
 
 ```
 <body> 
 <h2>Hello World!</h2> 
 </body> 
-</html> 
+</html>
 ```
 
-执行mvn install，并将target下面的LearnNew.war放于tomcat的webapps下面，启动tomcat，通过浏览器访问:http://localhost:8080/LearnNew/将会看到熟悉的：”Hello World!“
+执行mvn install，并将target下面的LearnNew.war放于tomcat的webapps下面，启动tomcat，通过浏览器访问:[http://localhost:8080/LearnNew/将会看到熟悉的：”Hello](http://localhost:8080/LearnNew/将会看到熟悉的：”Hello) World!“
 
