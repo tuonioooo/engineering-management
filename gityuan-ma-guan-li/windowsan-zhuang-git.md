@@ -46,15 +46,19 @@
 
 ![](file:///C:/Users/tony/AppData/Local/Temp/enhtmlclip/Image%2814%29.png)
 
-#### 生成SSH Key
+#### 
 
-配置email，命令如下：
+### 配置用户和email，
+
+命令如下：
 
 > $git config --global user.name "your name"
 >
 > $git config --global user.email "your@email.address"
 
 其中"your name"换成你的名字，"your@email.address"换成你的邮箱地址。
+
+#### 生成SSH Key
 
 在使用Git前，需要先生成一个SSH Key，来保证你的local box和服务器之间通信的安全，识别代码的改动。选择一个文件夹，单击右键，选择“Git Bash Here”, 然后在命令行窗口中输入:
 
@@ -70,7 +74,6 @@
 
 ```
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDLY5NBdoD6UNgFWje2KkWLkVN9YtSOYlaPI24A6GlDaH70Aaf1XPkhiUsEHXgE9gJtCFBz0yBS9SoZ8G62wOm4g2NSqubYQVIsRamzJXRsWmmFJxPzQXEjj2NQCs/oIMsYTZmE3ad9+zikDmXQUolL812FdiRWxkbG/nGMbN3DD1Lhhd0FTnGon/XX+BL3BuecAhEhGQZYSJaLkFR9S9iOgpnj+w99ArZVPspkj6GoRsfN55gm0eBagokk5FxUByCK1AFWIJZucFhBLqWUQv9orzrXEuI9x3Ek2mCz/Kr6QKAks2GS5k1bqTopj393qlIdA9o+S8NTCbXVpLCB0h8r daizhaoman@sina.com
-
 ```
 
 此时只要把你的公钥放进你项目的服务中就可以进行git的相关操作。
