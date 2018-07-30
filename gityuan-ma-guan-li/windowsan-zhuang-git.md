@@ -46,8 +46,6 @@
 
 ![](file:///C:/Users/tony/AppData/Local/Temp/enhtmlclip/Image%2814%29.png)
 
-#### 
-
 ### 配置用户和email
 
 命令如下：
