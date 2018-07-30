@@ -103,5 +103,5 @@ set convert-meta off
 export LESSCHARSET=iso8859
 ```
 
-到这时有关于git在winxp下安装就介绍完了，希望这个能给一些朋友带来一定的帮助。同时更希望朋友们关注W3CPLUS，因为只有你们的关注才能带来我的成长。
+
 
