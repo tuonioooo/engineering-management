@@ -18,9 +18,7 @@
 
 [http://search.maven.org/](http://search.maven.org/)
 
-[http://mvnrepository.com/](http://mvnrepository.com/)
+[http://mvnrepository.com/](http://mvnrepository.com/)      常用
 
-[http://central.maven.org/maven2](http://central.maven.org/maven2)
-
-
+[http://central.maven.org/maven2](http://central.maven.org/maven2)  常用
 
