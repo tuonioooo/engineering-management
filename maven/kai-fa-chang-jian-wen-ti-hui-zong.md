@@ -144,13 +144,7 @@ m2eclipse中类似以上的方法都会失效，所幸m2eclipse提供了配置�
 
 [http://blog.csdn.net/fujunsfzh/article/details/72673775](http://blog.csdn.net/fujunsfzh/article/details/72673775)
 
-  
-
-
-  
-
-
-在markers view 中提示：“The type org.springframework.context.ConfigurableApplicationContext cannot be resolved. It is indirectly referenced from required .class files” 
+在markers view 中提示：“The type org.springframework.context.ConfigurableApplicationContext cannot be resolved. It is indirectly referenced from required .class files”
 
 经查询发现 在 这里 发生了和我类似的问题， 原来问题是出现在maven中缓存上，maven的缓存已损坏
 
@@ -167,4 +161,6 @@ m2eclipse中类似以上的方法都会失效，所幸m2eclipse提供了配置�
 如果仍然存在错误，请删除（〜/ .m2 / repository / org / springframework）文件夹并运行 mvn package
 
 它现在可以正常工作
+
+
 
