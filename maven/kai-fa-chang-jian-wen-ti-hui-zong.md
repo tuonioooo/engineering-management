@@ -1,6 +1,6 @@
 # 开发常见问题汇总
 
-### **1.maven在POM.xml中配置plugin的忽略测试功能配置**
+* ### **maven在POM.xml中配置plugin的忽略测试功能配置**
 
 ```
 <plugin>
@@ -13,7 +13,7 @@
 </plugin>
 ```
 
-### **2.maven install 报错，出现找不到符号**
+* ### **maven install 报错，出现找不到符号**
 
 在编译插件中，添加&lt;encoding&gt;UTF-8&lt;/encoding&gt;
 
@@ -33,7 +33,7 @@
             </plugin>
 ```
 
-### 3.Maven  Java.OutOfMemory错误
+* ### Maven  Java.OutOfMemory错误
 
 当Maven项目很大，或者你运行诸如 mvn site 这样的命令的时候，maven运行需要很大的内存，在默认配置下，就可能遇到java的堆溢出。如：
 
@@ -102,7 +102,7 @@ m2eclipse中类似以上的方法都会失效，所幸m2eclipse提供了配置�
 
 这时会看到一个maven运行配置对话框，这里面其它的配置我不多解释了，为了解决内存溢出的问题，我们可以选择第二个TAB: JRE，然后在VM arguments中输入配置如：-Xms128m -Xmx512m。
 
-### 4.依赖冲突
+* ### 依赖冲突
 
 解决方式：在依赖中排除有冲突的jar引用，比如：
 
@@ -126,7 +126,7 @@ m2eclipse中类似以上的方法都会失效，所幸m2eclipse提供了配置�
 >
 > &lt;/dependency&gt;
 
-### 5.No compiler is provided in this environment. Perhaps you are running on a JRE rather than a JDK? 问题
+* ### No compiler is provided in this environment. Perhaps you are running on a JRE rather than a JDK? 问题
 
 解决方案：
 
@@ -136,11 +136,11 @@ m2eclipse中类似以上的方法都会失效，所幸m2eclipse提供了配置�
 
 3. 然后在maven菜单中使用 “update project ...”.
 
-### 6.Unable to locate the Javac Compiler in:   D:\Java\jre6..\lib\tools.jar
+* ### Unable to locate the Javac Compiler in:   D:\Java\jre6..\lib\tools.jar
 
 一般是项目编译的版本不对，更换高一点的版本，build path
 
-### 7.maven的缓存已损坏 相关问题（ The type org.springframework.context.ConfigurableApplicationContext cannot be resolved）
+* ### maven的缓存已损坏 相关问题（ The type org.springframework.context.ConfigurableApplicationContext cannot be resolved）
 
 [http://blog.csdn.net/fujunsfzh/article/details/72673775](http://blog.csdn.net/fujunsfzh/article/details/72673775)
 
@@ -162,7 +162,7 @@ m2eclipse中类似以上的方法都会失效，所幸m2eclipse提供了配置�
 
 它现在可以正常工作
 
-### 8.在POM配置Maven plugin提示错误“Plugin execution not covered by lifecycle configuration”的解决方案
+* ### 在POM配置Maven plugin提示错误“Plugin execution not covered by lifecycle configuration”的解决方案
 
 eclipse在其POM文件的一处提示出错如下：
 
