@@ -20,5 +20,9 @@ Maven这个单词来自于意第绪语（犹太语），意为知识的积累，
 | 扩展语言 | 插件是用 Jelly（XML）编写的。 | 插件是用 Java 语言编写的。 |
 | 构建规则可扩展性 | 通过定义 &lt;preGoal&gt; 和 &lt;postGoal&gt; 使构建 goal 可扩展。 | 构建规则不易扩展；可通过使用 &lt;script&gt; 任务模拟 &lt;preGoal&gt; 和 &lt;postGoal&gt; 所起的作用。 |
 
+Maven是一个项目管理工具，它包含了一个项目对象模型 \(Project Object Model\)，一组标准集合，一个项目生命周期\(Project Lifecycle\)，一个依赖管理系统\(Dependency Management System\)，和用来运行定义在生命周期阶段\(phase\)中插件\(plugin\)目标\(goal\)的逻辑。当你使用Maven的时候，你用一个明确定义的项目对象模型来描述你的项目，然后Maven可以应用横切的逻辑，这些逻辑来自一组共享的（或者自定义的）插件。
 
+Maven 有一个生命周期，当你运行 mvn install 的时候被调用。这条命令告诉 Maven 执行一系列的有序的步骤，直到到达你指定的生命周期。遍历生命周期旅途中的一个影响就是，Maven 运行了许多默认的插件目标，这些目标完成了像编译和创建一个 JAR 文件这样的工作。
+
+此外，Maven能够很方便的帮你管理项目报告，生成站点，管理JAR文件，等等。
 
