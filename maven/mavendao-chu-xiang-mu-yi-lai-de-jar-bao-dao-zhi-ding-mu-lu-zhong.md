@@ -26,19 +26,13 @@ mvn dependency:copy-dependencies -DoutputDirectory=lib
 
 maven项目所依赖的jar包都会复制到项目目录下的lib目录下
 
-* ### 设置依赖级别 
+* ### 设置依赖级别
 
 同时可以设置依赖级别，通常使用compile级别
 
 ```
 mvn dependency:copy-dependencies -DoutputDirectory=lib   -DincludeScope=compile
 ```
-
-?
-
-| 1 |  |
-| :--- | :--- |
-
 
 
 
