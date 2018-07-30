@@ -46,8 +46,6 @@
 
 ![](file:///C:/Users/tony/AppData/Local/Temp/enhtmlclip/Image%2814%29.png)
 
-
-
 #### 生成SSH Key
 
 配置email，命令如下：
@@ -67,6 +65,15 @@
 如果是在XP系统上，位置应该是 “C:\Documents and Settings\username.ssh\”;
 
 如果是在Win7系统上，位置应该是  “C:\Users\username.ssh”。
+
+使用文本编辑器打开“id\_rsa.pub”就可以看到公钥的内容：
+
+```
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDLY5NBdoD6UNgFWje2KkWLkVN9YtSOYlaPI24A6GlDaH70Aaf1XPkhiUsEHXgE9gJtCFBz0yBS9SoZ8G62wOm4g2NSqubYQVIsRamzJXRsWmmFJxPzQXEjj2NQCs/oIMsYTZmE3ad9+zikDmXQUolL812FdiRWxkbG/nGMbN3DD1Lhhd0FTnGon/XX+BL3BuecAhEhGQZYSJaLkFR9S9iOgpnj+w99ArZVPspkj6GoRsfN55gm0eBagokk5FxUByCK1AFWIJZucFhBLqWUQv9orzrXEuI9x3Ek2mCz/Kr6QKAks2GS5k1bqTopj393qlIdA9o+S8NTCbXVpLCB0h8r daizhaoman@sina.com
+
+```
+
+此时只要把你的公钥放进你项目的服务中就可以进行git的相关操作。
 
 #### 注册Git Account
 
