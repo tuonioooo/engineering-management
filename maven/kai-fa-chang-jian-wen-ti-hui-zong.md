@@ -136,9 +136,35 @@ m2eclipse中类似以上的方法都会失效，所幸m2eclipse提供了配置�
 
 3. 然后在maven菜单中使用 “update project ...”.
 
-### 6.Unable to locate the Javac Compiler in:   D:\Java\jre6\..\lib\tools.jar
+### 6.Unable to locate the Javac Compiler in:   D:\Java\jre6..\lib\tools.jar
 
 一般是项目编译的版本不对，更换高一点的版本，build path
 
+### 7.maven的缓存已损坏 相关问题（ The type org.springframework.context.ConfigurableApplicationContext cannot be resolved）
 
+[http://blog.csdn.net/fujunsfzh/article/details/72673775](http://blog.csdn.net/fujunsfzh/article/details/72673775)
+
+  
+
+
+  
+
+
+在markers view 中提示：“The type org.springframework.context.ConfigurableApplicationContext cannot be resolved. It is indirectly referenced from required .class files” 
+
+经查询发现 在 这里 发生了和我类似的问题， 原来问题是出现在maven中缓存上，maven的缓存已损坏
+
+按照以下步骤解决：
+
+在命令行中转到项目目录。
+
+确保您的POM.xml与您的命令行在同一个目录中
+
+运行命令 mvn dependency:purge-local-repository
+
+如果您收到构建成功的消息，表示错误已解决。
+
+如果仍然存在错误，请删除（〜/ .m2 / repository / org / springframework）文件夹并运行 mvn package
+
+它现在可以正常工作
 
