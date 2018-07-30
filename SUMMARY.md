@@ -15,6 +15,6 @@
   * [构建私有仓库](gityuan-ma-guan-li/gou-jian-si-you-cang-ku.md)
   * [如何利用github/码云进行学习](gityuan-ma-guan-li/ru-he-li-yong-github-ma-yun-jin-xing-xue-xi.md)
     * [github](gityuan-ma-guan-li/ru-he-li-yong-github-ma-yun-jin-xing-xue-xi/github.md)
-    * 码云
+    * [码云](gityuan-ma-guan-li/ru-he-li-yong-github-ma-yun-jin-xing-xue-xi/ma-yun.md)
   * [详解Git-flow企业级开发流程](gityuan-ma-guan-li/xiang-jie-git-flow-qi-ye-ji-kai-fa-liu-cheng.md)
 
