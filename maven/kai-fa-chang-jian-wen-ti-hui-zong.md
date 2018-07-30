@@ -15,7 +15,7 @@
 
 ### **2.maven install 报错，出现找不到符号**
 
-在编译插件中，添加&lt;encoding&gt;UTF-8&lt;/encoding&gt;  
+在编译插件中，添加&lt;encoding&gt;UTF-8&lt;/encoding&gt;
 
 ```
 <plugin>
@@ -31,23 +31,9 @@
                     </compilerArguments>
                 </configuration>
             </plugin>
-
 ```
 
-  
 
-
-主要还是编码问题！！！
-
-?
-
-| 1 | &lt;encoding&gt;UTF-8&lt;/encoding&gt; |
-| :--- | :--- |
-
-
-```
-
-```
 
 
 
