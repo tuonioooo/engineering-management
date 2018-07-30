@@ -35,4 +35,5 @@
   * [maven集成Tomcat插件\(二\)](maven/mavenji-cheng-tomcat-cha-4ef628-4e8c29.md)
   * [maven+tomcat6-maven-plugin 实现热部署及调试](maven/maven+tomcat6-maven-plugin-shi-xian-re-bu-shu-ji-diao-shi.md)
   * [maven项目将自研发的依赖包打进Jar文件中](maven/mavenxiang-mu-jiang-zi-yan-fa-de-yi-lai-bao-da-jin-jar-wen-jian-zhong.md)
+  * [maven自定义插件研发](maven/mavenzi-ding-yi-cha-jian-yan-fa.md)
 
