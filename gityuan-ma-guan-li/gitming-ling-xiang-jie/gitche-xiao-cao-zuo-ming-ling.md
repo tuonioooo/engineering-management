@@ -98,3 +98,21 @@
 
 在第二个括号中，我们看到了抛弃文件修改的命令（至少在 Git 1.6.1 以及更高版本中会这样提示，如果你还在用老版本，我们强烈建议你升级，以获取最佳的用户体验），让我们试试看：
 
+> $ git checkout -- benchmarks.rb
+>
+> $ git status
+>
+> \# On branch master
+>
+> \# Changes to be committed:
+>
+> \# \(use "git reset HEAD &lt;file&gt;..." to unstage\)
+>
+> \#
+>
+> \# modified: README.txt
+>
+> \#
+
+
+
