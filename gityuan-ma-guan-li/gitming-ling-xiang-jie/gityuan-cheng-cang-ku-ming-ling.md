@@ -84,19 +84,20 @@
 >
 > git init
 >
-> git remote -v 
+> git remote -v
 >
-> git remote add origin git@github.com:tuonioooo/gitclone.git    \#这个是github上的映射服务器目录
+> git remote add origin git@github.com:tuonioooo/gitclone.git  
+>     \#这个是github上的映射服务器目录
 >
 > 或者
 >
-> git remote add origin git://127.0.0.1/abc.git \#自己建立的git服务器  
+> git remote add origin git://127.0.0.1/abc.git \#自己建立的git服务器
 >
 > git add README.md
 >
 > git commit -m "init "
 >
->  git push origin master
+> git push origin master
 
 ```
 Warning: Permanently added the RSA host key for IP address '13.229.188.59' to the list of known hosts.
@@ -105,18 +106,9 @@ Writing objects: 100% (3/3), 206 bytes | 0 bytes/s, done.
 Total 3 (delta 0), reused 0 (delta 0)
 To github.com:tuonioooo/gitclone.git
  * [new branch]      master -> master
-
 ```
 
 
-
-> 首先，在本地新建文件夹abc，进入到abc里面，然后git init。这样就在本地初始化了一个git项目abc。
->
-> 然后，登录到远程的git服务器上，到gitrepo目录下面，mkdir abc.git。然后进入abc.git目录。git  --bare init。这样就在服务器端建立了一个空的git项目。
->
-> 之后，在本地，进入到abc目录里面，增加远程仓库。git remote -v 显示项目目前的远程仓库，因为是新建项目，所以结果为空。git remote add origin git://127.0.0.1/abc.git这样就增加了远程仓库abc。
->
-> 最后，commit提交本地代码，git push origin master这样就把本地的git库上传到了远程git服务器的git库中了
 
 
 
