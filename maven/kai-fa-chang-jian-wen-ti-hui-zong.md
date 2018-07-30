@@ -126,5 +126,23 @@ m2eclipse中类似以上的方法都会失效，所幸m2eclipse提供了配置�
 >
 > &lt;/dependency&gt;
 
+### 5.No compiler is provided in this environment. Perhaps you are running on a JRE rather than a JDK? 问题
+
+解决方案：
+
+	1. 
+
+下载java jdk，并安装java jdk。下载地址：http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html
+
+	2. 
+
+在eclipse的菜单中，进入 Window &gt; Preferences &gt; Java &gt; Installed JREs &gt; Execution Environments，选择JavaSE-1.6, 在右侧选择jdk.
+
+	3. 
+
+然后在maven菜单中使用 “update project ...”.
+
+
+
 
 
