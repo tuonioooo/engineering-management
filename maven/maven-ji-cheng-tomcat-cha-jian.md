@@ -27,11 +27,11 @@ POM.xml 加入以下plugin
 </plugin>
 ```
 
-> path  是访问应用的路径
+> path  是访问应用的路径
 >
 > port 是tomcat 的端口号
 >
-> uriEncoding  URL按UTF-8进行编码，这样就解决了中文参数乱码。
+> uriEncoding  URL按UTF-8进行编码，这样就解决了中文参数乱码。
 >
 > Server 指定tomcat名称。
 
@@ -58,5 +58,28 @@ POM.xml 加入以下plugin
 | tomcat:undeploy | 停止一个war包 |
 | tomcat:run | 启动嵌入式tomcat ，并运行当前项目 |
 
+## tomcat7-maven-plugin 使用配置
 
+POM.xml 加入以下plugin
+
+```
+<plugin>
+<groupId>org.apache.tomcat.maven</groupId>
+<artifactId>tomcat7-maven-plugin</artifactId>
+<version>2.1</version>
+<configuration>
+<port>9090</port>
+<path>/mgr</path>
+<uriEncoding>UTF-8</uriEncoding>
+<finalName>mgr</finalName>
+<server>tomcat7</server>
+</configuration>
+</plugin>
+```
+
+与tomcat6具体配置一样。
+
+## 插件使用
+
+在这里要注意一下，该插件命名方式有些不同，比如启动tomcat ，对应的目标命令是: tomcat7:run ,同样，其它命令也是这样，需要更改为：tomcat7：&lt;插件执行点&gt;
 
