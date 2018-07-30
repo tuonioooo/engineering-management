@@ -22,7 +22,7 @@ Generate web.xml deployment descriptor自动生成web.xml文件,可选可不选.
 
 8.设置将Maven的jar包发布到lib下.
 
-Add -&gt; Java Build Path Entries -&gt; Maven Dependencies -&gt; Finish 
+Add -&gt; Java Build Path Entries -&gt; Maven Dependencies -&gt; Finish
 
 完成后有:
 
@@ -34,7 +34,7 @@ Add -&gt; Java Build Path Entries -&gt; Maven Dependencies -&gt; Finish
 
 Maven Dependencies  /WEB-INF/lib
 
-4.点击OK
+9.点击OK
 
 好了，这样就把一个maven项目转化成web项目了
 
