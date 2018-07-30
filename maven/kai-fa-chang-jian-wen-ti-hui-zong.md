@@ -170,7 +170,7 @@ Plugin execution not covered by lifecycle configuration: org.apache.maven.plugin
 
 这表示m2e在其执行maven的生命周期管理时没有定义该插件，所以提示出错，其实m2e对此是提供了扩展机制的，我们可以通过如下操作来消除这个出错提示：
 
-1. 进入Window—&gt;Preferences—&gt;Maven配置，进入Lifecycle Mapping设置项，如下图：
+进入Window—&gt;Preferences—&gt;Maven配置，进入Lifecycle Mapping设置项，如下图：
 
 ![](file:///C:/Users/tony/AppData/Local/Temp/enhtmlclip/Image%2818%29.png)
 
@@ -191,4 +191,10 @@ Plugin execution not covered by lifecycle configuration: org.apache.maven.plugin
 ![](file:///C:/Users/tony/AppData/Local/Temp/enhtmlclip/Image%2820%29.png)
 
 修改完成后，需在m2e配置处把“Update Maven projects on startup”选项勾上，并重启eclipse即可消除出错示。
+
+
+
+
+
+
 
