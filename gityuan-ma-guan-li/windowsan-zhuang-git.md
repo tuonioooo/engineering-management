@@ -76,47 +76,7 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDLY5NBdoD6UNgFWje2KkWLkVN9YtSOYlaPI24A6GlD
 
 此时只要把你的公钥放进你项目的服务中就可以进行git的相关操作。
 
-#### 注册Git Account
+### 解决中文目录支持问题
 
-注册过程大同小异，唯一不同的地方就是需要输入一个 “SSH Public Key”。这时就需要用到刚刚生成的rsa key文件了。用notepad打开
 
-id\_rsa.pub
-
-，文件的内容就是你的public SSH key.  copy
-
-&
-
-past，注册就完成了。
-
-#### 开始Git之旅
-
-在source code文件夹上使用  “
-
-Git Bash Here
-
-”，然后输入你的Git name和邮箱
-
-> git config --global user.email
->
-> [username@email.com](mailto:username@email.com)  
-> git config --global user.name “username”
-
-初始化文件夹:
-
-> git init
-
-添加文件
-
-> git add .
-
-提交的服务器
-
-> git commit –m ‘start project’
->
-> git remote add origin  
-> git@github.com:username/project.git
->
-> git push origin master
-
-project.git是你在github创建的项目的名字
 
