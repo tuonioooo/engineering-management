@@ -72,13 +72,13 @@
 
 * ## git将本地仓库上传到远程空的仓库
 
-服务器端建立空的git项目
+**服务器端建立空的git项目**
 
 > mkdir gitclone
 >
 > git --bare init
 
-本地git
+**本地git**
 
 > cd /e/Github/gitclone/
 >
@@ -107,8 +107,6 @@ Total 3 (delta 0), reused 0 (delta 0)
 To github.com:tuonioooo/gitclone.git
  * [new branch]      master -> master
 ```
-
-
 
 
 
