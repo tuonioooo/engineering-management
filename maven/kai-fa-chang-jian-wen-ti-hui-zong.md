@@ -162,5 +162,51 @@ m2eclipse中类似以上的方法都会失效，所幸m2eclipse提供了配置�
 
 它现在可以正常工作
 
+### 8.在POM配置Maven plugin提示错误“Plugin execution not covered by lifecycle configuration”的解决方案
 
+eclipse在其POM文件的一处提示出错如下：
+
+Plugin execution not covered by lifecycle configuration: org.apache.maven.plugins:maven-compiler-plugin:3.1:compile \(execution: default-compile, phase: compile\)
+
+这表示m2e在其执行maven的生命周期管理时没有定义该插件，所以提示出错，其实m2e对此是提供了扩展机制的，我们可以通过如下操作来消除这个出错提示：
+
+1. 进入Window—&gt;Preferences—&gt;Maven配置，进入Lifecycle Mapping设置项，如下图：
+
+![](file:///C:/Users/tony/AppData/Local/Temp/enhtmlclip/Image%2818%29.png)
+
+   从上图可以看出m2e管理maven生命周期的文件名是lifecycle-mapping-metadata.xml，以及该文件的存放路径
+
+2. 下一步我们就要去相应路径修改lifecycle-mapping-metadata.xml文件，但会发现这个文件在上图中提示的位置并不存在，那么此时就
+
+以到
+
+eclipse
+
+的安装目录下的
+
+plugins
+
+下的
+
+org.eclipse.m2e.lifecyclemapping.defaults\_xxxxxx.jar
+
+文件中找到该文件（如下图）:
+
+![](file:///C:/Users/tony/AppData/Local/Temp/enhtmlclip/Image%2819%29.png)
+
+通过解压软件可以发现lifecycle-mapping-metadata.xml文件的确在jar包中，把它从jar包中解压出来并放置到前图所示的路径下
+
+3. 打开lifecycle-mapping-metadata.xml文件，把未识别的插件在文件中加入即可：
+
+![](file:///C:/Users/tony/AppData/Local/Temp/enhtmlclip/Image%2820%29.png)
+
+4.修改完成后，需在m2e
+
+配置处把“
+
+Update Maven projects on startup
+
+”选项勾上，并重启
+
+eclipse即可消除出错示。
 
