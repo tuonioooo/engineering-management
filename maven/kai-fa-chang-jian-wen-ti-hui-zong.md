@@ -114,13 +114,13 @@ m2eclipse中类似以上的方法都会失效，所幸m2eclipse提供了配置�
 >
 > &lt;version&gt;2.2.0&lt;/version&gt;
 >
-> _**&lt;exclusions&gt;**_
+> **&lt;exclusions&gt;**
 >
-> _**&lt;exclusion&gt; &lt;groupId&gt;org.apache.httpcomponents&lt;/groupId&gt;**_
+> **&lt;exclusion&gt; &lt;groupId&gt;org.apache.httpcomponents&lt;/groupId&gt;**
 >
-> _**&lt;artifactId&gt;httpclient&lt;/artifactId&gt;**_
+> **&lt;artifactId&gt;httpclient&lt;/artifactId&gt;**
 >
-> _**&lt;/exclusion&gt;**_
+> **&lt;/exclusion&gt;**
 >
 > &lt;/exclusions&gt;&lt;/dependency&gt;
 
