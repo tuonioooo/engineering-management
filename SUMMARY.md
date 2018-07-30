@@ -26,4 +26,5 @@
   * 构建企业级私有仓库Nexus
   * 大型系统模块化工程管理实践
   * [maven导出项目依赖的jar包](maven/mavendao-chu-xiang-mu-yi-lai-de-jar-bao-dao-zhi-ding-mu-lu-zhong.md)
+  * [maven普通项目转成web项目](maven/mavenpu-tong-xiang-mu-zhuan-cheng-web-xiang-mu.md)
 
