@@ -8,3 +8,24 @@ tomcat-maven-plugin 插件官网：[http://mojo.codehaus.org/tomcat-maven-plugin
 
 tomcat7-maven-plugin 插件官网：[http://tomcat.apache.org/maven-plugin.html](http://tomcat.apache.org/maven-plugin.html)。
 
+## tomcat-maven-plugin  插件使用配置
+
+POM.xml 加入以下plugin
+
+```
+<plugin>
+<groupId>org.codehaus.mojo</groupId>
+<artifactId>tomcat-maven-plugin</artifactId>
+<version>1.1</version>
+<configuration>
+<path>/wp</path>
+<port>8080</port>
+<uriEncoding>UTF-8</uriEncoding>
+<url>http://localhost:8080/manager/html</url>
+<server>tomcat6</server>
+</configuration>
+</plugin>
+```
+
+
+
