@@ -30,4 +30,5 @@
   * [maven命令创建web项目](maven/mavenming-ling-chuang-jian-web-xiang-mu.md)
   * [maven settings配置详解](maven/maven-settingspei-zhi-xiang-jie.md)
   * [maven scm 用法\(SVN 的独有配置\)](maven/maven-scm-yong-6cd528-svn-de-du-you-pei-7f6e29.md)
+  * [maven修改后的settings.xml文件](maven/mavenxiu-gai-hou-de-settings-xml-wen-jian.md)
 
