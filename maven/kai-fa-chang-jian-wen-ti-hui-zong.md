@@ -136,7 +136,7 @@ m2eclipse中类似以上的方法都会失效，所幸m2eclipse提供了配置�
 
 3. 然后在maven菜单中使用 “update project ...”.
 
-* ### Unable to locate the Javac Compiler in:   D:\Java\jre6..\lib\tools.jar
+4. ### Unable to locate the Javac Compiler in:   D:\Java\jre6..\lib\tools.jar
 
 一般是项目编译的版本不对，更换高一点的版本，build path
 
@@ -213,4 +213,14 @@ Plugin execution not covered by lifecycle configuration: org.apache.maven.plugin
 5、在项目上点右键，进入属性（properties）
 
 6、在左侧列表项目中点击选择“Project Facets”，在右侧选择“Dynamic Web Module”和"Java"，点击OK保存即可。
+
+* ### Maven web项目到tomcat服务器时，没有将lib下的jar复制过去的解决办法
+
+解决办法如下：
+
+右击项目-&gt;properties-&gt;找到Deployment Assembly，右边便是编译打包的配置，看是不是缺少了lib库的依赖，我的就是，点击Add，添加maven依赖库。最后列表如下
+
+![](file:///C:/Users/tony/AppData/Local/Temp/enhtmlclip/Image%2821%29.png)
+
+再重新启动tomcat，启动成功！！
 
