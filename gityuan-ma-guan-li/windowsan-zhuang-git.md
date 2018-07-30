@@ -50,16 +50,9 @@
 
 #### 生成SSH Key
 
-在使用Git前，需要先生成一个SSH Key，来保证你的local box和服务器之间通信的安全，识别代码的改动。选择一个文件夹，单击右键，选择“
+在使用Git前，需要先生成一个SSH Key，来保证你的local box和服务器之间通信的安全，识别代码的改动。选择一个文件夹，单击右键，选择“Git Bash Here”, 然后在命令行窗口中输入:
 
-Git Bash Here
-
-”, 然后在命令行窗口中输入:
-
-> ssh-keygen –c
->
-> [“username@email.com](mailto:“username@email.com)  
-> ” –t rsa
+> ssh-keygen –c [“username@email.com](mailto:“username@email.com)” –t rsa
 
 这里使用的email地址是你注册Git时使用的email地址。 这里基本上也一路enter就好了，中间会有一步提示你输入 passphrase, 就是密码或者通行码，可以随便编一个或者直接回车，为空就好。之后窗口会显示生成的rsa文件存放的位置。
 
@@ -104,7 +97,7 @@ Git Bash Here
 
 > git commit –m ‘start project’
 >
-> git remote add origin   
+> git remote add origin  
 > git@github.com:username/project.git
 >
 > git push origin master
