@@ -19,7 +19,7 @@
   * [详解Git-flow企业级开发流程](gityuan-ma-guan-li/xiang-jie-git-flow-qi-ye-ji-kai-fa-liu-cheng.md)
 * [Maven](maven.md)
   * [概念剖析](maven/gai-nian-pou-xi.md)
-  * maven命令详解
+  * [maven命令详解](maven/mavenming-ling-xiang-jie.md)
   * 开发常见问题汇总
   * 构建企业级私有仓库Nexus
   * 大型系统模块化工程管理实践
