@@ -12,21 +12,13 @@
 
 * 创建Maven的Web项目：
 
-  `mvn archetype:create -DgroupId=packageName -DartifactId=webappName -DarchetypeArtifactId=maven-archetype-webapp`
-
 ```
 #这个命令使用的是默认的仓库地址配置文件（C:/tony/.m2/settings.xml），没有jar包会自动下载
 mvn archetype:create -DgroupId=packageName -DartifactId=webappName -DarchetypeArtifactId=maven-archetype-webapp
 
 #使用自定义仓库地址
 mvn archetype:create -s E:\.m2\settings.xml -DgroupId=packageName -DartifactId=webappName -DarchetypeArtifactId=maven-archetype-webapp
-
-
-
-
 ```
-
-       
 
 * 编译源代码：mvn compile
 
