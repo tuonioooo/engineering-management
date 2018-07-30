@@ -8,81 +8,16 @@
 
 %TOMCAT7\_PATH%/conf/tomcat-users.xml
 
-&lt;
+```
+<?xml version='1.0' encoding='utf-8'?>
+<tomcat-users>
 
-?xml version='1.0' encoding='utf-8'?
+<role rolename="manager-gui"/>
+<role rolename="manager-script"/>
+<user username="admin" password="password" roles="manager-gui,manager-script" />
 
-&gt;
-
-&lt;
-
-tomcat-users
-
-&gt;
-
-&lt;
-
-role rolename=
-
-"
-
-manager-gui
-
-"
-
-/
-
-&gt;
-
-&lt;
-
-role rolename=
-
-"
-
-manager-script
-
-"
-
-/
-
-&gt;
-
-&lt;
-
-user username=
-
-"
-
-admin
-
-"
-
-password=
-
-"
-
-password
-
-"
-
-roles=
-
-"
-
-manager-gui,manager-script
-
-"
-
-/
-
-&gt;
-
-&lt;
-
-/tomcat-users
-
-&gt;
+</tomcat-users>
+```
 
 1.2 Maven 认证
 
@@ -90,105 +25,19 @@ manager-gui,manager-script
 
 %MAVEN\_PATH%/conf/settings.xml
 
-&lt;
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<settings ...>
+<servers>
+<server>
+<id>TomcatServer</id>
+<username>admin</username>
+<password>password</password>
+</server>
 
-?xml version=
-
-"
-
-1.0
-
-"
-
-encoding=
-
-"
-
-UTF-8
-
-"
-
-?
-
-&gt;
-
-&lt;
-
-settings ...
-
-&gt;
-
-&lt;
-
-servers
-
-&gt;
-
-&lt;
-
-server
-
-&gt;
-
-&lt;
-
-id
-
-&gt;
-
-TomcatServer
-
-&lt;
-
-/id
-
-&gt;
-
-&lt;
-
-username
-
-&gt;
-
-admin
-
-&lt;
-
-/username
-
-&gt;
-
-&lt;
-
-password
-
-&gt;
-
-password
-
-&lt;
-
-/password
-
-&gt;
-
-&lt;
-
-/server
-
-&gt;
-
-&lt;
-
-/servers
-
-&gt;
-
-&lt;
-
-/settings
-
-&gt;
+</servers>
+</settings>
+```
 
 1.3 Tomcat7 Maven 插件
 
@@ -196,113 +45,18 @@ password
 
 pom.xml
 
-&lt;
-
-plugin
-
-&gt;
-
-&lt;
-
-groupId
-
-&gt;
-
-org.apache.tomcat.maven
-
-&lt;
-
-/groupId
-
-&gt;
-
-&lt;
-
-artifactId
-
-&gt;
-
-tomcat7-maven-plugin
-
-&lt;
-
-/artifactId
-
-&gt;
-
-&lt;
-
-version
-
-&gt;
-
-2.2
-
-&lt;
-
-/version
-
-&gt;
-
-&lt;
-
-configuration
-
-&gt;
-
-&lt;
-
-url
-
-&gt;
-
-[http://localhost:8080/manager/text](http://localhost:8080/manager/text)
-
-&lt;
-
-/url
-
-&gt;
-
-&lt;
-
-server
-
-&gt;
-
-TomcatServer
-
-&lt;
-
-/server
-
-&gt;
-
-&lt;
-
-path
-
-&gt;
-
-/yiibaiWebApp
-
-&lt;
-
-/path
-
-&gt;
-
-&lt;
-
-/configuration
-
-&gt;
-
-&lt;
-
-/plugin
-
-&gt;
+```
+<plugin>
+<groupId>org.apache.tomcat.maven</groupId>
+<artifactId>tomcat7-maven-plugin</artifactId>
+<version>2.2</version>
+<configuration>
+<url>http://localhost:8080/manager/text</url>
+<server>TomcatServer</server>
+<path>/yiibaiWebApp</path>
+</configuration>
+</plugin>
+```
 
 怎么运行的？
 
@@ -312,63 +66,32 @@ path
 
 以下的命令是用来操纵Tomcat WAR文件。
 
-mvn tomcat7
-
-:
-
-deploy
-
-mvn tomcat7
-
-:
-
-undeploy
-
-mvn tomcat7
-
-:
-
-redeploy
+```
+mvn tomcat7:deploy
+mvn tomcat7:undeploy
+mvn tomcat7:redeploy
+```
 
 示例
 
-&gt;
-
-mvn tomcat7:deploy
+```
+> mvn tomcat7:deploy
 
 ...
+[INFO] Deploying war to http://localhost:8080/yiibaiWebApp
+Uploading: http://localhost:8080/manager/text/deploy?path=%2FyiibaiWebApp&update=true
+Uploaded: http://localhost:8080/manager/text/deploy?path=%2FyiibaiWebApp&update=true (13925 KB at 35250.9 KB/sec)
 
-\[INFO\] Deploying war to [http://localhost:8080/yiibaiWebApp](http://localhost:8080/yiibaiWebApp)
-
-Uploading: [http://localhost:8080/manager/text/deploy?path=%2FyiibaiWebApp](http://localhost:8080/manager/text/deploy?path=%2FyiibaiWebApp)
-
-&
-
-update=true
-
-Uploaded: [http://localhost:8080/manager/text/deploy?path=%2FyiibaiWebApp](http://localhost:8080/manager/text/deploy?path=%2FyiibaiWebApp)
-
-&
-
-update=true \(13925 KB at 35250.9 KB/sec\)
-
-\[INFO\] tomcatManager status code:200, ReasonPhrase:OK
-
-\[INFO\] OK - Deployed application at context path /yiibaiWebApp
-
-\[INFO\] ------------------------------------------------------------------------
-
-\[INFO\] BUILD SUCCESS
-
-\[INFO\] ------------------------------------------------------------------------
-
-\[INFO\] Total time: 8.507 s
-
-\[INFO\] Finished at: 2015-08-05T11:35:25+08:00
-
-\[INFO\] Final Memory: 28M/308M
-
-\[INFO\] ------------------------------------------------------------------------
+[INFO] tomcatManager status code:200, ReasonPhrase:OK
+[INFO] OK - Deployed application at context path /yiibaiWebApp
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 8.507 s
+[INFO] Finished at: 2015-08-05T11:35:25+08:00
+[INFO] Final Memory: 28M/308M
+[INFO] ------------------------------------------------------------------------
+```
 
 ## 2. Tomcat 6 示例
 
