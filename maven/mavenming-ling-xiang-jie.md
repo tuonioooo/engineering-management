@@ -1,15 +1,5 @@
 # maven命令详解
 
-Maven库
-
-：
-
-eclipse：run的命令
-
-install -Dmaven.test.skip=true
-
-[http://repo2.maven.org/maven2/](http://repo2.maven.org/maven2/)
-
 ## Maven依赖查询：
 
 [http://mvnrepository.com/](http://mvnrepository.com/)
