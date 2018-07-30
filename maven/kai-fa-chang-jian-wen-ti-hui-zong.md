@@ -122,7 +122,9 @@ m2eclipse中类似以上的方法都会失效，所幸m2eclipse提供了配置�
 >
 > **&lt;/exclusion&gt;**
 >
-> &lt;/exclusions&gt;&lt;/dependency&gt;
+> **&lt;/exclusions&gt;**
+>
+> &lt;/dependency&gt;
 
 
 
