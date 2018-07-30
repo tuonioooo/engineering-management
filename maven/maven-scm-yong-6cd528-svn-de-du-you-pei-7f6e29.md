@@ -34,11 +34,9 @@ Maven中为我们集成了软件配置管理的（SCM：Software Configuration M
 >
 > scm:tag - command for tagging a certain revision（打标签）常用命令介绍
 
+而我们常用只有以下这两个命令：
 
-
-而我们常用只有以下这两个命令： 
-
-Usage 
+Usage
 
 The SCM Plugin maps a lot of commands to a variety of scm implementations. But there are only 2 frequently used commands:
 
@@ -64,9 +62,7 @@ update - 从服务器上获取最新的版本配置及使用
 </project>
 ```
 
-
-
-照这样配置好的，现在我们要做提交或者更新，就按如下按行命令 
+照这样配置好的，现在我们要做提交或者更新，就按如下按行命令
 
 提交：
 
@@ -80,9 +76,7 @@ mvn -Dmessage="<commit_log_here>" scm:checkin
 mvn scm:updateSCM支持的连接类型
 ```
 
-
-
-SCM支持两种连接类型：connection 及 developerConnection。 
+SCM支持两种连接类型：connection 及 developerConnection。
 
 以下是一个连接类型为connection的配置示例：
 
