@@ -70,8 +70,14 @@ Maven依赖查询：
 * mvn -Dwtpversion=1.0 eclipse:eclipse        生成Wtp插件的Web项目
 * mvn -Dwtpversion=1.0 eclipse:clean        清除Eclipse项目的配置信息\(Web项目\)
 * mvn eclipse:eclipse                将项目转化为Eclipse项目
+* mvn -e            显示详细错误 信息.
+* mvn validate        验证工程是否正确，所有需要的资源是否可用。
+* mvn test-compile    编译项目测试代码。 。
+* mvn integration-test     在集成测试可以运行的环境中处理和发布包。
+* mvn verify        运行任何检查，验证包是否有效且达到质量标准。
+* mvn generate-sources    产生应用需要的任何额外的源代码，如xdoclet。
 
-在应用程序用使用多个存储库
+* 在应用程序用使用多个存储库
 
 ```
 <repositories>    
@@ -85,7 +91,7 @@ Maven依赖查询：
         <name>Planet Mirror</name>      
         <url>http://public.planetmirror.com/pub/maven/</url>    
     </repository>  
-</repositories> 
+</repositories>
 ```
 
 ```
@@ -98,19 +104,9 @@ mvn deploy:deploy-file -DgroupId=com -DartifactId=client -Dversion=0.1.0 -Dpacka
 mvn install:install-file -DgroupId=com -DartifactId=client -Dversion=0.1.0 -Dpackaging=jar -Dfile=d:\client-0.1.0.jar -DdownloadSources=true -DdownloadJavadocs=true
 ```
 
-mvn -e            显示详细错误 信息.
 
-mvn validate        验证工程是否正确，所有需要的资源是否可用。
 
-mvn test-compile    编译项目测试代码。 。
 
-mvn integration-test     在集成测试可以运行的环境中处理和发布包。
-
-mvn verify        运行任何检查，验证包是否有效且达到质量标准。
-
-mvn generate-sources    产生应用需要的任何额外的源代码，如xdoclet。
-
-本文来自CSDN博客，转载请标明出处：[http://blog.csdn.net/lifxue/archive/2009/10/14/4662902.aspx](http://blog.csdn.net/lifxue/archive/2009/10/14/4662902.aspx)
 
 常用命令：
 
