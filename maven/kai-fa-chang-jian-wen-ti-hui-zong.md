@@ -1,6 +1,6 @@
 # 开发常见问题汇总
 
-1.maven在POM.xml中配置plugin的忽略测试功能配置
+### **1.maven在POM.xml中配置plugin的忽略测试功能配置**
 
 ```
 <plugin>
