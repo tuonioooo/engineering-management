@@ -2,7 +2,7 @@
 
 ## 参考文档：
 
-[http://www.runoob.com/git/git-basic-operations.html](http://www.runoob.com/git/git-basic-operations.html)  
+[http://www.runoob.com/git/git-basic-operations.html](http://www.runoob.com/git/git-basic-operations.html)
 
 > git版本控制命令
 >
@@ -20,15 +20,15 @@
 >
 > 7.cat ~/.ssh/config                  显示当前的SSH配置文件中的信息
 >
->  TCPKeepAlive  yes
+> TCPKeepAlive  yes
 >
->  ServerAliveInterval=30
+> ServerAliveInterval=30
 >
->                            
 >
->  Host  git\(别名\)
 >
->  HostName 219.232.251.2
+> Host  git\(别名\)
+>
+> HostName 219.232.251.2
 >
 > Port  52010
 >
@@ -80,23 +80,23 @@
 >
 > 30.git 建立分支之前，如果在当前版本有没提交的文件，那么建立分支之后，也会显示之前没提交的文件，此时，再次的变换分支到master上，也还会显示，没提交的文件；
 >
->        如果在新建立的分支中，提交修改的代码，此时，在切换master版本中，不会显示没提交的文件，并且提交的内容不在master版本中体现，master会找到修改之前的代码自动更新；
+> ```
+>    如果在新建立的分支中，提交修改的代码，此时，在切换master版本中，不会显示没提交的文件，并且提交的内容不在master版本中体现，master会找到修改之前的代码自动更新；
 >
->        而新版本提交之后，就显示刚才提交的内容，这点，恰恰是master与分支之间没提交代码时的区别；请加以注意；             
+>    而新版本提交之后，就显示刚才提交的内容，这点，恰恰是master与分支之间没提交代码时的区别；请加以注意；             
+> ```
 >
 > 注意事项：1.每次push之前，都要pull
 >
->        2.在分支修改之后，需要添加和commit，才能合并
+> ```
+>    2.在分支修改之后，需要添加和commit，才能合并
 >
->        3.staged状态之前存在四种文件：一个是冲突文件、修改文件、不在版本控制之内的文件、删除文件
+>    3.staged状态之前存在四种文件：一个是冲突文件、修改文件、不在版本控制之内的文件、删除文件
 >
->        4.提交分支的话，只能在当前的分支下才可以提交分支，如果切换到其他分支或者是主控制分支上，在去提交的话，就会遇到错误;
->
->
+>    4.提交分支的话，只能在当前的分支下才可以提交分支，如果切换到其他分支或者是主控制分支上，在去提交的话，就会遇到错误;
+> ```
 >
 > 31.git push origin bugfix4:new\_feature              把本地分支的代码提交到远程仓库中，并同时在仓库中建立new\_feature分支
->
->
 >
 > 32.git branch -r                                                      查看仓库的远程分支
 >
@@ -106,7 +106,7 @@
 >
 > 35.git push origin bugfix5:new\_feature          指定分支，提交指定的仓库
 >
-> 36.https://developer.amazonservices.com.cn/gp/mws/faq.html  亚马逊中的信息
+> 36.[https://developer.amazonservices.com.cn/gp/mws/faq.html](https://developer.amazonservices.com.cn/gp/mws/faq.html)  亚马逊中的信息
 
 
 
