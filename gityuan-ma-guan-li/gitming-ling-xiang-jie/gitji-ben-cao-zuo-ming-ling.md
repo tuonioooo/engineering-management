@@ -6,7 +6,7 @@
 
 官方文档：[https://git-scm.com/doc](https://git-scm.com/doc)
 
-廖雪峰git教程：[https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)  
+廖雪峰git教程：[https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
 
 * ## git版本控制命令
 
@@ -105,8 +105,8 @@
 > 34.git branch --track origin/new\_feature            将当前的分支跟踪到远程的分支下
 >
 > 35.git push origin bugfix5:new\_feature              指定分支，提交指定的仓库
->
-> 36.[https://developer.amazonservices.com.cn/gp/mws/faq.html](https://developer.amazonservices.com.cn/gp/mws/faq.html)  亚马逊中的信息
+
+
 
 
 
