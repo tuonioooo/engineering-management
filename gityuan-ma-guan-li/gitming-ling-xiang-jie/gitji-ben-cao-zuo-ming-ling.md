@@ -102,9 +102,9 @@
 >
 > 33.git fetch origin new\_feature                            同步远程分支
 >
-> 34.git branch --track origin/new\_feature          将当前的分支跟踪到远程的分支下
+> 34.git branch --track origin/new\_feature            将当前的分支跟踪到远程的分支下
 >
-> 35.git push origin bugfix5:new\_feature          指定分支，提交指定的仓库
+> 35.git push origin bugfix5:new\_feature              指定分支，提交指定的仓库
 >
 > 36.[https://developer.amazonservices.com.cn/gp/mws/faq.html](https://developer.amazonservices.com.cn/gp/mws/faq.html)  亚马逊中的信息
 
