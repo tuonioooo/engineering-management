@@ -136,7 +136,9 @@ m2eclipse中类似以上的方法都会失效，所幸m2eclipse提供了配置�
 
 3. 然后在maven菜单中使用 “update project ...”.
 
+### 6.Unable to locate the Javac Compiler in:   D:\Java\jre6\..\lib\tools.jar
 
+一般是项目编译的版本不对，更换高一点的版本，build path
 
 
 
