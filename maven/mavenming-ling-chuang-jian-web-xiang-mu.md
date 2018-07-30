@@ -7,7 +7,7 @@
 或者使用自定义的仓库配置文件
 
 ```
-mvn archetype:create -s E:\.m2\settings.xml -DgroupId=com.learn -DartifactId=LearnNew -DarchetypeArtifactId=maven-archetype-webapp
+mvn archetype:create -s E:/.m2/settings.xml -DgroupId=com.learn -DartifactId=LearnNew -DarchetypeArtifactId=maven-archetype-webapp
 ```
 
 **执行结果如下：**
@@ -27,5 +27,5 @@ mvn archetype:create -s E:\.m2\settings.xml -DgroupId=com.learn -DartifactId=Lea
 </html>
 ```
 
-执行mvn install，并将target下面的LearnNew.war放于tomcat的webapps下面，启动tomcat，通过浏览器访问: http://localhost:8080/LearnNew/     将会看到熟悉的：”Hello World!“
+执行mvn install，并将target下面的LearnNew.war放于tomcat的webapps下面，启动tomcat，通过浏览器访问: [http://localhost:8080/LearnNew/](http://localhost:8080/LearnNew/)     将会看到熟悉的：”Hello World!“
 
