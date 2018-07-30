@@ -41,7 +41,7 @@ settings.xml代码如下，这个id需跟我们pom.xml配置的id一致：
 </servers>
 ```
 
- settings.xml配置完后，就需给admin用户赋权了，这个在tomcat安装目录下的conf/tomcat-users.xml文件，赋权代码如下：
+settings.xml配置完后，就需给admin用户赋权了，这个在tomcat安装目录下的conf/tomcat-users.xml文件，赋权代码如下：
 
 ```
 <role rolename="admin"/>
@@ -54,33 +54,21 @@ settings.xml代码如下，这个id需跟我们pom.xml配置的id一致：
 <user username="admin" password="admin" roles="admin,manager,manager-gui,admin-gui,manager-script,manager-jmx,manager-status"/>
 ```
 
- 到此所有配置完成，然后就可进行热部署了：
+到此所有配置完成，然后就可进行热部署了：
 
 1、在myeclipse中运行,非远程\(tomcat没有启动\)
 
-运行：
+运行：clean tomcat6:run
 
-clean tomcat6:run
+重新部署：clean tomcat6:redeploy
 
-重新部署：
-
-clean tomcat6:redeploy
-
-清除部署：
-
-tomcat6:undeploy
+清除部署：tomcat6:undeploy
 
 2、在远程服务器运行\(tomcat必须启动\)，执行完后去tomcat webapp目录下看看发生了生命
 
-部署：
+部署：clean tomcat6:deploy
 
-clean tomcat6:deploy
+重新部署：clean tomcat6:redeploy
 
-重新部署：
-
-clean tomcat6:redeploy
-
-清除部署：
-
-tomcat6:undeploy
+清除部署：tomcat6:undeploy
 
