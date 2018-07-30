@@ -23,8 +23,8 @@
   * [maven命令详解](maven/mavenming-ling-xiang-jie.md)
   * [maven仓库](maven/mavencang-ku.md)
   * [开发常见问题汇总](maven/kai-fa-chang-jian-wen-ti-hui-zong.md)
-  * 构建企业级私有仓库Nexus
-  * 大型系统模块化工程管理实践
+  * [构建企业级私有仓库Nexus](maven/gou-jian-qi-ye-ji-si-you-cang-ku-nexus.md)
+  * [大型系统模块化工程管理实践](maven/da-xing-xi-tong-mo-kuai-hua-gong-cheng-guan-li-shi-jian.md)
   * [maven导出项目依赖的jar包](maven/mavendao-chu-xiang-mu-yi-lai-de-jar-bao-dao-zhi-ding-mu-lu-zhong.md)
   * [maven普通项目转成web项目](maven/mavenpu-tong-xiang-mu-zhuan-cheng-web-xiang-mu.md)
   * [maven命令创建web项目](maven/mavenming-ling-chuang-jian-web-xiang-mu.md)
@@ -32,4 +32,5 @@
   * [maven scm 用法\(SVN 的独有配置\)](maven/maven-scm-yong-6cd528-svn-de-du-you-pei-7f6e29.md)
   * [maven修改后的settings.xml文件](maven/mavenxiu-gai-hou-de-settings-xml-wen-jian.md)
   * [maven集成Tomcat插件](maven/maven-ji-cheng-tomcat-cha-jian.md)
+  * [maven+tomcat6-maven-plugin 实现热部署及调试](maven/maven+tomcat6-maven-plugin-shi-xian-re-bu-shu-ji-diao-shi.md)
 
