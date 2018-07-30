@@ -1,12 +1,6 @@
 # 码云
 
-#### 使用码云
-
-阅读: 13907
-
----
-
-使用GitHub时，国内的用户经常遇到的问题是访问速度太慢，有时候还会出现无法连接的情况（原因你懂的）。
+#### 使用GitHub时，国内的用户经常遇到的问题是访问速度太慢，有时候还会出现无法连接的情况（原因你懂的）。
 
 如果我们希望体验Git飞一般的速度，可以使用国内的Git托管服务——[码云](https://gitee.com/)（[gitee.com](https://gitee.com/)）。
 
@@ -34,7 +28,6 @@
 
 ```
 git remote add origin git@gitee.com:liaoxuefeng/learngit.git
-
 ```
 
 之后，就可以正常地用`git push`和`git pull`推送了！
@@ -44,7 +37,6 @@ git remote add origin git@gitee.com:liaoxuefeng/learngit.git
 ```
 git remote add origin git@gitee.com:liaoxuefeng/learngit.git
 fatal: remote origin already exists.
-
 ```
 
 这说明本地库已经关联了一个名叫`origin`的远程库，此时，可以先用`git remote -v`查看远程库信息：
@@ -53,7 +45,6 @@ fatal: remote origin already exists.
 git remote -v
 origin    git@github.com:michaelliao/learngit.git (fetch)
 origin    git@github.com:michaelliao/learngit.git (push)
-
 ```
 
 可以看到，本地库已经关联了`origin`的远程库，并且，该远程库指向GitHub。
@@ -62,7 +53,6 @@ origin    git@github.com:michaelliao/learngit.git (push)
 
 ```
 git remote rm origin
-
 ```
 
 再关联码云的远程库（注意路径中需要填写正确的用户名）：
@@ -77,7 +67,6 @@ git remote add origin git@gitee.com:liaoxuefeng/learngit.git
 git remote -v
 origin    git@gitee.com:liaoxuefeng/learngit.git (fetch)
 origin    git@gitee.com:liaoxuefeng/learngit.git (push）
-
 ```
 
 现在可以看到，origin已经被关联到码云的远程库了。通过`git push`命令就可以把本地库推送到Gitee上。
@@ -92,7 +81,6 @@ origin    git@gitee.com:liaoxuefeng/learngit.git (push）
 
 ```
 git remote rm origin
-
 ```
 
 然后，先关联GitHub的远程库：
@@ -119,21 +107,18 @@ gitee    git@gitee.com:liaoxuefeng/learngit.git (fetch)
 gitee    git@gitee.com:liaoxuefeng/learngit.git (push)
 github    git@github.com:michaelliao/learngit.git (fetch)
 github    git@github.com:michaelliao/learngit.git (push)
-
 ```
 
 如果要推送到GitHub，使用命令：
 
 ```
 git push github master
-
 ```
 
 如果要推送到码云，使用命令：
 
 ```
 git push gitee master
-
 ```
 
 这样一来，我们的本地库就可以同时与多个远程库互相同步：
@@ -148,7 +133,6 @@ git push gitee master
     ┌─────────────┐
     │ Local Repo  │
     └─────────────┘
-
 ```
 
 码云也同样提供了Pull request功能，可以让其他小伙伴参与到开源项目中来。你可以通过Fork我的仓库：[https://gitee.com/liaoxuefeng/learngit](https://gitee.com/liaoxuefeng/learngit)，创建一个`your-gitee-id.txt`的文本文件， 写点自己学习Git的心得，然后推送一个pull request给我，这个仓库会在码云和GitHub做双向同步。
