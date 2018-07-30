@@ -26,5 +26,57 @@
 
 ## 取消已经暂存的文件
 
-接下来的将演示如何取消暂存区域中的文件，以及如何取消工作目录中已修改的文件。不用担心，查看文件状态的时候就提示了该如何撤消，所以不需要死记硬背。来看下面的例子，有两个修改过的文件，我们想要分开提交，但不小心用git add . 全加到了暂存区域。该如何撤消暂存其中的一个文件呢？其实，git status 的命令输出已经告诉了我们该怎么做：
+接下来的将演示如何取消暂存区域中的文件，以及如何取消工作目录中已修改的文件。不用担心，查看文件状态的时候就提示了该如何撤消，所以不需要死记硬背。来看下面的例子，有两个修改过的文件，我们想要分开提交，但不小心用git add . 全加到了暂存区域。该如何撤消暂存其中的一个文件呢？其实，_**git status**_ 的命令输出已经告诉了我们该怎么做：
+
+> $ git add .
+>
+> $ git status
+>
+> \# On branch master
+>
+> \# Changes to be committed:
+>
+> \# \(use "git reset HEAD &lt;file&gt;..." to unstage\)
+>
+> \#
+>
+> \# modified: README.txt
+>
+> \# modified: benchmarks.rb
+>
+> \#
+
+就在 “Changes to be committed” 下面，括号中有提示，可以使用_**git reset HEAD &lt;file&gt;... **_的方式取消暂存。好吧，我们来试试取消暂存 benchmarks.rb 文件：
+
+> $ git reset HEAD benchmarks.rb
+>
+> benchmarks.rb: locally modified
+>
+> $ git status
+>
+> \# On branch master
+>
+> \# Changes to be committed:
+>
+> \# \(use "git reset HEAD &lt;file&gt;..." to unstage\)
+>
+> \#
+>
+> \# modified: README.txt
+>
+> \#
+>
+> \# Changed but not updated:
+>
+> \# \(use "git add &lt;file&gt;..." to update what will be committed\)
+>
+> \# \(use "git checkout -- &lt;file&gt;..." to discard changes in working directory\)
+>
+> \#
+>
+> \# modified: benchmarks.rb
+>
+> \#
+
+
 
