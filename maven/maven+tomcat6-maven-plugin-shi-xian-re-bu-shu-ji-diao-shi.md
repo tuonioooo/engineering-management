@@ -25,221 +25,36 @@ pom.xml tomcat插件配置\(此处用tomcat6，注意tomcat7的url跟tomcat6的�
 </plugin>
 ```
 
- 配置完这个后pom.xml还配置C:\Users\3panjiacai.MSS\.m2\settings.xml\\(maven的全局配置,您的路径肯定跟我的不一样\\):
+配置完这个后pom.xml还配置C:\Users\3panjiacai.MSS.m2\settings.xml\\(maven的全局配置,您的路径肯定跟我的不一样\\):
 
 ![](file:///C:/Users/tony/AppData/Local/Temp/enhtmlclip/Image%287%29.jpg)
 
 settings.xml代码如下，这个id需跟我们pom.xml配置的id一致：
 
-![](file:///C:/Users/tony/AppData/Local/Temp/enhtmlclip/Image.gif "复制代码")
-
-&lt;
-
-/servers
-
-&gt;
-
-&lt;
-
-server
-
-&gt;
-
-&lt;
-
-id
-
-&gt;
-
-tomcat
-
-&lt;
-
-/id
-
-&gt;
-
-&lt;
-
-username
-
-&gt;
-
-admin
-
-&lt;
-
-/username
-
-&gt;
-
-&lt;
-
-password
-
-&gt;
-
-admin
-
-&lt;
-
-/password
-
-&gt;
-
-&lt;
-
-/server
-
-&gt;
-
-&lt;
-
-/servers
-
-&gt;
-
-![](file:///C:/Users/tony/AppData/Local/Temp/enhtmlclip/Image.gif "复制代码")
-
 ```
+</servers>
+　　<server>
+<id>tomcat</id>
+<username>admin</username>
+<password>admin</password>
+</server>
+</servers>
+```
+
  settings.xml配置完后，就需给admin用户赋权了，这个在tomcat安装目录下的conf/tomcat-users.xml文件，赋权代码如下：
-```
-
-![](file:///C:/Users/tony/AppData/Local/Temp/enhtmlclip/Image.gif "复制代码")
-
-&lt;
-
-role rolename=
-
-"
-
-admin
-
-"
-
-/
-
-&gt;
-
-&lt;
-
-role rolename=
-
-"
-
-admin-gui
-
-"
-
-/
-
-&gt;
-
-&lt;
-
-role rolename=
-
-"
-
-manager
-
-"
-
-/
-
-&gt;
-
-&lt;
-
-role rolename=
-
-"
-
-manager-script
-
-"
-
-/
-
-&gt;
-
-&lt;
-
-role rolename=
-
-"
-
-manager-gui
-
-"
-
-/
-
-&gt;
-
-&lt;
-
-role rolename=
-
-"
-
-manager-jmx
-
-"
-
-/
-
-&gt;
-
-&lt;
-
-role rolename=
-
-"
-
-manager-status
-
-"
-
-/
-
-&gt;
-
-&lt;
-
-user username=
-
-"
-
-admin
-
-"
-
-password=
-
-"
-
-admin
-
-"
-
-roles=
-
-"
-
-admin,manager,manager-gui,admin-gui,manager-script,manager-jmx,manager-status
-
-"
-
-/
-
-&gt;
-
-![](file:///C:/Users/tony/AppData/Local/Temp/enhtmlclip/Image.gif "复制代码")
 
 ```
+<role rolename="admin"/>
+<role rolename="admin-gui"/>
+<role rolename="manager"/>
+<role rolename="manager-script"/>
+<role rolename="manager-gui"/>
+<role rolename="manager-jmx"/>
+<role rolename="manager-status"/>
+<user username="admin" password="admin" roles="admin,manager,manager-gui,admin-gui,manager-script,manager-jmx,manager-status"/>
+```
+
  到此所有配置完成，然后就可进行热部署了：
-```
 
 1、在myeclipse中运行,非远程\(tomcat没有启动\)
 
