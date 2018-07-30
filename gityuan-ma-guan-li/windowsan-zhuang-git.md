@@ -48,7 +48,15 @@
 
 #### 
 
-#### 生成SSH Key
+#### 生成SSH Key 
+
+配置email，命令如下：
+
+> $git config --global user.name "your name"
+>
+> $git config --global user.email "your@email.address"
+
+其中"your name"换成你的名字，"your@email.address"换成你的邮箱地址。
 
 在使用Git前，需要先生成一个SSH Key，来保证你的local box和服务器之间通信的安全，识别代码的改动。选择一个文件夹，单击右键，选择“Git Bash Here”, 然后在命令行窗口中输入:
 
