@@ -36,9 +36,9 @@ Maven会将下载的类库（jar包）放置到本地的一个目录下（一般
 
 * 在安装Maven的目录下找到conf文件夹，在文件夹中找到settings.xml文件，复制settings.xml文件放于E:.m2，如下图所示：
 
-![](file:///C:\Users\tony\AppData\Roaming\Tencent\Users\596807862\QQ\WinTemp\RichOle\%29QTZHG%28`]%29DCE~MRNKR}9W2.png)
+  ![](/assets/123.png)
 
-**3、修改settings.xml文件，如下图所示：**
+* 修改settings.xml文件，如下图所示：
 
 ![](https://images2017.cnblogs.com/blog/1223891/201708/1223891-20170822141537621-774553219.png)
 
