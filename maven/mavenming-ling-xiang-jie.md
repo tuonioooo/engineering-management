@@ -16,73 +16,62 @@ Maven依赖查询：
 
 Maven常用命令：
 
-1. 创建Maven的普通java项目：
+* 创建Maven的普通java项目：
 
-   `mvn archetype:create -DgroupId=packageName -DartifactId=projectName`
+  `mvn archetype:create -DgroupId=packageName -DartifactId=projectName`
 
-2. 创建Maven的Web项目：
+* 创建Maven的Web项目：
 
-   `mvn archetype:create -DgroupId=packageName -DartifactId=webappName -DarchetypeArtifactId=maven-archetype-webapp`
+  `mvn archetype:create -DgroupId=packageName -DartifactId=webappName -DarchetypeArtifactId=maven-archetype-webapp`
 
-3. 编译源代码： mvn compile
+* 编译源代码： 
 
-4. 编译测试代码：mvn test-compile
+`mvn compile`
 
-5. 运行测试：mvn test
+* 编译测试代码：mvn test-compile
 
-6. 产生site：mvn site
+* 运行测试：mvn test
 
-7. 打包：mvn package
+* 产生site：mvn site
 
-8. 在本地Repository中安装jar：mvn install
+* 打包：mvn package
 
-9. 清除产生的项目：mvn clean
+* 在本地Repository中安装jar：mvn install
 
-10. 生成eclipse项目：mvn eclipse:eclipse
+* 清除产生的项目：mvn clean
 
-11. 生成idea项目：mvn idea:idea
+* 生成eclipse项目：mvn eclipse:eclipse
 
-12. 组合使用goal命令，如只打包不测试：mvn -Dtest package
+* 生成idea项目：mvn idea:idea
 
-13. 编译测试的内容：mvn test-compile
+* 组合使用goal命令，如只打包不测试：mvn -Dtest package
 
-14. 只打jar包: mvn jar:jar
+* 编译测试的内容：mvn test-compile
 
-15. 只测试而不编译，也不测试编译：mvn test -skipping compile -skipping test-compile
+* 只打jar包: mvn jar:jar
 
-    \( -skipping 的灵活运用，当然也可以用于其他组合命令\)
+* 只测试而不编译，也不测试编译：mvn test -skipping compile -skipping test-compile
 
-16. 清除eclipse的一些系统设置:  mvn eclipse:clean
+  \( -skipping 的灵活运用，当然也可以用于其他组合命令\)
 
-
+* 清除eclipse的一些系统设置:  mvn eclipse:clean
 
 > ps：
 >
 > 一般使用情况是这样，首先通过cvs或svn下载代码到本机，然后执行mvn eclipse:eclipse生成ecllipse项目文件，然后导入到eclipse就行了；修改代码后执行mvn compile或mvn test检验，也可以下载eclipse的maven插件。
 
-mvn -version/-v  显示版本信息
-
-mvn archetype:generate        创建mvn项目
-
-mvn archetype:create -DgroupId=com.oreilly -DartifactId=my-app   创建mvn项目
-
-mvn package            生成target目录，编译、测试代码，生成测试报告，生成jar/war文件
-
-mvn jetty:run            运行项目于jetty上,
-
-mvn compile                    编译
-
-mvn test                    编译并测试
-
-mvn clean                    清空生成的文件
-
-mvn site                    生成项目相关信息的网站
-
-mvn -Dwtpversion=1.0 eclipse:eclipse        生成Wtp插件的Web项目
-
-mvn -Dwtpversion=1.0 eclipse:clean        清除Eclipse项目的配置信息\(Web项目\)
-
-mvn eclipse:eclipse                将项目转化为Eclipse项目
+* mvn -version/-v  显示版本信息
+* mvn archetype:generate        创建mvn项目
+* mvn archetype:create -DgroupId=com.oreilly -DartifactId=my-app   创建mvn项目
+* mvn package            生成target目录，编译、测试代码，生成测试报告，生成jar/war文件
+* mvn jetty:run            运行项目于jetty上,
+* mvn compile                    编译
+* mvn test                    编译并测试
+* mvn clean                    清空生成的文件
+* mvn site                    生成项目相关信息的网站
+* mvn -Dwtpversion=1.0 eclipse:eclipse        生成Wtp插件的Web项目
+* mvn -Dwtpversion=1.0 eclipse:clean        清除Eclipse项目的配置信息\(Web项目\)
+* mvn eclipse:eclipse                将项目转化为Eclipse项目
 
 在应用程序用使用多个存储库
 
