@@ -96,9 +96,7 @@ a. 创建develop分支
 
 ```
 git branch develop
-git 
-push
- -u origin develop
+git push -u origin develop 
 ```
 
 b. 开始新Feature开发
