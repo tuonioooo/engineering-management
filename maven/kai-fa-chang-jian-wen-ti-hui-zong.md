@@ -102,3 +102,27 @@ m2eclipse中类似以上的方法都会失效，所幸m2eclipse提供了配置�
 
 这时会看到一个maven运行配置对话框，这里面其它的配置我不多解释了，为了解决内存溢出的问题，我们可以选择第二个TAB: JRE，然后在VM arguments中输入配置如：-Xms128m -Xmx512m。
 
+### 4.依赖冲突
+
+解决方式：在依赖中排除有冲突的jar引用，比如：
+
+> &lt;dependency&gt;
+>
+> &lt;groupId&gt;com.aliyun.oss&lt;/groupId&gt;
+>
+> &lt;artifactId&gt;aliyun-sdk-oss&lt;/artifactId&gt;
+>
+> &lt;version&gt;2.2.0&lt;/version&gt;
+>
+> _**&lt;exclusions&gt;**_
+>
+> _**&lt;exclusion&gt; &lt;groupId&gt;org.apache.httpcomponents&lt;/groupId&gt;**_
+>
+> _**&lt;artifactId&gt;httpclient&lt;/artifactId&gt;**_
+>
+> _**&lt;/exclusion&gt;**_
+>
+> &lt;/exclusions&gt;&lt;/dependency&gt;
+
+
+
