@@ -134,7 +134,7 @@
 > 创建新分支并立即切换到新分支：$ git checkout -b \[name\]
 >
 > 删除分支：$ git branch -d \[name\] ---- -d选项只能删除已经参与了合并的分支，对于未有合并的分支是无法删除的。
-
+>
 > 如果想强制删除一个分支，可以使用-D选项
 >
 > 合并分支：$ git merge \[name\] ----将名称为\[name\]的分支与当前分支合并
@@ -142,6 +142,20 @@
 > 创建远程分支\(本地分支push到远程\)：$ git push origin \[name\]
 >
 > 删除远程分支：$ git push origin :heads/\[name\]
+
+* ## **版本\(tag\)操作相关命令**
+
+> 查看版本：$ git tag
+>
+> 创建版本：$ git tag \[name\]
+>
+> 删除版本：$ git tag -d \[name\]
+>
+> 查看远程版本：$ git tag -r
+>
+> 创建远程版本\(本地版本push到远程\)：$ git push origin \[name\]
+>
+> 删除远程版本：$ git push origin :refs/tags/\[name\]
 
 
 
