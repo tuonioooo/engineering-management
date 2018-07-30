@@ -48,7 +48,7 @@
 
 #### 
 
-#### 生成SSH Key 
+#### 生成SSH Key
 
 配置email，命令如下：
 
@@ -64,9 +64,9 @@
 
 这里使用的email地址是你注册Git时使用的email地址。 这里基本上也一路enter就好了，中间会有一步提示你输入 passphrase, 就是密码或者通行码，可以随便编一个或者直接回车，为空就好。之后窗口会显示生成的rsa文件存放的位置。
 
-如果是在XP系统上，位置应该是 “C:\Documents and Settings\username.ssh\”
+如果是在XP系统上，位置应该是 “C:\Documents and Settings\username.ssh\”;
 
-; 如果是在Win7系统上，位置应该是  “C:\Users\username.ssh”。
+如果是在Win7系统上，位置应该是  “C:\Users\username.ssh”。
 
 #### 注册Git Account
 
