@@ -26,3 +26,75 @@ Maven 有一个生命周期，当你运行 mvn install 的时候被调用。这�
 
 此外，Maven能够很方便的帮你管理项目报告，生成站点，管理JAR文件，等等。
 
+## 生命周期
+
+Maven的生命周期是为了对所有的构建过程进行了抽象了，便于统一。
+
+clean\(清理\)
+
+cleanup\(清理所有\)
+
+此生命周期旨在给工程做清理工作，它主要包含以下阶段：
+
+pre-clean - 执行项目清理前所需要的工作。
+
+clean - 清理上一次build项目生成的文件。
+
+post-clean - 执行完成项目清理所需的工作.
+
+default\(默认\)
+
+validate - 验证项目是否正确且所有必要的信息都可用。
+
+initialize - 初始化构建工作，如：设置参数，创建目录等。
+
+generate-sources - 为包含在编译范围内的代码生成源代码.
+
+process-sources - 处理源代码, 如过滤值.
+
+generate-resources -
+
+process-resources - 复制并处理资源文件，至目标目录，准备打包。
+
+compile - 编译项目中的源代码.
+
+process-classes - 为编译生成的文件做后期工作, 例如做Java类的字节码增强.
+
+generate-test-sources - 为编译内容生成测试源代码.
+
+process-test-sources - 处理测试源代码。
+
+generate-test-resources -process-test-resources - 复制并处理资源文件，至目标测试目录。
+
+test-compile - 将需测试源代码编译到路径。一般来说，是编译/src/test/java目录下的java文件至目标输出的测试classpath目录中。
+
+process-test-classes -
+
+test - 使用合适的单元测试框架运行测试。这些测试代码不会被打包或部署。
+
+prepare-package -
+
+package - 接受编译好的代码，打包成可发布的格式，如 JAR 。
+
+pre-integration-test -
+
+integration-test - 按需求将发布包部署到运行环境。
+
+post-integration-test -verify -install -将包安装到本地仓库，给其他本地引用提供依赖。
+
+deploy -完成集成和发布工作，将最终包复制到远程仓库以便分享给其他开发人员。
+
+site\(站点\)
+
+pre-site - 执行一些生成项目站点前的准备工作。
+
+site - 生成项目站点的文档。
+
+post-site - 执行需完成站点生成的工作，如站点部署的准备工作。
+
+site-deploy - 向制定的web服务器部署站点生成文件。 \[2\] 
+
+Maven生命周期参考：Apache Maven Project \[2\]  ，书籍《Maven In Action》
+
+
+
