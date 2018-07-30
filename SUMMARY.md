@@ -38,5 +38,5 @@
   * [maven自定义插件研发](maven/mavenzi-ding-yi-cha-jian-yan-fa.md)
   * [maven部署到Tomcat的对应目录如下](maven/mavenbu-shu-dao-tomcat-de-dui-ying-mu-lu-ru-xia.md)
   * [maven中的MANIFEST.MF文件中的Class-Path中增加当前目录\(.\)](maven/mavenzhong-demanifest-mf-wen-jian-zhong-de-class-path-zhong-zeng-jia-dang-qian-mu-5f552829.md)
-  * [maven 如何修改本地仓库与中央仓库](maven/maven-ru-he-xiu-gai-ben-di-cang-ku-yu-zhong-yang-cang-ku.md)
+  * [maven如何修改本地仓库与中央仓库](maven/maven-ru-he-xiu-gai-ben-di-cang-ku-yu-zhong-yang-cang-ku.md)
 
