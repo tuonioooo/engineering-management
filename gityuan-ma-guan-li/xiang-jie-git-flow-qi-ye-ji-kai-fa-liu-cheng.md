@@ -98,7 +98,7 @@ a. 创建develop分支
 git branch develop
 git 
 push
- -u origin develop    
+ -u origin develop
 ```
 
 b. 开始新Feature开发
@@ -117,7 +117,7 @@ push
 
 git status
 git add some-file
-git commit    
+git commit
 ```
 
 c. 完成Feature
@@ -142,7 +142,7 @@ If
 to
  origin:
 git push origin 
---delete some-feature    
+--delete some-feature
 ```
 
 d. 开始Relase
@@ -299,8 +299,9 @@ wget -q -O - --no-check-certificate[https://github.com/nvie/gitflow/raw/develop/
 
 * **开始一个Release:**git flow release start RELEASE \[BASE\]
 
-* **Publish一个Release:**
+* **Publish一个Release:**  
   git flow release publish RELEASE
+
 * **发布Release:**git flow release finish RELEASE  
   别忘了git push --tags
 
@@ -308,7 +309,7 @@ wget -q -O - --no-check-certificate[https://github.com/nvie/gitflow/raw/develop/
 
 * **发布一个Hotfix:**git flow hotfix finish VERSION
 
-![](https://images.cnblogs.com/cnblogs_com/cnblogsfans/771108/o_git-flow-commands.png)
+![](/assets/import-gitflow-06.png)
 
 ### Git Flow GUI {#git-flow-gui}
 
@@ -322,9 +323,9 @@ wget -q -O - --no-check-certificate[https://github.com/nvie/gitflow/raw/develop/
 
 这么好的工具请问多少钱呢？**免费!!!!**
 
-![](https://images.cnblogs.com/cnblogs_com/cnblogsfans/771108/o_source-tree-git-flow-init.png)
+![](/assets/import-gitflow-07.png)
 
-![](https://images.cnblogs.com/cnblogs_com/cnblogsfans/771108/o_sourcetree-hero-mac-log.png)
+![](/assets/import-gitflow-08.png)
 
 #### Git flow for visual studio {#git-flow-for-visual-studio}
 
