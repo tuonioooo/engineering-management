@@ -17,7 +17,7 @@
 mvn archetype:create -DgroupId=packageName -DartifactId=webappName -DarchetypeArtifactId=maven-archetype-webapp
 
 #使用自定义仓库地址
-mvn archetype:create -s E:\.m2\settings.xml -DgroupId=packageName -DartifactId=webappName -DarchetypeArtifactId=maven-archetype-webapp
+mvn archetype:create -s E:/.m2/settings.xml -DgroupId=packageName -DartifactId=webappName -DarchetypeArtifactId=maven-archetype-webapp
 ```
 
 * 编译源代码：mvn compile
