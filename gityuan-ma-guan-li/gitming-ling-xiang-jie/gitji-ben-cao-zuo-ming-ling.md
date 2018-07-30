@@ -2,9 +2,9 @@
 
 ## 参考文档：
 
-菜鸟教程：[http://www.runoob.com/git/git-basic-operations.html](http://www.runoob.com/git/git-basic-operations.html)  
+菜鸟教程：[http://www.runoob.com/git/git-basic-operations.html](http://www.runoob.com/git/git-basic-operations.html)
 
-官方文档：[https://git-scm.com/doc](https://git-scm.com/doc) 
+官方文档：[https://git-scm.com/doc](https://git-scm.com/doc)
 
 廖雪峰git教程：[https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
 
@@ -100,7 +100,7 @@
 >
 > 32.git branch -r                                                      查看仓库的远程分支
 >
-> 33.git fetch origin new\_feature                         同步远程分支
+> 33.git fetch origin new\_feature                            同步远程分支
 >
 > 34.git branch --track origin/new\_feature          将当前的分支跟踪到远程的分支下
 >
