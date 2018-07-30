@@ -12,10 +12,6 @@
 
 原文：[http://juvenshun.iteye.com/blog/305865](http://juvenshun.iteye.com/blog/305865)
 
-* ### maven多项目依赖配置示例4 
-
-### 
-
 * ### maven多模块项目的创建、提交和检出
 
 原文：[http://xc5.iteye.com/blog/1546414](http://xc5.iteye.com/blog/1546414)
