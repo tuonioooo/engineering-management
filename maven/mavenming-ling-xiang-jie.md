@@ -101,8 +101,8 @@ mvn install:install-file -DgroupId=com -DartifactId=client -Dversion=0.1.0 -Dpac
 * mvn help:effective-pom 看这个“有效的 \(effective\)”POM，它暴露了 Maven的默认设置
 * mvn archetype:create -DgroupId=org.sonatype.mavenbook.ch03 -DartifactId=simple -DpackageName=org.sonatype.mavenbook 创建Maven的普通java项目，在命令行使用Maven Archetype 插件
 * mvn exec:java -Dexec.mainClass=org.sonatype.mavenbook.weather.Main Exec 插件让我们能够在不往 classpath 载入适当的依赖的情况下，运行这个程序
-* mvn dependency:resolve 打印出已解决依赖的列表
-* mvn dependency:tree 打印整个依赖树
+* **mvn dependency:resolve **打印出已解决依赖的列表
+* **mvn dependency:tree** 打印整个依赖树
 * mvn install -X 想要查看完整的依赖踪迹，包含那些因为冲突或者其它原因而被拒绝引入的构件，打开 Maven 的调试标记运行
 * **mvn install -Dmaven.test.skip=true** 给任何目标添加maven.test.skip 属性就能跳过测试
 * mvn install assembly:assembly 构建装配Maven Assembly 插件是一个用来创建你应用程序特有分发包的插件
