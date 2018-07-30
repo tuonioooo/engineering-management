@@ -32,6 +32,7 @@
   * [maven scm 用法\(SVN 的独有配置\)](maven/maven-scm-yong-6cd528-svn-de-du-you-pei-7f6e29.md)
   * [maven修改后的settings.xml文件](maven/mavenxiu-gai-hou-de-settings-xml-wen-jian.md)
   * [maven集成Tomcat插件](maven/maven-ji-cheng-tomcat-cha-jian.md)
+  * [maven集成Tomcat插件\(二\)](maven/mavenji-cheng-tomcat-cha-4ef628-4e8c29.md)
   * [maven+tomcat6-maven-plugin 实现热部署及调试](maven/maven+tomcat6-maven-plugin-shi-xian-re-bu-shu-ji-diao-shi.md)
   * [maven项目将自研发的依赖包打进Jar文件中](maven/mavenxiang-mu-jiang-zi-yan-fa-de-yi-lai-bao-da-jin-jar-wen-jian-zhong.md)
 
