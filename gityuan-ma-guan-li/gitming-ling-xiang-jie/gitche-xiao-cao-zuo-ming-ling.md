@@ -80,3 +80,23 @@
 
 这条命令看起来有些古怪，先别管，能用就行。现在 benchmarks.rb 文件又回到了之前已修改未暂存的状态。
 
+## 取消对文件的修改，之前已经暂存
+
+如果觉得刚才对 benchmarks.rb 的修改完全没有必要，该如何取消修改，回到之前的状态（也就是修改之前的版本）呢？git status 同样提示了具体的撤消方法，接着上面的例子，现在未暂存区域看起来像这样：
+
+> \# Changed but not updated:
+>
+> \# \(use "git add &lt;file&gt;..." to update what will be committed\)
+>
+> \# \(use "git checkout -- &lt;file&gt;..." to discard changes in working directory\)
+>
+> \#
+>
+> \# modified: benchmarks.rb
+>
+> \#
+
+
+
+
+
