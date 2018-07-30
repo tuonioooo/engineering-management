@@ -14,7 +14,7 @@ Maven依赖查询：
 
 [http://mvnrepository.com/](http://mvnrepository.com/)
 
-Maven常用命令：
+## Maven常用命令：
 
 * 创建Maven的普通java项目：
 
@@ -73,15 +73,30 @@ Maven常用命令：
 
 在应用程序用使用多个存储库
 
+```
+<repositories>    
+    <repository>      
+        <id>Ibiblio</id>      
+        <name>Ibiblio</name>      
+        <url>http://www.ibiblio.org/maven/</url>    
+    </repository>    
+    <repository>      
+        <id>PlanetMirror</id>      
+        <name>Planet Mirror</name>      
+        <url>http://public.planetmirror.com/pub/maven/</url>    
+    </repository>  
+</repositories> 
+```
+
+```
 mvn deploy:deploy-file -DgroupId=com -DartifactId=client -Dversion=0.1.0 -Dpackaging=jar -Dfile=d:\client-0.1.0.jar -DrepositoryId=maven-repository-inner -Durl=ftp://xxxxxxx/opt/maven/repository/
+```
 
-发布第三方Jar到本地库中：
+* 发布第三方Jar到本地库中：
 
-mvn install:install-file -DgroupId=com -DartifactId=client -Dversion=0.1.0 -Dpackaging=jar -Dfile=d:\client-0.1.0.jar
-
--DdownloadSources=true
-
--DdownloadJavadocs=true
+```
+mvn install:install-file -DgroupId=com -DartifactId=client -Dversion=0.1.0 -Dpackaging=jar -Dfile=d:\client-0.1.0.jar -DdownloadSources=true -DdownloadJavadocs=true
+```
 
 mvn -e            显示详细错误 信息.
 
