@@ -24,9 +24,7 @@ Maven常用命令：
 
   `mvn archetype:create -DgroupId=packageName -DartifactId=webappName -DarchetypeArtifactId=maven-archetype-webapp`
 
-* 编译源代码：
-
-      `mvn compile`
+* 编译源代码：mvn compile
 
 * 编译测试代码：mvn test-compile
 
