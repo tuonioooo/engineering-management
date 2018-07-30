@@ -192,9 +192,25 @@ Plugin execution not covered by lifecycle configuration: org.apache.maven.plugin
 
 修改完成后，需在m2e配置处把“Update Maven projects on startup”选项勾上，并重启eclipse即可消除出错示。
 
+* ### 没有Project Facets的解决方法
 
+解决步骤：
 
+1、进入项目目录，可看到.project文件，打开。
 
+2、找到&lt;natures&gt;...&lt;/natures&gt;代码段。
 
+3、在第2步的代码段中加入如下标签内容并保存：
 
+&lt;nature&gt;org.eclipse.wst.common.project.facet.core.nature&lt;/nature&gt;
+
+&lt;nature&gt;org.eclipse.wst.common.modulecore.ModuleCoreNature&lt;/nature&gt;
+
+&lt;nature&gt;org.eclipse.jem.workbench.JavaEMFNature&lt;/nature&gt;
+
+4、在eclipse的项目上点右键，刷新项目。
+
+5、在项目上点右键，进入属性（properties）
+
+6、在左侧列表项目中点击选择“Project Facets”，在右侧选择“Dynamic Web Module”和"Java"，点击OK保存即可。
 
