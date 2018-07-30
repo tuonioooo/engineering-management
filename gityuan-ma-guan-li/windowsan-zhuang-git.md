@@ -76,7 +76,7 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDLY5NBdoD6UNgFWje2KkWLkVN9YtSOYlaPI24A6GlD
 
 此时只要把你的公钥放进你项目的服务中就可以进行git的相关操作。
 
-### 解决中文目录支持问题 
+### 解决中文目录支持问题
 
 * **ls不能显示中文目录**
 
@@ -95,18 +95,13 @@ set output-meta on
 set convert-meta off
 ```
 
-
-
-3、git log无法显示中文注释
+* **git log无法显示中文注释**
 
 解决办法：在git/etc/profile中增加一行：
 
-  
-
-
+```
 export LESSCHARSET=iso8859
+```
 
 到这时有关于git在winxp下安装就介绍完了，希望这个能给一些朋友带来一定的帮助。同时更希望朋友们关注W3CPLUS，因为只有你们的关注才能带来我的成长。
-
-
 
