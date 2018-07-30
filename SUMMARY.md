@@ -13,7 +13,7 @@
   * 常见代码冲突解决方案
   * 构建私有仓库
   * [如何利用github/码云进行学习](gityuan-ma-guan-li/ru-he-li-yong-github-ma-yun-jin-xing-xue-xi.md)
-    * github
+    * [github](gityuan-ma-guan-li/ru-he-li-yong-github-ma-yun-jin-xing-xue-xi/github.md)
     * 码云
   * 详解Git-flow企业级开发流程
 
