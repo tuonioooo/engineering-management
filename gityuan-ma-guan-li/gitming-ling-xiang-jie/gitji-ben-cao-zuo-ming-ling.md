@@ -6,10 +6,10 @@
 
 官方文档：[https://git-scm.com/doc](https://git-scm.com/doc)
 
-廖雪峰git教程：[https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
+廖雪峰git教程：[https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)  
 
-> git版本控制命令
->
+* ## git版本控制命令
+
 > 1.git config --global user.name "daizhao"  建立用户\(在本机git库中建立一个用户命名为daizhao\)
 >
 > 2.git config --global user.email "email"   建立邮箱........................................
