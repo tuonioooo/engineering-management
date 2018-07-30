@@ -181,9 +181,15 @@
     </plugins>
 
 </build>
-
-
 ```
 
+说明：
 
+* 这种方法与不把依赖打到jar包内的配置区别就是拷贝依赖包的位置有变化，见上面红色部分
+* jar包解压之后如下图所示
+
+![](file:///C:/Users/tony/AppData/Local/Temp/enhtmlclip/Image%289%29.jpg)
+* 这种方式目前测试中发现一个不太好的地方，就是会把scope为test的包也拷贝到jar包中，虽然对功能无影响，但是会增加整个jar包的大小，并且增加了无用的jar包，如下图中的junit，目前还没找到原因，找到原因之后再增加相关内容（有知道的兄弟也可告知一下，谢谢：\)）。
+
+![](file:///C:/Users/tony/AppData/Local/Temp/enhtmlclip/Image%2810%29.jpg)
 
