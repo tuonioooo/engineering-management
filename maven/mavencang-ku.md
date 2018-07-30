@@ -8,9 +8,19 @@
 
 [http://repository.sonatype.org/content/groups/public/ ](http://repository.sonatype.org/content/groups/public/ )
 
-[http://maven.ibiblio.org/maven2/](http://maven.ibiblio.org/maven2/) 
+[http://maven.ibiblio.org/maven2/](http://maven.ibiblio.org/maven2/)
 
 > 都可以查询到Jar包具体的jar、jar.md5、jar.sha1、pom、pom.md5等信息
+
+## Jar下载仓库地址
+
+[http://www.java2s.com/Code/Jar](http://www.java2s.com/Code/Jar)
+
+[http://search.maven.org/](http://search.maven.org/)
+
+[http://mvnrepository.com/](http://mvnrepository.com/)
+
+[http://central.maven.org/maven2](http://central.maven.org/maven2)
 
 
 
