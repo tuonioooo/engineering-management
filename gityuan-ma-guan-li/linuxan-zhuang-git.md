@@ -145,12 +145,7 @@ $ git config --global user.email test@runoob.com
 设置Git默认使用的文本编辑器, 一般可能会是 Vi 或者 Vim。如果你有其他偏好，比如 Emacs 的话，可以重新设置：:
 
 ```
-$ git config 
---
-global
- core
-.
-editor emacs
+$ git config --global core.editor emacs
 ```
 
 ### 差异分析工具
@@ -158,12 +153,7 @@ editor emacs
 还有一个比较常用的是，在解决合并冲突时使用哪种差异分析工具。比如要改用 vimdiff 的话：
 
 ```
-$ git config 
---
-global
- merge
-.
-tool vimdiff
+$ git config --global merge.tool vimdiff
 ```
 
 Git 可以理解 kdiff3，tkdiff，meld，xxdiff，emerge，vimdiff，gvimdiff，ecmerge，和 opendiff 等合并工具的输出信息。
@@ -175,27 +165,10 @@ Git 可以理解 kdiff3，tkdiff，meld，xxdiff，emerge，vimdiff，gvimdiff�
 要检查已有的配置信息，可以使用 git config --list 命令：
 
 ```
-$ git config 
---
-list
-http
-.
-postbuffer
-=
-2M
-
-user
-.
-name
-=
-runoob
-user
-.
-email
-=
-test@runoob
-.
-com
+$ git config --list
+http.postbuffer=2M
+user.name=runoob
+user.email=test@runoob.com
 ```
 
 有时候会看到重复的变量名，那就说明它们来自不同的配置文件（比如 /etc/gitconfig 和 ~/.gitconfig），不过最终 Git 实际采用的是最后一个。
@@ -203,42 +176,88 @@ com
 这些配置我们也可以在**~/.gitconfig**或**/etc/gitconfig**看到，如下所示：
 
 ```
-vim 
-~/.
-gitconfig
+vim ~/.gitconfig 
 ```
 
 显示内容如下所示：
 
 ```
-[
-http
-]
-
-    postBuffer 
-=
-2M
-[
-user
-]
-
-    name 
-=
- runoob
-    email 
-=
- test@runoob
-.
-com
+[http]
+    postBuffer = 2M
+[user]
+    name = runoob
+    email = test@runoob.com
 ```
 
 也可以直接查阅某个环境变量的设定，只要把特定的名字跟在后面即可，像这样：
 
 ```
-$ git config user
-.
-name
+$ git config user.name
 runoob
+```
+
+## 补充
+
+* **最新git源码下载地址**
+
+[https://github.com/git/git/releases](https://github.com/git/git/releases)
+
+[https://www.kernel.org/pub/software/scm/git/](https://www.kernel.org/pub/software/scm/git/)
+
+可以手动下载下来在上传到服务器上面
+
+* **移除旧版本git**
+
+centos自带Git，7.x版本自带git 1.8.3.1（应该是，也可能不是）， 安装新版本之前需要使用yum remove git卸载（安装后卸载也可以）。
+
+```
+[root@Git ~]# git --version    ## 查看自带的版本
+git version 1.8.3.1
+[root@Git ~]# yum remove git   ## 移除原来的版本
+```
+
+* ** 安装所需软件包**
+
+```
+[root@Git ~]# yum install curl-devel expat-devel gettext-devel openssl-devel zlib-devel 
+[root@Git ~]# yum install gcc-c++ perl-ExtUtils-MakeMaker
+```
+
+* **下载&安装**
+
+```
+[root@Git ~]# cd /usr/src
+[root@Git ~]# wget https://www.kernel.org/pub/software/scm/git/git-2.7.3.tar.gz
+```
+
+* **解压**
+
+```
+[root@Git ~]# tar xf git-2.7.3.tar.gz
+```
+
+* **配置编译安装**
+
+```
+[root@Git ~]# cd git-2.7.3
+[root@Git ~]# make configure
+[root@Git ~]# ./configure --prefix=/usr/git ##配置目录
+[root@Git ~]# make profix=/usr/git
+[root@Git ~]# make install
+```
+
+* **加入环境变量**
+
+```
+[root@Git ~]# echo "export PATH=$PATH:/usr/git/bin" >> /etc/profile
+[root@Git ~]# source /etc/profile
+```
+
+* **检查版本**
+
+```
+[root@Git git-2.7.3]# git --version 
+git version 2.7.3
 ```
 
 
