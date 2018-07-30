@@ -24,7 +24,7 @@
   * [maven仓库](maven/mavencang-ku.md)
   * [开发常见问题汇总](maven/kai-fa-chang-jian-wen-ti-hui-zong.md)
   * [构建企业级私有仓库Nexus](maven/gou-jian-qi-ye-ji-si-you-cang-ku-nexus.md)
-  * [大型系统模块化工程管理实践](maven/da-xing-xi-tong-mo-kuai-hua-gong-cheng-guan-li-shi-jian.md)
+  * [大型系统模块化工程管理实践/maven构建多模块项目](maven/da-xing-xi-tong-mo-kuai-hua-gong-cheng-guan-li-shi-jian.md)
   * [maven导出项目依赖的jar包](maven/mavendao-chu-xiang-mu-yi-lai-de-jar-bao-dao-zhi-ding-mu-lu-zhong.md)
   * [maven普通项目转成web项目](maven/mavenpu-tong-xiang-mu-zhuan-cheng-web-xiang-mu.md)
   * [maven命令创建web项目](maven/mavenming-ling-chuang-jian-web-xiang-mu.md)
