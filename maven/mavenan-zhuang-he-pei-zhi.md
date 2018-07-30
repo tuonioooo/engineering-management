@@ -30,13 +30,13 @@
 
 **五、修改本地仓库位置（如果不想修改本地仓库位置则这一步骤省略即可）**
 
-  Maven会将下载的类库（jar包）放置到本地的一个目录下（一般默认情况下maven在本机的仓库位于C:\我的文档中.m2.\repository），如果想重新定义这个目录的位置就需要修改Maven本地仓库的配置：
+Maven会将下载的类库（jar包）放置到本地的一个目录下（一般默认情况下maven在本机的仓库位于C:\我的文档中.m2.\repository），如果想重新定义这个目录的位置就需要修改Maven本地仓库的配置：
 
 * 在自己喜欢的位置创建文件夹，此处本人创建的位置是（E:\.m2\repository）
 
-* 在安装Maven的目录下找到conf文件夹，在文件夹中找到settings.xml文件，复制settings.xml文件放于F:\Maven，如下图所示：
+* 在安装Maven的目录下找到conf文件夹，在文件夹中找到settings.xml文件，复制settings.xml文件放于E:\.m2，如下图所示：
 
-![](https://images2017.cnblogs.com/blog/1223891/201708/1223891-20170822141403511-1309297021.png)
+![](file:///C:\Users\tony\AppData\Roaming\Tencent\Users\596807862\QQ\WinTemp\RichOle\%29QTZHG%28`]%29DCE~MRNKR}9W2.png)
 
 **3、修改settings.xml文件，如下图所示：**
 
