@@ -52,7 +52,7 @@ Maven常用命令：
 
     \( -skipping 的灵活运用，当然也可以用于其他组合命令\)
 
-16. 清除eclipse的一些系统设置:mvn eclipse:clean
+16. 清除eclipse的一些系统设置:  mvn eclipse:clean
 
 ps：
 
