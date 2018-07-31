@@ -1,0 +1,93 @@
+[常见代码检查工具及规范（PMD、checkStyle）](/sonardai-ma-zhi-liang-jian-ce-ping-tai/chang-jian-dai-ma-jian-cha-gong-ju-ji-gui-fan-ff08-pmd-checkstyle.md) 
+
+
+
+
+
+PMD
+
+是一个源代码分析器。发现常见的编程缺陷像未使用的变量，空的catch块，不必要的对象的创建，等等。支持java，JavaScript，Salesforce.com的先端，PLSQL，Apache速度，XML。此外，它包括CPD，复制粘贴探测器。
+
+官网地址：http://pmd.github.io/
+
+
+
+# FindBugs
+
+FindBugs 是一个静态分析工具，它检查类或者 JAR 文件，将
+
+[字节码](http://baike.baidu.com/view/560330.htm)
+
+与一组缺陷模式进行对比以发现可能的问题。有了静态分析工具，就可以在不实际运行程序的情况对软件进行分析。不是通过分析类文件的形式或结构来确定程序的意图，而是通常使用 Visitor 模式（请参阅
+
+[参考资料](http://baike.baidu.com/view/1040352.htm)
+
+）。图 1 显示了分析一个匿名项目的结果（为防止可怕的犯罪，这里不给出它的名字）：
+
+在FindBugs的GUI中，需要先选择待扫描的.class文件\(FindBugs其实就是对编译后的class进行扫描，藉以发现一些隐藏的bug。\)。如果你拥有这些.class档对应的
+
+[源文件](http://baike.baidu.com/view/385166.htm)
+
+，可把这些.java文件再选上，这样便可以从稍后得出的报告中快捷的定位到出问题的代码上面。此外，还可以选上工程所使用的library，这样似乎可以帮助FindBugs做一些高阶的检查，藉以发现一些更深层的bug。
+
+选定了以上各项后，便可以开始检测了。检测的过程可能会花好几分钟，具体视工程的规模而定。检测完毕可生成一份详细的报告，藉由这份报告，可以发现许多代码中间潜在的bug。比较典型的，如引用了空
+
+[指针](http://baike.baidu.com/view/159417.htm)
+
+\(null pointer dereference\), 特定的资源\(db connection\)未关闭，等等。如果用人工检查的方式，这些bug可能很难才会被发现，或许永远也无法发现，直到运行时发作…当除掉了这些典型的\(classic\) bug后，可以确信的是，我们的系统稳定度将会上一个新的台阶。
+
+
+
+
+
+## Jtest {#major2}
+
+
+
+
+
+Jtest 是 Parasoft 公司推出的一款针对 Java 语言的自动化代码优化和测试工具，它通过自动化实现对 Java 应用程序的单元测试和编码规范校验，从而提高代码的可靠性以及 Java 软件开发团队的开发效率。
+
+       静态代码分析是指不运行源程序，仅通过分析源程序的语法、结构、接口等来检查程序正确性，找出代码隐藏的缺陷之处。
+
+Jtest 的静态代码分析功能能够按照其内置的超过 800 条的 Java 编码规范自动检查并纠正这些隐蔽且难以修复的编码错误。同时，还支持用户自定义编码规则，帮助用户预防一些特殊用法的错误。
+
+  
+
+
+**CheckStyle**
+
+      是SourceForge下的一个项目，提供了一个帮助JAVA开发人员遵守某些编码规范的工具。它能够自动化代码规范检查过程，从而使得开发人员从这项重要，但是枯燥的任务中解脱出来。
+
+CheckStyle检验的主要内容
+
+·Javadoc注释
+
+·命名约定
+
+·标题
+
+·Import语句
+
+·体积大小
+
+·空白
+
+·修饰符
+
+·块
+
+·代码问题
+
+·类设计
+
+·混合检查（包括一些有用的比如非必须的System.out和printstackTrace）
+
+  
+
+
+  
+
+
+下面主要介绍IDEA，如何配置，使用checkstyle
+
