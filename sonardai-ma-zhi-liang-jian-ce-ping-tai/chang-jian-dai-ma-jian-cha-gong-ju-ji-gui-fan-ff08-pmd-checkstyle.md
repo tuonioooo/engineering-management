@@ -40,5 +40,5 @@ CheckStyle检验的主要内容
 * 类设计
 * 混合检查（包括一些有用的比如非必须的System.out和printstackTrace）
 
-下面主要介绍IDEA，如何配置，使用checkstyle
+
 
