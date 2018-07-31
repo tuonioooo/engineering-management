@@ -50,7 +50,7 @@ DevOps这个新理念的出现，是为了应对IT环境中普遍面临的一些
 
 ## 将 DevOps 集成到软件生命周期中
 
-IBM DevOps[：https://www.ibm.com/developerworks/cn/devops/](https://blog.csdn.net/boonya/article/details/%EF%BC%9Ahttps%3A//www.ibm.com/developerworks/cn/devops/) 
+IBM DevOps[：https://www.ibm.com/developerworks/cn/devops/](https://blog.csdn.net/boonya/article/details/：https%3A//www.ibm.com/developerworks/cn/devops/) 
 
-
+![](/assets/import-devops-04.png)
 
