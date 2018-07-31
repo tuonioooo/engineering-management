@@ -6,18 +6,13 @@
 
 二，使用IDEA的插件生效
 
-![](/assets/import-checkstyle-02.png)  
-
+![](/assets/import-checkstyle-02.png)
 
 三、添加自己的配置文件，要检查的项目
 
-![](/assets/import-checkstyle-03.png)  
-
+![](/assets/import-checkstyle-03.png)
 
 四、将checkstyle.xml配置文件粘贴如下 ：
-
-  
-
 
 ```
 <?xml version="1.0"?>
@@ -257,21 +252,9 @@
 </module>
 ```
 
-  
-
-
 五、运行并看执行效果
-
-  
-
 
 点击要check的文件，就会根据您配置的规范，提示出一系统的问题。
 
-  
-
-
-![](https://img-blog.csdn.net/20161215141510026?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc2hlbmhvbmdsZWkxMjM0/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center)
-
-  
-
+![](/assets/import-checkstyle-04.png)
 
