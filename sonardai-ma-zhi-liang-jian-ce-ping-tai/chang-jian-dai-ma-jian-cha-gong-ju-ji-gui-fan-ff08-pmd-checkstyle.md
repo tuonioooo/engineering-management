@@ -1,18 +1,12 @@
-[常见代码检查工具及规范（PMD、checkStyle）](/sonardai-ma-zhi-liang-jian-ce-ping-tai/chang-jian-dai-ma-jian-cha-gong-ju-ji-gui-fan-ff08-pmd-checkstyle.md) 
+# 常见代码检查工具及规范（PMD、checkStyle）
 
-
-
-
-
-PMD
+## PMD
 
 是一个源代码分析器。发现常见的编程缺陷像未使用的变量，空的catch块，不必要的对象的创建，等等。支持java，JavaScript，Salesforce.com的先端，PLSQL，Apache速度，XML。此外，它包括CPD，复制粘贴探测器。
 
-官网地址：http://pmd.github.io/
+官网地址：[http://pmd.github.io/](http://pmd.github.io/)
 
-
-
-# FindBugs
+## FindBugs
 
 FindBugs 是一个静态分析工具，它检查类或者 JAR 文件，将
 
@@ -36,28 +30,21 @@ FindBugs 是一个静态分析工具，它检查类或者 JAR 文件，将
 
 \(null pointer dereference\), 特定的资源\(db connection\)未关闭，等等。如果用人工检查的方式，这些bug可能很难才会被发现，或许永远也无法发现，直到运行时发作…当除掉了这些典型的\(classic\) bug后，可以确信的是，我们的系统稳定度将会上一个新的台阶。
 
-
-
-
-
 ## Jtest {#major2}
-
-
-
-
 
 Jtest 是 Parasoft 公司推出的一款针对 Java 语言的自动化代码优化和测试工具，它通过自动化实现对 Java 应用程序的单元测试和编码规范校验，从而提高代码的可靠性以及 Java 软件开发团队的开发效率。
 
-       静态代码分析是指不运行源程序，仅通过分析源程序的语法、结构、接口等来检查程序正确性，找出代码隐藏的缺陷之处。
+```
+   静态代码分析是指不运行源程序，仅通过分析源程序的语法、结构、接口等来检查程序正确性，找出代码隐藏的缺陷之处。
+```
 
 Jtest 的静态代码分析功能能够按照其内置的超过 800 条的 Java 编码规范自动检查并纠正这些隐蔽且难以修复的编码错误。同时，还支持用户自定义编码规则，帮助用户预防一些特殊用法的错误。
 
-  
-
-
 **CheckStyle**
 
-      是SourceForge下的一个项目，提供了一个帮助JAVA开发人员遵守某些编码规范的工具。它能够自动化代码规范检查过程，从而使得开发人员从这项重要，但是枯燥的任务中解脱出来。
+```
+  是SourceForge下的一个项目，提供了一个帮助JAVA开发人员遵守某些编码规范的工具。它能够自动化代码规范检查过程，从而使得开发人员从这项重要，但是枯燥的任务中解脱出来。
+```
 
 CheckStyle检验的主要内容
 
@@ -82,12 +69,6 @@ CheckStyle检验的主要内容
 ·类设计
 
 ·混合检查（包括一些有用的比如非必须的System.out和printstackTrace）
-
-  
-
-
-  
-
 
 下面主要介绍IDEA，如何配置，使用checkstyle
 
