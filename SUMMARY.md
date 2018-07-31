@@ -43,6 +43,7 @@
   * [maven如何修改本地仓库与中央仓库](maven/maven-ru-he-xiu-gai-ben-di-cang-ku-yu-zhong-yang-cang-ku.md)
 * [Sonar代码质量检测平台](sonardai-ma-zhi-liang-jian-ce-ping-tai.md)
   * [常见代码检查工具及规范（PMD、checkStyle）](sonardai-ma-zhi-liang-jian-ce-ping-tai/chang-jian-dai-ma-jian-cha-gong-ju-ji-gui-fan-ff08-pmd-checkstyle.md)
+    * [CheckStyle插件安装和使用](sonardai-ma-zhi-liang-jian-ce-ping-tai/chang-jian-dai-ma-jian-cha-gong-ju-ji-gui-fan-ff08-pmd-checkstyle/checkstylecha-jian-an-zhuang-he-shi-yong.md)
   * 构建Sonar环境
   * Sonar+Maven集成代码质量检测工具
   * Sonar代码质量检测报告解析
