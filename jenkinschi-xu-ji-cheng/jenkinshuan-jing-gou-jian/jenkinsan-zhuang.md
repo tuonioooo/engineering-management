@@ -14,7 +14,7 @@
 
   * Java 8（JRE或Java开发工具包（JDK）很好）
 
-  * [Docker](https://docs.docker.com/)（导航到网站顶部的**获取Docker**以访问适合您平台的Docker下载）
+  * [Docker](https://docs.docker.com/)（导航到网站顶部的**获取Docker**以访问适合您平台的Docker下载，可以先不用下载）
 
 ## 下载Jenkins
 
