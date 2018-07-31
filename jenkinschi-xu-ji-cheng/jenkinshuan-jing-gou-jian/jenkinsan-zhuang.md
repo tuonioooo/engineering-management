@@ -38,5 +38,36 @@ Linux环境：
 [root@god local]# java -jar jenkins.war &
 ```
 
+该命令后，各项任务将运行，其中一个是由名为 winstone 的嵌入式web服务器进行 war 文件提取。
+
+```
+七月 31, 2018 11:55:08 上午 jenkins.InitReactorRunner$1 onAttained
+信息: Started all plugins
+七月 31, 2018 11:55:08 上午 jenkins.InitReactorRunner$1 onAttained
+信息: Augmented all extensions
+七月 31, 2018 11:55:09 上午 jenkins.InitReactorRunner$1 onAttained
+信息: Loaded all jobs
+七月 31, 2018 11:55:10 上午 hudson.model.AsyncPeriodicWork$1 run
+信息: Started Download metadata
+七月 31, 2018 11:55:12 上午 hudson.model.AsyncPeriodicWork$1 run
+信息: Finished Download metadata. 1,517 ms
+七月 31, 2018 11:55:13 上午 org.springframework.context.support.AbstractApplicationContext prepareRefresh
+信息: Refreshing org.springframework.web.context.support.StaticWebApplicationContext@22315391: display name [Root WebApplicationContext]; startup date [Tue Jul 31 11:55:13 CST 2018]; root of context hierarchy
+七月 31, 2018 11:55:13 上午 org.springframework.context.support.AbstractApplicationContext obtainFreshBeanFactory
+信息: Bean factory for application context [org.springframework.web.context.support.StaticWebApplicationContext@22315391]: org.springframework.beans.factory.support.DefaultListableBeanFactory@29e568e8
+七月 31, 2018 11:55:13 上午 org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+信息: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@29e568e8: defining beans [authenticationManager]; root of factory hierarchy
+七月 31, 2018 11:55:13 上午 org.springframework.context.support.AbstractApplicationContext prepareRefresh
+信息: Refreshing org.springframework.web.context.support.StaticWebApplicationContext@4808dc00: display name [Root WebApplicationContext]; startup date [Tue Jul 31 11:55:13 CST 2018]; root of context hierarchy
+七月 31, 2018 11:55:13 上午 org.springframework.context.support.AbstractApplicationContext obtainFreshBeanFactory
+信息: Bean factory for application context [org.springframework.web.context.support.StaticWebApplicationContext@4808dc00]: org.springframework.beans.factory.support.DefaultListableBeanFactory@6567b115
+七月 31, 2018 11:55:13 上午 org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+信息: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6567b115: defining beans [filter,legacy]; root of factory hierarchy
+七月 31, 2018 11:55:14 上午 jenkins.InitReactorRunner$1 onAttained
+信息: Completed initialization
+七月 31, 2018 11:55:14 上午 hudson.WebAppMain$3 run
+信息: Jenkins is fully up and running
+```
+
 
 
