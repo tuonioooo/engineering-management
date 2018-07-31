@@ -48,4 +48,10 @@
   * [Sonar+Maven集成代码质量检测工具](sonardai-ma-zhi-liang-jian-ce-ping-tai/sonar+mavenji-cheng-dai-ma-zhi-liang-jian-ce-gong-ju.md)
   * [Sonar代码质量检测报告解析](sonardai-ma-zhi-liang-jian-ce-ping-tai/sonardai-ma-zhi-liang-jian-ce-bao-gao-jie-xi.md)
   * [代码常见质量问题分析](sonardai-ma-zhi-liang-jian-ce-ping-tai/dai-ma-chang-jian-zhi-liang-wen-ti-fen-xi.md)
+* [Jenkins持续集成](jenkinschi-xu-ji-cheng.md)
+  * DevOps持续集成介绍
+  * Jenkins环境构建
+  * Jenkins集成git/svn/tomcat/sonar等
+  * Jenkins插件机制
+  * 构建企业级Jenkins持续集成环境
 
