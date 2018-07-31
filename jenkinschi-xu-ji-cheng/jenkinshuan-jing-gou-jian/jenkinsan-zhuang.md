@@ -8,3 +8,9 @@
 
 ![](file:///C:\Users\tony\AppData\Roaming\Tencent\Users\596807862\QQ\WinTemp\RichOle\19KX{IR{NZ3176`Q4WWYQ$1.png)
 
+## 启动Jenkins
+
+
+
+
+
