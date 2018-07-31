@@ -28,27 +28,49 @@ Jtest 的静态代码分析功能能够按照其内置的超过 800 条的 Java 
 
 CheckStyle检验的主要内容
 
-·Javadoc注释
+J
 
-·命名约定
+avadoc注释
 
-·标题
 
-·Import语句
 
-·体积大小
+命名约定
 
-·空白
 
-·修饰符
 
-·块
+标题
 
-·代码问题
 
-·类设计
 
-·混合检查（包括一些有用的比如非必须的System.out和printstackTrace）
+Import语句
+
+
+
+体积大小
+
+
+
+空白
+
+
+
+修饰符
+
+
+
+块
+
+
+
+代码问题
+
+
+
+类设计
+
+
+
+混合检查（包括一些有用的比如非必须的System.out和printstackTrace）
 
 下面主要介绍IDEA，如何配置，使用checkstyle
 
