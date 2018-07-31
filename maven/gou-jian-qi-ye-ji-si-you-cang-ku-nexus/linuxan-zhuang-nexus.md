@@ -1,4 +1,4 @@
-# Linux安装Nexus 
+# Linux安装Nexus
 
 # 一、搭建nexus服务的意义 {#一搭建nexus服务的意义}
 
