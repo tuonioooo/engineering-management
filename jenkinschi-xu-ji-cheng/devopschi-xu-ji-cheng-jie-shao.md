@@ -36,10 +36,6 @@ DevOps这个新理念的出现，是为了应对IT环境中普遍面临的一些
 
 代码集成以后，当所有的单元测试通过，程序员A和程序员B就得到了一个绿色构建（green build）。这表明他们已经成功地集成在一起，代码正按照测试预期地在工作。然而，尽管集成代码能够成功地一起工作了，它仍未为生产做好准备，因为它没有在类似生产的环境中测试和工作。在下面持续交付部分你可以了解到持续集成后面发生了什么。
 
-
-
-
-
 ![](/assets/import-devops-02.png)  
 考虑到实践持续集成，程序员A和程序员B必须频繁地登记主代码仓库、集成和测试他们的代码。通常一小时很多次，并且每天最少一次。
 
@@ -60,17 +56,13 @@ IBM DevOps[：https://www.ibm.com/developerworks/cn/devops/](https://blog.csdn.n
 
 ### IBM DevOps 方法简介
 
-  
-IBM DevOps 方法加快并维持您在规划、开发、测试和交付方面的软件推动的创新。无论您的关注点是移动开发、云托管、大数据分析还是社交商务、您都可以更快地持续发布更好的软件和服务，而且成本更低，风险也更小。  
-  
+IBM DevOps 方法加快并维持您在规划、开发、测试和交付方面的软件推动的创新。无论您的关注点是移动开发、云托管、大数据分析还是社交商务、您都可以更快地持续发布更好的软件和服务，而且成本更低，风险也更小。
+
 IBM DevOps 通过吸引并协调软件交付生命周期中的所有参与者来完成其工作，这些参与者包括业务团队、架构师、开发人员和测试人员、还有 IT 运营和生产人员，他们都有一个共同的目标：持续创新，通过持续交付来支持持续创新，并通过持续反馈来改进创新。
 
 ### 采用 IBM DevOps 的前提条件
 
-  
-包含 IBM DevOps 方法的组织遵循 4 个指导原则。  
-  
-
+包含 IBM DevOps 方法的组织遵循 4 个指导原则。
 
 * 协作学习文化非常重要
 * 敏捷开发和自动化可加速创新
@@ -79,43 +71,31 @@ IBM DevOps 通过吸引并协调软件交付生命周期中的所有参与者来
 
 ### 敏捷方法和自动化可加速创新
 
-  
-IBM DevOps 在整个软件开发生命周期中扩展了敏捷的、迭代的开发实践（开发、测试、部署、验证和调整）以及精益思想原则。  
-  
-开发和测试类似生产的系统 与使用可重读的、可靠的流程执行可迭代的、频繁的部署 的敏捷特征是 DevOps 采用中的主要部分。敏捷实践提供了一些结构和规则，根据用户的需求，始终如一地向用户交付宝贵的软件。  
-  
-系统化地消除一些行为和易错活动也是加速软件交付的关键。最大程度地减少引入的手动误差的一种方法就是部署自动化，自动化可加快测试和交付流程，同时确保满足法规需求。  
-  
-自动部署有助于软件更快地到达生产服务器（物理、虚拟或云），从而加快上市时间。您可以建立可重复、无差错、可扩展的应用程序部署流程，并获取版本所在位置的可见性。相反，如果进行手动部署，那么部署、测试和生产环境中的差异（以及不连贯的部分流程）可能造成部署失败。  
-  
-通过使用电脑自带的功能来处理重复的任务，团队可以进行一些批判性的思考，并提供一些有创造性的问题解决方案。  
+IBM DevOps 在整个软件开发生命周期中扩展了敏捷的、迭代的开发实践（开发、测试、部署、验证和调整）以及精益思想原则。
 
+开发和测试类似生产的系统 与使用可重读的、可靠的流程执行可迭代的、频繁的部署 的敏捷特征是 DevOps 采用中的主要部分。敏捷实践提供了一些结构和规则，根据用户的需求，始终如一地向用户交付宝贵的软件。
 
-  
+系统化地消除一些行为和易错活动也是加速软件交付的关键。最大程度地减少引入的手动误差的一种方法就是部署自动化，自动化可加快测试和交付流程，同时确保满足法规需求。
 
+自动部署有助于软件更快地到达生产服务器（物理、虚拟或云），从而加快上市时间。您可以建立可重复、无差错、可扩展的应用程序部署流程，并获取版本所在位置的可见性。相反，如果进行手动部署，那么部署、测试和生产环境中的差异（以及不连贯的部分流程）可能造成部署失败。
+
+通过使用电脑自带的功能来处理重复的任务，团队可以进行一些批判性的思考，并提供一些有创造性的问题解决方案。
 
 ## DevOps 的技术栈与工具链
 
-  
-Everything is Code，DevOps 也同样要通过技术工具链完成持续集成、持续交付、用户反馈和系统优化的整合。[Elasticbox](https://elasticbox.com/)整理了[60+ 开源工具与分类](https://elasticbox.com/blog/devops-open-source-tools/)，其中包括版本控制&协作开发工具、自动化构建和测试工具、持续集成&交付工具、部署工具、维护工具、监控，警告&分析工具等等，  
-补充了一些国内的服务，可以让你更好的执行实施 DevOps 工作流。  
-  
+Everything is Code，DevOps 也同样要通过技术工具链完成持续集成、持续交付、用户反馈和系统优化的整合。[Elasticbox](https://elasticbox.com/)整理了[60+ 开源工具与分类](https://elasticbox.com/blog/devops-open-source-tools/)，其中包括版本控制&协作开发工具、自动化构建和测试工具、持续集成&交付工具、部署工具、维护工具、监控，警告&分析工具等等，补充了一些国内的服务，可以让你更好的执行实施 DevOps 工作流。
 
+* 版本控制&协作开发：GitHub、GitLab、BitBucket、SubVersion、Coding、Bazaar
+* 自动化构建和测试:Apache Ant、Maven 、Selenium、PyUnit、QUnit、JMeter、Gradle、PHPUnit
+* 持续集成&交付:Jenkins、Capistrano、BuildBot、Fabric、Tinderbox、Travis CI、flow.ci Continuum、LuntBuild、CruiseControl、Integrity、Gump、Go
+* 容器平台: Docker、Rocket、Ubuntu（LXC）、第三方厂商如（AWS/阿里云）
+* 配置管理：Chef、Puppet、CFengine、Bash、Rudder、Powershell、RunDeck、Saltstack、Ansible
+* 微服务平台：OpenShift、Cloud Foundry、Kubernetes、Mesosphere
+* 服务开通：Puppet、docker Swarm、Vagrant、Powershell、OpenStack Heat
+* 日志管理：Logstash、CollectD、StatsD
+* 监控，警告&分析：Nagios、Ganglia、Sensu、zabbix、ICINGA、Graphite、Kibana
 
-*     版本控制&协作开发：GitHub、GitLab、BitBucket、SubVersion、Coding、Bazaar
-*     自动化构建和测试:Apache Ant、Maven 、Selenium、PyUnit、QUnit、JMeter、Gradle、PHPUnit
-*     持续集成&交付:Jenkins、Capistrano、BuildBot、Fabric、Tinderbox、Travis CI、flow.ci Continuum、LuntBuild、CruiseControl、Integrity、Gump、Go
-*     容器平台: Docker、Rocket、Ubuntu（LXC）、第三方厂商如（AWS/阿里云）
-*     配置管理：Chef、Puppet、CFengine、Bash、Rudder、Powershell、RunDeck、Saltstack、Ansible
-*     微服务平台：OpenShift、Cloud Foundry、Kubernetes、Mesosphere
-*     服务开通：Puppet、docker Swarm、Vagrant、Powershell、OpenStack Heat
-*     日志管理：Logstash、CollectD、StatsD
-*     监控，警告&分析：Nagios、Ganglia、Sensu、zabbix、ICINGA、Graphite、Kibana
+![](/assets/import-devops-06.png)
 
-![](/assets/import-devops-06.png)  
-
-
-  
-顺便再分享一个[DevOps BookMarks](http://www.devopsbookmarks.com/)，涉及了DevOps方方面面的工具和内容，有兴趣可以去学习下。  
-
+顺便再分享一个[DevOps BookMarks](http://www.devopsbookmarks.com/)，涉及了DevOps方方面面的工具和内容，有兴趣可以去学习下。
 
