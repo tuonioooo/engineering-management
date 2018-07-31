@@ -50,7 +50,7 @@
   * [代码常见质量问题分析](sonardai-ma-zhi-liang-jian-ce-ping-tai/dai-ma-chang-jian-zhi-liang-wen-ti-fen-xi.md)
 * [Jenkins持续集成](jenkinschi-xu-ji-cheng.md)
   * [DevOps持续集成介绍](jenkinschi-xu-ji-cheng/devopschi-xu-ji-cheng-jie-shao.md)
-  * Jenkins环境构建
+  * [Jenkins环境构建](jenkinschi-xu-ji-cheng/jenkinshuan-jing-gou-jian.md)
   * Jenkins集成git/svn/tomcat/sonar等
   * Jenkins插件机制
   * 构建企业级Jenkins持续集成环境
