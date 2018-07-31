@@ -10,7 +10,11 @@
 
 ## 启动Jenkins
 
+打开命令提示符。在命令提示符下，浏览到 jenkins.war 文件存在的目录。运行以下命令：
 
+```
+D:\worksp\yiibai.com> java -jar Jenkins.war
+```
 
 
 
