@@ -48,11 +48,9 @@ DevOps这个新理念的出现，是为了应对IT环境中普遍面临的一些
 
 在不同的环境下，程序员A和程序员B写的代码被分别进行测试。当代码部署到生产环境它就开始了工作，这给予了他们更多的信心。并且只有当代码通过前一个环境的测试才会进入到下一个部署流水线的环境当中去。通过这种方式，程序员A和程序员B将会从每个环境中测试并得到新的反馈，如果有失败，他们也可以在代码被应用到生产环境之前更加容易地发现问题并且修正它。
 
+## 将 DevOps 集成到软件生命周期中
 
-
-
-
-
+IBM DevOps[：https://www.ibm.com/developerworks/cn/devops/](https://blog.csdn.net/boonya/article/details/%EF%BC%9Ahttps%3A//www.ibm.com/developerworks/cn/devops/) 
 
 
 
