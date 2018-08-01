@@ -1,4 +1,6 @@
-# Jenkins关闭和重启
+# Jenkins启动、关闭和重启
+
+## 浏览器方式
 
 * ### 关闭Jenkins {#1-关闭jenkins}
 
@@ -12,5 +14,11 @@
 
 * ### 重新加载配置信息 {#3-重新加载配置信息}
 
-[http://localhost:8080/reload](http://localhost:8080/reload)
+[http://localhost:8080/reload](http://localhost:8080/reload) 
+
+
+
+## 命令方式
+
+
 
