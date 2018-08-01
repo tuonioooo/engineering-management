@@ -25,3 +25,11 @@
 
 目标是将项目打包后发布到tomcat中去，所以现在我们需要安装一个发布到tomcat的jenkins插件点击系统管理，选择管理插件
 
+![](/assets/import-jenkins-26.png)
+
+点击可选插件，然后在右上方搜索框搜索container，选择Deploy to container Plugin，点击安装即可
+
+![](/assets/import-jenkins-27.png)
+
+
+
