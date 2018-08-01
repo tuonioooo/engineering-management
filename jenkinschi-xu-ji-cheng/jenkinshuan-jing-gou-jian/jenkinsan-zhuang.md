@@ -69,5 +69,23 @@ Linux环境：
 信息: Jenkins is fully up and running
 ```
 
+## jenkins安装war包遇到的问题
 
+1.Caused by: sun.security.validator.ValidatorException: PKIX path building failed:                                   sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+
+**参考：**
+
+[解决 PKIX：unable to find valid certification path to requested target](http://bijian1013.iteye.com/blog/2310856)
+
+原因是就是升级站点的链接https://updates.jenkins.io/update-center.json默认是https的，如何解决呢？
+
+**解决方案1:**
+
+安装插件那个页面，就是提示你offline的那个页面，跳过插件继续安装，直至安装完，然后打开一个新的tab，输入网址http://localhost:8080/jenkins/pluginManager/advanced。 这里面最底下有个【升级站点】，把其中的链接由https改成http的就好了，_**http://updates.jenkins.io/update-center.json**_。 然后在服务列表中关闭jenkins，再tomcat重新启动，这样就能正常联网了
+
+参考：[Jenkenis报错：该jenkins实例似乎已离线](https://www.jianshu.com/p/3a71f8b84289)
+
+**解决方案2：**
+
+当然，原则上也可以参考解决PKIX的第二种方式，为updates.jenkins.io生成证书并导入到JAVA\_HOME/jre/lib/security目录下（留坑）
 
