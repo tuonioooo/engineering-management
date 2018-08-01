@@ -31,5 +31,17 @@
 
 ![](/assets/import-jenkins-27.png)
 
+* ### jenkins从Git自动下载项目，通过maven编译部署到Tomcat
+
+#### 1.新建项目
+
+点击左上方新建，新建构建项目
+
+![](/assets/import-jenkins-28.png)
+
+
+
+
+
 
 
