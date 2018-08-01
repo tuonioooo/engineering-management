@@ -1,4 +1,4 @@
-# Jenkins安装
+# Jenkins的war包安装
 
 ## 安装条件
 
@@ -38,7 +38,7 @@ Linux环境：
 [root@god local]# java -jar jenkins.war &
 ```
 
-该命令后，各项任务将运行，其中一个是由名为 winstone 的嵌入式web服务器进行 war 文件提取。
+该命令后，各项任务将运行，其中一个是由名为 winstone 的嵌入式web服务器进行 war 文件提取。
 
 ```
 七月 31, 2018 11:55:08 上午 jenkins.InitReactorRunner$1 onAttained
