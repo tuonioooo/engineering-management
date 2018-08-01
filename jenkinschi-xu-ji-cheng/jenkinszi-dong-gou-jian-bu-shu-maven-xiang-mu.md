@@ -1,4 +1,4 @@
-# Jenkins自动构建部署maven项目
+# Jenkins自动构建部署maven项目的WEB项目
 
 * ### **Jenkins安装过程略，参考**[**Jenkins环境构建  **](/jenkinschi-xu-ji-cheng/jenkinshuan-jing-gou-jian.md)
 * ### 配置系统工具
@@ -65,7 +65,7 @@
 
 看一看是否成功发布了
 
-我的tomcat地址是[http://localhost/apidoc](http://localhost/apidoc)，之前填写contextpath是apidoc 
+我的tomcat地址是[http://localhost/apidoc](http://localhost/apidoc)，之前填写contextpath是apidoc
 
 ![](/assets/import-jenkins-38.png)
 

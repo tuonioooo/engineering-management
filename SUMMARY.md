@@ -59,5 +59,5 @@
     * [Jenkins Git安装设置](jenkinschi-xu-ji-cheng/jenkinshuan-jing-gou-jian/jenkins-gitan-zhuang-she-zhi.md)
     * [Jenkins Maven安装设置](jenkinschi-xu-ji-cheng/jenkinshuan-jing-gou-jian/jenkins-mavenan-zhuang-she-zhi.md)
   * [Jenkins插件机制](jenkinschi-xu-ji-cheng/jenkinscha-jian-ji-zhi.md)
-  * [Jenkins自动构建部署maven项目](jenkinschi-xu-ji-cheng/jenkinszi-dong-gou-jian-bu-shu-maven-xiang-mu.md)
+  * [Jenkins自动构建部署maven项目的WEB项目](jenkinschi-xu-ji-cheng/jenkinszi-dong-gou-jian-bu-shu-maven-xiang-mu.md)
 
