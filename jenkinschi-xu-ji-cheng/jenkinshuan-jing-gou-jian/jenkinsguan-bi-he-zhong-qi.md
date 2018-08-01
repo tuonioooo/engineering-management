@@ -10,15 +10,21 @@
 
 * ### 重启Jenkies {#2-重启jenkies}
 
-[http://localhost:8080/restart](http://localhost:8080/restart)
+* [http://localhost:8080/restart](http://localhost:8080/restart)
 
 * ### 重新加载配置信息 {#3-重新加载配置信息}
 
-[http://localhost:8080/reload](http://localhost:8080/reload) 
-
-
+[http://localhost:8080/reload](http://localhost:8080/reload)
 
 ## 命令方式
+
+* ### 启动Jenkins服务
+
+　　net start jenkins  （注：如果Jenkins曾经启动过，启动服务不需要进入到某个目录）
+
+* ### 停止Jenkins服务
+
+　　net stop jenkins
 
 
 
