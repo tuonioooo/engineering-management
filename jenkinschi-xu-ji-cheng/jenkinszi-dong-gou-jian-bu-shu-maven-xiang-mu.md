@@ -1,5 +1,9 @@
 # Jenkins自动构建部署maven项目的WEB项目
 
+## 参考文档：
+
+[https://www.jianshu.com/p/60fb231a160e](https://www.jianshu.com/p/60fb231a160e)
+
 * ### **Jenkins安装过程略，参考**[**Jenkins环境构建  **](/jenkinschi-xu-ji-cheng/jenkinshuan-jing-gou-jian.md)
 * ### 配置系统工具
 
@@ -57,10 +61,8 @@
 <role rolename="admin"/>　  
 <role rolename="admin-gui"/>　  
 <role rolename="manager-script"/>  
-<user username="tomcat" password="tomcat" roles="admin-gui,admin,manager-gui,manager,manager-script"/> 
+<user username="tomcat" password="tomcat" roles="admin-gui,admin,manager-gui,manager,manager-script"/>
 ```
-
-
 
 构建后步骤  选择发布war包到一个容器中
 
