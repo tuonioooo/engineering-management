@@ -39,9 +39,13 @@
 
 ![](/assets/import-jenkins-28.png)
 
+填写项目名，选择自由风格
 
+![](/assets/import-jenkins-30.png)
 
+配置源码管理
 
+![](/assets/import-jenkins-31.png)构建配置
 
-
+![](/assets/import-jenkins-32.png)
 
