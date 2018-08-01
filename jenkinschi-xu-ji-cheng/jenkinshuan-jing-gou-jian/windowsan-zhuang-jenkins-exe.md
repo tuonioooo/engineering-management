@@ -12,9 +12,9 @@
 
 ![](file:///C:\Users\tony\AppData\Roaming\Tencent\Users\596807862\QQ\WinTemp\RichOle\R[[6NE2B%283BEYL7IT{~R%29}Q.png)
 
+安装完之后，jenkins会自动启动，在安装目录中有一个jenkins.exe启动脚本，还有个war文件，用于java命令部署，如图所示：
 
-
-
+![](/assets/import-jenkins-08.png)
 
 
 
