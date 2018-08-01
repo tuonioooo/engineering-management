@@ -47,7 +47,22 @@
 
 ![](/assets/import-jenkins-31.png)构建配置
 
-![](/assets/import-jenkins-32.png)构建后步骤  选择发布war包到一个容器中
+![](/assets/import-jenkins-32.png)添加tomcat凭证
+
+![](/assets/import-jenkins-43.png)同时，也需要在E:\tomcat\apache-tomcat-8.0.35\conf\tomcat-users.xml添加权限
+
+```
+<role rolename="manager"/>　  
+<role rolename="manager-gui"/>　  
+<role rolename="admin"/>　  
+<role rolename="admin-gui"/>　  
+<role rolename="manager-script"/>  
+<user username="tomcat" password="tomcat" roles="admin-gui,admin,manager-gui,manager,manager-script"/> 
+```
+
+
+
+构建后步骤  选择发布war包到一个容器中
 
 ![](/assets/import-jenkins-41.png)
 
