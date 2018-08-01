@@ -65,7 +65,7 @@
 
 看一看是否成功发布了
 
-我的tomcat地址是[http://localhost/apidoc](http://localhost/apidoc)，之前填写contextpath是apidoc 
+我的tomcat地址是[http://localhost:8082/apidoc](http://localhost/apidoc)，之前填写contextpath是apidoc
 
 ![](/assets/import-jenkins-40.png)
 
@@ -78,53 +78,53 @@
 > ```
 > ERROR: Build step failed with exception
 > org.codehaus.cargo.container.ContainerException: Failed to redeploy [D:\Tools\jenkins\workspace\springboot-apidoc\target\springboot-apidoc-0.0.1-SNAPSHOT.war]
-> 	at org.codehaus.cargo.container.tomcat.internal.AbstractTomcatManagerDeployer.redeploy(AbstractTomcatManagerDeployer.java:192)
-> 	at hudson.plugins.deploy.CargoContainerAdapter.deploy(CargoContainerAdapter.java:77)
-> 	at hudson.plugins.deploy.CargoContainerAdapter$DeployCallable.invoke(CargoContainerAdapter.java:147)
-> 	at hudson.plugins.deploy.CargoContainerAdapter$DeployCallable.invoke(CargoContainerAdapter.java:117)
-> 	at hudson.FilePath.act(FilePath.java:1076)
-> 	at hudson.FilePath.act(FilePath.java:1059)
-> 	at hudson.plugins.deploy.CargoContainerAdapter.redeploy(CargoContainerAdapter.java:114)
-> 	at hudson.plugins.deploy.PasswordProtectedAdapterCargo.redeploy(PasswordProtectedAdapterCargo.java:93)
-> 	at hudson.plugins.deploy.DeployPublisher.perform(DeployPublisher.java:64)
-> 	at hudson.tasks.BuildStepMonitor$3.perform(BuildStepMonitor.java:45)
-> 	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:744)
-> 	at hudson.model.AbstractBuild$AbstractBuildExecution.performAllBuildSteps(AbstractBuild.java:690)
-> 	at hudson.model.Build$BuildExecution.post2(Build.java:186)
-> 	at hudson.model.AbstractBuild$AbstractBuildExecution.post(AbstractBuild.java:635)
-> 	at hudson.model.Run.execute(Run.java:1840)
-> 	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
-> 	at hudson.model.ResourceController.execute(ResourceController.java:97)
-> 	at hudson.model.Executor.run(Executor.java:429)
+>     at org.codehaus.cargo.container.tomcat.internal.AbstractTomcatManagerDeployer.redeploy(AbstractTomcatManagerDeployer.java:192)
+>     at hudson.plugins.deploy.CargoContainerAdapter.deploy(CargoContainerAdapter.java:77)
+>     at hudson.plugins.deploy.CargoContainerAdapter$DeployCallable.invoke(CargoContainerAdapter.java:147)
+>     at hudson.plugins.deploy.CargoContainerAdapter$DeployCallable.invoke(CargoContainerAdapter.java:117)
+>     at hudson.FilePath.act(FilePath.java:1076)
+>     at hudson.FilePath.act(FilePath.java:1059)
+>     at hudson.plugins.deploy.CargoContainerAdapter.redeploy(CargoContainerAdapter.java:114)
+>     at hudson.plugins.deploy.PasswordProtectedAdapterCargo.redeploy(PasswordProtectedAdapterCargo.java:93)
+>     at hudson.plugins.deploy.DeployPublisher.perform(DeployPublisher.java:64)
+>     at hudson.tasks.BuildStepMonitor$3.perform(BuildStepMonitor.java:45)
+>     at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:744)
+>     at hudson.model.AbstractBuild$AbstractBuildExecution.performAllBuildSteps(AbstractBuild.java:690)
+>     at hudson.model.Build$BuildExecution.post2(Build.java:186)
+>     at hudson.model.AbstractBuild$AbstractBuildExecution.post(AbstractBuild.java:635)
+>     at hudson.model.Run.execute(Run.java:1840)
+>     at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+>     at hudson.model.ResourceController.execute(ResourceController.java:97)
+>     at hudson.model.Executor.run(Executor.java:429)
 > Caused by: java.net.ConnectException: Connection refused: connect
-> 	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
-> 	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
-> 	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-> 	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-> 	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-> 	at java.net.PlainSocketImpl.connect(Unknown Source)
-> 	at java.net.SocksSocketImpl.connect(Unknown Source)
-> 	at java.net.Socket.connect(Unknown Source)
-> 	at java.net.Socket.connect(Unknown Source)
-> 	at sun.net.NetworkClient.doConnect(Unknown Source)
-> 	at sun.net.www.http.HttpClient.openServer(Unknown Source)
-> 	at sun.net.www.http.HttpClient.openServer(Unknown Source)
-> 	at sun.net.www.http.HttpClient.
+>     at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+>     at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+>     at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+>     at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+>     at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+>     at java.net.PlainSocketImpl.connect(Unknown Source)
+>     at java.net.SocksSocketImpl.connect(Unknown Source)
+>     at java.net.Socket.connect(Unknown Source)
+>     at java.net.Socket.connect(Unknown Source)
+>     at sun.net.NetworkClient.doConnect(Unknown Source)
+>     at sun.net.www.http.HttpClient.openServer(Unknown Source)
+>     at sun.net.www.http.HttpClient.openServer(Unknown Source)
+>     at sun.net.www.http.HttpClient.
 > <
 > init
 > >
 > (Unknown Source)
-> 	at sun.net.www.http.HttpClient.New(Unknown Source)
-> 	at sun.net.www.http.HttpClient.New(Unknown Source)
-> 	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source)
-> 	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source)
-> 	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
-> 	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source)
-> 	at org.codehaus.cargo.container.tomcat.internal.TomcatManager.invoke(TomcatManager.java:561)
-> 	at org.codehaus.cargo.container.tomcat.internal.TomcatManager.list(TomcatManager.java:876)
-> 	at org.codehaus.cargo.container.tomcat.internal.TomcatManager.getStatus(TomcatManager.java:889)
-> 	at org.codehaus.cargo.container.tomcat.internal.AbstractTomcatManagerDeployer.redeploy(AbstractTomcatManagerDeployer.java:173)
-> 	... 17 more
+>     at sun.net.www.http.HttpClient.New(Unknown Source)
+>     at sun.net.www.http.HttpClient.New(Unknown Source)
+>     at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source)
+>     at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source)
+>     at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
+>     at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source)
+>     at org.codehaus.cargo.container.tomcat.internal.TomcatManager.invoke(TomcatManager.java:561)
+>     at org.codehaus.cargo.container.tomcat.internal.TomcatManager.list(TomcatManager.java:876)
+>     at org.codehaus.cargo.container.tomcat.internal.TomcatManager.getStatus(TomcatManager.java:889)
+>     at org.codehaus.cargo.container.tomcat.internal.AbstractTomcatManagerDeployer.redeploy(AbstractTomcatManagerDeployer.java:173)
+>     ... 17 more
 > ```
 
 
