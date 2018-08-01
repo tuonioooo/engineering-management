@@ -1,8 +1,6 @@
 # Jenkins自动构建部署maven项目的WEB项目
 
-## 参考文档：
-
-[https://www.jianshu.com/p/60fb231a160e](https://www.jianshu.com/p/60fb231a160e)
+## 参考文档：[https://www.jianshu.com/p/60fb231a160e](https://www.jianshu.com/p/60fb231a160e)
 
 * ### **Jenkins安装过程略，参考**[**Jenkins环境构建  **](/jenkinschi-xu-ji-cheng/jenkinshuan-jing-gou-jian.md)
 * ### 配置系统工具
