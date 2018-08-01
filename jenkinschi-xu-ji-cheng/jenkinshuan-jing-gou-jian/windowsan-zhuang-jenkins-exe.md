@@ -8,5 +8,9 @@
 
 ## 安装Jenkins
 
+如图所示，一致next即可
+
+![](file:///C:\Users\tony\AppData\Roaming\Tencent\Users\596807862\QQ\WinTemp\RichOle\R[[6NE2B%283BEYL7IT{~R%29}Q.png)
+
 
 
