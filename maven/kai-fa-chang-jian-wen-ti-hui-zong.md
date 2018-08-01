@@ -228,9 +228,9 @@ Plugin execution not covered by lifecycle configuration: org.apache.maven.plugin
 
 奇怪的是我的 Jenkins 构建机器上只安装了 JDK 8，为什么还会说不支持 diamond 和 lambda 呢？
 
-在 [Maven Compiler 插件介绍](http://maven.apache.org/plugins/maven-compiler-plugin/) 里面找到了答案：`Also note that at present the default source setting is1.5and the default target setting is1.5, independently of the JDK you run Mavenwith.`
+在 [Maven Compiler 插件介绍](http://maven.apache.org/plugins/maven-compiler-plugin/) 里面找到了答案：`Also note that at present the default source setting is1.5and the default target setting is1.5, independently of the JDK you run Mavenwith.`
 
-原来 Maven Compiler 插件默认会加 -source 1.5 及 -target 1.5 参数来编译（估计是为了兼容一些比较老的 [Linux](http://lib.csdn.net/base/linux) 服务器[操作系统](http://lib.csdn.net/base/operatingsystem)，它们通常只有 JDK 5），而我们的代码里使用了 JDK 7/8 的语法。解决办法在[这里](http://maven.apache.org/plugins/maven-compiler-plugin/examples/set-compiler-source-and-target.html)：
+原来 Maven Compiler 插件默认会加 -source 1.5 及 -target 1.5 参数来编译（估计是为了兼容一些比较老的 [Linux](http://lib.csdn.net/base/linux) 服务器[操作系统](http://lib.csdn.net/base/operatingsystem)，它们通常只有 JDK 5），而我们的代码里使用了 JDK 7/8 的语法。解决办法在[这里](http://maven.apache.org/plugins/maven-compiler-plugin/examples/set-compiler-source-and-target.html)：
 
 ```
 <project>
@@ -266,6 +266,12 @@ Plugin execution not covered by lifecycle configuration: org.apache.maven.plugin
   [...]
 </project>
 ```
+
+> ## Setting the -source and -target of the Java Compiler
+>
+> Sometimes when you may need to compile a certain project to a different version than what you are currently using. The javac can accept such command using -source and -target. The Compiler Plugin can also be configured to provide these options during compilation.
+>
+> For example, if you want to use the Java 8 language features \(-source 1.8\) and also want the compiled classes to be compatible with JVM 1.8 \(-target 1.8\), you can either add the two following properties, which are the default property names for the plugin parameters:
 
 
 
