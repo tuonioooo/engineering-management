@@ -1,7 +1,6 @@
-# Jenkins自动构建部署maven项目 
+# Jenkins自动构建部署maven项目
 
 * ### **Jenkins安装过程略，参考**[**Jenkins环境构建  **](/jenkinschi-xu-ji-cheng/jenkinshuan-jing-gou-jian.md)
-
 * ### 配置系统工具
 
 ![](/assets/import-jenkins-21.png)
@@ -21,4 +20,10 @@
 配置maven位置
 
 ![](/assets/import-jenkins-25.png)
+
+* ### 安装插件
+
+目标是将项目打包后发布到tomcat中去，所以现在我们需要安装一个发布到tomcat的jenkins插件
+
+点击系统管理，选择管理插件
 
