@@ -26,6 +26,10 @@
 
 ![](/assets/import-jenkins-11.png)
 
+可以自己创建账户,也可以使用admin继续.
+
+![](/assets/import-jenkins-12.png)
+
 
 
 
