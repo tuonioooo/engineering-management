@@ -49,5 +49,17 @@
 
 ![](/assets/import-jenkins-32.png)构建后步骤  选择发布war包到一个容器中
 
-![](/assets/import-jenkins-33.png)
+### ![](/assets/import-jenkins-33.png)
+
+* ### 开始构建
+
+点击左方的立即构建，下方会出现构建队列
+
+![](/assets/import-jenkins-35.png)
+
+点击进入队列，然后点击Console output 可以看到构建过程中打印的日志信息，可以用来在构建失败时排错
+
+![](/assets/import-jenkins-36.png)
+
+
 
