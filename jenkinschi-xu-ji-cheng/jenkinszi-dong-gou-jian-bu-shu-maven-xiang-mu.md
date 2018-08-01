@@ -59,7 +59,16 @@
 
 点击进入队列，然后点击Console output 可以看到构建过程中打印的日志信息，可以用来在构建失败时排错
 
-![](/assets/import-jenkins-36.png)
+![](/assets/import-jenkins-36.png)构建之后，会看到输出提示
+
+![](/assets/import-jenkins-37.png)
+
+看一看是否成功发布了
+
+  
+
+
+我的tomcat地址是[http://localhost/apidoc](http://localhost/apidoc)，之前填写contextpath是apidoc 
 
 
 
