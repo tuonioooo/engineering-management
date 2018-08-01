@@ -14,7 +14,7 @@
 
 安装完之后，jenkins会自动启动，在安装目录中有一个jenkins.exe启动脚本，还有个war文件，用于java命令部署，如图所示：
 
-![](/assets/import-jenkins-08.png)浏览器地址栏输入http://localhost:8080/jenkins 
+![](/assets/import-jenkins-08.png)浏览器地址栏输入[http://localhost:8080/jenkins](http://localhost:8080/jenkins)
 
 ![](/assets/import-jenkins-09.png)
 
@@ -22,9 +22,9 @@
 
 ![](/assets/import-jenkins-10.png)
 
+本次我选择安装推荐的插件,插件安装成功后跳至此界面
 
-
-
+![](/assets/import-jenkins-11.png)
 
 
 
