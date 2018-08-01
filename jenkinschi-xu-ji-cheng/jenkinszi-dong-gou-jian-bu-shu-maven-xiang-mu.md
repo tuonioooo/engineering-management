@@ -47,5 +47,7 @@
 
 ![](/assets/import-jenkins-31.png)构建配置
 
-![](/assets/import-jenkins-32.png)
+![](/assets/import-jenkins-32.png)构建后步骤  选择发布war包到一个容器中
+
+![](/assets/import-jenkins-33.png)
 
