@@ -52,7 +52,7 @@
   * [DevOps持续集成介绍](jenkinschi-xu-ji-cheng/devopschi-xu-ji-cheng-jie-shao.md)
   * [Jenkins环境构建](jenkinschi-xu-ji-cheng/jenkinshuan-jing-gou-jian.md)
     * [Jenkins的war包安装](jenkinschi-xu-ji-cheng/jenkinshuan-jing-gou-jian/jenkinsan-zhuang.md)
-    * Windows安装Jenkins.exe
+    * [Windows安装Jenkins.exe](jenkinschi-xu-ji-cheng/jenkinshuan-jing-gou-jian/windowsan-zhuang-jenkins-exe.md)
   * [Jenkins集成git/svn/tomcat/sonar等](jenkinschi-xu-ji-cheng/jenkinsji-cheng-git-svn-tomcat-sonar-deng.md)
     * [Jenkins Tomcat安装设置](jenkinschi-xu-ji-cheng/jenkinshuan-jing-gou-jian/jenkins-tomcatan-zhuang-she-zhi.md)
     * [Jenkins Git安装设置](jenkinschi-xu-ji-cheng/jenkinshuan-jing-gou-jian/jenkins-gitan-zhuang-she-zhi.md)
