@@ -65,10 +65,7 @@
 
 看一看是否成功发布了
 
-  
-
-
 我的tomcat地址是[http://localhost/apidoc](http://localhost/apidoc)，之前填写contextpath是apidoc 
 
-
+![](/assets/import-jenkins-38.png)
 
