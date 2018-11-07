@@ -33,7 +33,7 @@
                 </excludes>
             </resource>
             <resource>
-                <directory>src/main/resources/${profiles.active}</directory>
+            <directory>src/main/resources/${profiles.active}</directory>
     </resource>
 </resources>
 ```
@@ -48,7 +48,7 @@
 
 ## 参考
 
-https://www.cnblogs.com/a591378955/p/8491687.html
+[https://www.cnblogs.com/a591378955/p/8491687.html](https://www.cnblogs.com/a591378955/p/8491687.html)
 
-https://blog.csdn.net/vbirdbest/article/details/78744786
+[https://blog.csdn.net/vbirdbest/article/details/78744786](https://blog.csdn.net/vbirdbest/article/details/78744786)
 
