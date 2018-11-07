@@ -39,6 +39,10 @@
 ```
 
 > maven 带环境的打包命令
+>
+> cmd下的命令：mvn -Pdev package -Dmaven.test.skip=true
+>
+> idea软件命令下：-Pdev package -Dmaven.test.skip=true
 
 
 
