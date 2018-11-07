@@ -43,6 +43,8 @@
 > cmd下的命令：mvn -Pdev package -Dmaven.test.skip=true
 >
 > idea软件命令下：-Pdev package -Dmaven.test.skip=true
+>
+> -P 指定部署环境
 
 
 
