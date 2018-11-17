@@ -76,43 +76,19 @@ RemoteDirectory是cstServer\_test/tmp，然后这边远程服务器的Remote Dir
 
 8、然后我们来写远程服务器的shell脚本
 
-大概如下，我也是copy来的，如果不懂shell脚本的话，先去学吧，都很基础。。。
-
-\#!/bin/sh
-
-export JAVA\_HOME=/usr/java/jdk1.7.0\_75
-
-kill -9 $\(ps -aef \| grep tomcat/conf \| grep -v grep \| awk '{print $2}'\)
-
-cd /app/programs/tomcat\_test1/webapps
-
-mv ROOT.war ROOT\_\`date +%Y%m%d%H%M%S\`.war.bak
-
-\#rm -rf ROOT
-
-mv  /app/programs/temp/mvcDemo3\*-SNAPSHOT.war ROOT.war
-
-cd /app/programs/tomcat\_test1/bin
-
-./startup.sh
+    #!/bin/sh
+    export JAVA_HOME=/usr/java/jdk1.7.0_75
+    kill -9 $(ps -aef | grep tomcat/conf | grep -v grep | awk '{print $2}')
+    cd /app/programs/tomcat_test1/webapps
+    mv ROOT.war ROOT_`date +%Y%m%d%H%M%S`.war.bak
+    #rm -rf ROOT
+    mv  /app/programs/temp/mvcDemo3*-SNAPSHOT.war ROOT.war
+    cd /app/programs/tomcat_test1/bin
+    ./startup.sh
 
 这个要放在刚才配置的目录下面，就是文件所在的目录要跟刚才配置的Exec command目录一致就行了。
 
 这样就可以开始构建了。如果目录配置都没有问题的话，就能正常自动部署。
 
-==================================优雅的分割线=========================================
 
-然而。。。还有个麻烦的事情，就是我们部署上去的时候，会有很多环境，开发环境，测试环境，beta环境等等，总不能每次部署，每次都去自己改一下配置文件吧，这样也
-
-太麻烦了。这篇就先这到这里，如何动态部署配置文件，我另外再写一篇文章。
-
----
-
-作者：序猿\_
-
-来源：CSDN
-
-原文：[https://blog.csdn.net/huangchao064/article/details/73604980](https://blog.csdn.net/huangchao064/article/details/73604980)
-
-版权声明：本文为博主原创文章，转载请附上博文链接！
 
