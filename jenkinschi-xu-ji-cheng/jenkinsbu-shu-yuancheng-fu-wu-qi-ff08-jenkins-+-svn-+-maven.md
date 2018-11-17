@@ -52,6 +52,8 @@ Exec command 这个是要执行的远程脚本目录，主要是用于tomcat的�
 
 然后往下翻，翻到Publish over SSH，如下图
 
+![](/assets/20170622163015141.png)
+
 这里就是配置远程服务器的地方。
 
 name：自己随便取，方便记忆就行
