@@ -70,6 +70,8 @@ RemoteDirectory是cstServer\_test/tmp，然后这边远程服务器的Remote Dir
 
 别着急，点击旁边的高级就是出现密码输入框，如果是新增的话，点击高级以后还要勾选Use password authentication....这个选项才会出现密码输入框，如下图
 
+![](/assets/20170622163350857.png)
+
 好了，到这里就完成远程服务器配置了。刚才如果没配置好，返回去重新配置一下就行了。
 
 8、然后我们来写远程服务器的shell脚本
