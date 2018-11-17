@@ -92,3 +92,7 @@ RemoteDirectory是cstServer\_test/tmp，然后这边远程服务器的Remote Dir
 
 
 
+参考：
+
+https://blog.csdn.net/huangchao064/article/details/73604980
+
