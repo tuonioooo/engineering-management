@@ -28,9 +28,7 @@ C:\Windows\Microsoft.NET\Framework\v2.0.50727>cd  C:\WINDOWS\Microsoft.NET\Frame
 C:\Windows\Microsoft.NET\Framework\v2.0.50727>InstallUtil.exe D:\Tools\jenkins\jenkins.exe
 ```
 
-
-
-浏览器地址栏输入[http://localhost:8080/jenkins](http://localhost:8080/jenkins)
+浏览器地址栏输入[http://localhost:8080/jenkins](http://localhost:8080/jenkins) 或 http://localhost:8080/
 
 ![](/assets/import-jenkins-09.png)
 
