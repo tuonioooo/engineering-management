@@ -12,6 +12,7 @@
     * [git删除本地仓库中所有的.git文件夹](gityuan-ma-guan-li/gitming-ling-xiang-jie/gitshan-chu-ben-di-cang-ku-zhong-suo-you-7684-git-wen-jian-jia.md)
     * [git版本回滚命令](gityuan-ma-guan-li/gitming-ling-xiang-jie/git-ban-ben-hui-gun-ming-ling.md)
     * [git分支管理](gityuan-ma-guan-li/gitming-ling-xiang-jie/gitfen-zhi-guan-li.md)
+    * [git如何拉取指定分支（远程仓库）代码](gityuan-ma-guan-li/gitming-ling-xiang-jie/gitru-he-la-qu-zhi-ding-fen-zhi-ff08-yuan-cheng-cang-ku-ff09-dai-ma.md)
   * [构建私有仓库](gityuan-ma-guan-li/gou-jian-si-you-cang-ku.md)
   * [如何利用github/码云进行学习](gityuan-ma-guan-li/ru-he-li-yong-github-ma-yun-jin-xing-xue-xi.md)
     * [github](gityuan-ma-guan-li/ru-he-li-yong-github-ma-yun-jin-xing-xue-xi/github.md)
