@@ -128,6 +128,8 @@
 >
 > 查看远程分支：$ git branch -r
 >
+> 查看所有分支【本地+远程】：$ git branch -a
+>
 > 创建本地分支：$ git branch \[name\] ----注意新分支创建后不会自动切换为当前分支
 >
 > 切换分支：$ git checkout \[name\]
