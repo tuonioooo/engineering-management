@@ -20,8 +20,8 @@
 
 ```
 进入项目目录
-git checkout -b 远程仓库分支名字 origin/远程仓库分支名字 
-git pull/git pull origin 远程仓库分支名字
+git checkout -b 远程仓库分支名字
+git pull origin 远程仓库分支名字
 ```
 
 3.**使用TortoiseGit工具拉取**
