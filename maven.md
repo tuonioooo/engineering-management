@@ -22,6 +22,7 @@
 * [maven中的MANIFEST.MF文件中的Class-Path中增加当前目录\(.\)](/maven/mavenzhong-demanifest-mf-wen-jian-zhong-de-class-path-zhong-zeng-jia-dang-qian-mu-5f552829.md) 
 * [maven如何修改本地仓库与中央仓库](/maven/maven-ru-he-xiu-gai-ben-di-cang-ku-yu-zhong-yang-cang-ku.md)
 * [maven的&lt;profile&gt;标签，打包不同配置的变量包](/maven/maven76843c-profile-biao-qian-ff0c-da-bao-bu-tong-pei-zhi-de-bian-liang-bao.md)
+* [maven 在idea中依赖包不自动更新问题](/maven/maven-zai-idea-zhong-yi-lai-bao-bu-zi-dong-geng-xin-wen-ti.md)
 
 # 参考文档：
 
