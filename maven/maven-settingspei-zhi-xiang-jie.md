@@ -28,7 +28,7 @@
 <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" 
           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
           xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
- 
+
  <!-- localRepository
    | 指定存储Maven要用到jar包的本地仓库位置
    | 默认: ~/.m2/repository
@@ -42,14 +42,14 @@
    | 默认: true
 　-->
   <interactiveMode>true</interactiveMode>
-  
+
 
   <!-- offline
    | 指定在build时，是否需要Maven连接网络，去下载一些jar包、部署文件等。
    | 默认: false
   -->
   <offline>false</offline>
-  
+
 
   <!-- pluginGroups
    | 这里面有一系列的group标识，当要解析插件时，会根据前缀自动搜索。
@@ -101,14 +101,14 @@
       <username>repouser</username>
       <password>repopwd</password>
     </server>
-   
-    
+
+
     <server>
       <id>siteServer</id>
       <privateKey>/path/to/private/key</privateKey>
       <passphrase>可选，如果不用的话，置空</passphrase>
     </server>
-   
+
   </servers>
 
   <!-- mirrors
@@ -132,9 +132,9 @@
       <name>Human Readable Name for this Mirror.</name>
       <url>http://my.repository.com/repo/path</url>
     </mirror>
-    
+
   </mirrors>
-  
+
   <!-- profiles
    |  Profiles用来指定本地机器路径和仓库位置，使程序可以在本地环境中运行。 
    | 比如你有一个集成测试的插件 cactus，它需要知道你的tomcat安装在哪。
@@ -167,7 +167,7 @@
         </repository>
       </repositories>
     </profile>
-    
+
 
     <!--插件配置的profile
      |
@@ -196,7 +196,7 @@
         <tomcatPath>/path/to/tomcat/instance</tomcatPath>
       </properties>
     </profile>
-    
+
   </profiles>
 
   <!-- activeProfiles
@@ -206,7 +206,7 @@
     <activeProfile>alwaysActiveProfile</activeProfile>
     <activeProfile>anotherAlwaysActiveProfile</activeProfile>
   </activeProfiles>
-  
+
 </settings>
 ```
 
