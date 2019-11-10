@@ -42,6 +42,7 @@ $ yum -y install git-core
 
 $ git --version
 git version 1.7.1
+
 ```
 
 ### 源码安装
@@ -65,11 +66,22 @@ $ apt-get install libcurl4-gnutls-dev libexpat1-dev gettext \
 ```
 $ tar -zxf git-1.7.2.2.tar.gz
 $ cd git-1.7.2.2
-$ make prefix=/usr/local all
-$ sudo make prefix=/usr/local install
+$ make prefix=/usr/local/git all
+$ sudo make prefix=/usr/local/git install
+$ whereis git
 ```
 
----
+配置环境变量
+
+如果你是centsos 7自带git1.8要自己先yum remove git  删除git1.8,此外去看下/etc/profile.d/git.sh 删干净，再来执行下面与配置/etc/profile，示例如下：
+
+```
+[root@bogon git-2.3.0]# echo "export PATH=$PATH:/usr/local/git/bin" > /etc/profile.d/git.sh
+[root@bogon git-2.3.0]# source /etc/profile.d/git.sh
+[root@bogon git-2.3.0]# git --version
+git version 2.3.0
+[root@bogon git-2.3.0]#
+```
 
 ## Windows 平台上安装
 
@@ -176,7 +188,7 @@ user.email=test@runoob.com
 这些配置我们也可以在**~/.gitconfig**或**/etc/gitconfig**看到，如下所示：
 
 ```
-vim ~/.gitconfig 
+vim ~/.gitconfig
 ```
 
 显示内容如下所示：
