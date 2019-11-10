@@ -42,7 +42,6 @@ $ yum -y install git-core
 
 $ git --version
 git version 1.7.1
-
 ```
 
 ### 源码安装
@@ -73,14 +72,13 @@ $ whereis git
 
 配置环境变量
 
-如果你是centsos 7自带git1.8要自己先yum remove git  删除git1.8,此外去看下/etc/profile.d/git.sh 删干净，再来执行下面与配置/etc/profile，示例如下：
+如果你是centsos 7自带git1.8要自己先yum remove git  删除git1.8,此外去看下/etc/profile.d/git.sh 删干净，再来执行下面与配置/etc/profile，示例如下：
 
 ```
 [root@bogon git-2.3.0]# echo "export PATH=$PATH:/usr/local/git/bin" > /etc/profile.d/git.sh
 [root@bogon git-2.3.0]# source /etc/profile.d/git.sh
 [root@bogon git-2.3.0]# git --version
 git version 2.3.0
-[root@bogon git-2.3.0]#
 ```
 
 ## Windows 平台上安装
