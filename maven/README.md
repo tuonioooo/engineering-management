@@ -3,7 +3,7 @@
 ## Maven
 
 * [概念剖析](gai-nian-pou-xi.md) 
-* maven build标签（打入外部jar包、xml配置编译）
+* [maven build标签（打入外部jar包、xml配置编译）](https://tuonioooo-notebook.gitbook.io/engineering-management/maven/maven-build-biao-qian-da-ru-wai-bu-jar-bao-xml-pei-zhi-bian-yi)
 * [maven安装和配置](mavenan-zhuang-he-pei-zhi.md) 
 * [maven命令详解](mavenming-ling-xiang-jie.md) 
 * [maven仓库](mavencang-ku.md) 
