@@ -1,4 +1,4 @@
-# maven 发布github或者gitee的release版本
+# maven 发布github的release版本
 
 {% embed url="https://blog.csdn.net/qq\_22225183/article/details/108075104" %}
 
