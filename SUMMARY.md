@@ -22,6 +22,7 @@
 * [Maven](maven/README.md)
   * [概念剖析](maven/gai-nian-pou-xi.md)
   * [maven build标签（打入外部jar包、xml配置编译）](maven/maven-build-biao-qian-da-ru-wai-bu-jar-bao-xml-pei-zhi-bian-yi.md)
+  * [maven 发布github或者gitee的release版本](maven/maven-fa-bu-github-huo-zhe-gitee-de-release-ban-ben.md)
   * [maven安装和配置](maven/mavenan-zhuang-he-pei-zhi.md)
   * [maven命令详解](maven/mavenming-ling-xiang-jie.md)
   * [maven仓库](maven/mavencang-ku.md)
