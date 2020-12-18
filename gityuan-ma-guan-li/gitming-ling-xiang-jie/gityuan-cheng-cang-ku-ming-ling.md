@@ -1,6 +1,6 @@
 # git远程仓库命令
 
-* ## git建立远程仓库，让别人git clone下来
+* **git建立远程仓库，让别人git clone下来**
 
 > 1，建立你的git 目录。
 >
@@ -70,7 +70,7 @@
 >
 > 通过 sudo apt-get install openssh-server命令安装即可
 
-* ## git将本地仓库上传到远程空的仓库
+* **git将本地仓库上传到远程空的仓库**
 
 **服务器端建立空的git项目**
 
@@ -87,7 +87,7 @@
 > git remote -v
 >
 > git remote add origin git@github.com:tuonioooo/gitclone.git  
->     \#这个是github上的映射服务器目录
+> \#这个是github上的映射服务器目录
 >
 > 或者
 >
@@ -99,7 +99,7 @@
 >
 > git push origin master
 
-```
+```text
 Warning: Permanently added the RSA host key for IP address '13.229.188.59' to the list of known hosts.
 Counting objects: 3, done.
 Writing objects: 100% (3/3), 206 bytes | 0 bytes/s, done.
@@ -107,12 +107,4 @@ Total 3 (delta 0), reused 0 (delta 0)
 To github.com:tuonioooo/gitclone.git
  * [new branch]      master -> master
 ```
-
-
-
-
-
-
-
-
 

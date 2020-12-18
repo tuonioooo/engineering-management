@@ -4,7 +4,7 @@
 
 ### 1.使用maven-assembly-plugin插件
 
-```
+```text
   <build>
 
 <plugins>
@@ -86,7 +86,7 @@
 
 因为maven默认是将target/classes目录下所有文件打成jar包，所以我们可以配置在编译的时候将依赖的构件拷贝到target/classes目录下，注意这种方法需要配置classpath。pom.xml配置如下：
 
-```
+```text
  <build>
 
     <plugins>
@@ -189,6 +189,7 @@
 * jar包解压之后如下图所示
 
 ![](file:///C:/Users/tony/AppData/Local/Temp/enhtmlclip/Image%289%29.jpg)
+
 * 这种方式目前测试中发现一个不太好的地方，就是会把scope为test的包也拷贝到jar包中，虽然对功能无影响，但是会增加整个jar包的大小，并且增加了无用的jar包，如下图中的junit，目前还没找到原因，找到原因之后再增加相关内容（有知道的兄弟也可告知一下，谢谢：\)）。
 
 ![](file:///C:/Users/tony/AppData/Local/Temp/enhtmlclip/Image%2810%29.jpg)

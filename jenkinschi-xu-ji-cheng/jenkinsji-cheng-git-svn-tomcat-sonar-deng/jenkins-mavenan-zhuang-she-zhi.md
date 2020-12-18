@@ -1,4 +1,4 @@
-# Jenkins Maven安装设置 
+# Jenkins Maven安装设置
 
 ## 参考文档：
 

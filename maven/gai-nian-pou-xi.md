@@ -64,7 +64,7 @@ generate-test-sources - 为编译内容生成测试源代码.
 
 process-test-sources - 处理测试源代码。
 
-generate-test-resources -process-test-resources - 复制并处理资源文件，至目标测试目录。
+generate-test-resources - process-test-resources - 复制并处理资源文件，至目标测试目录。
 
 test-compile - 将需测试源代码编译到路径。一般来说，是编译/src/test/java目录下的java文件至目标输出的测试classpath目录中。
 
@@ -80,7 +80,7 @@ pre-integration-test -
 
 integration-test - 按需求将发布包部署到运行环境。
 
-post-integration-test -verify -install -将包安装到本地仓库，给其他本地引用提供依赖。
+post-integration-test - verify - install -将包安装到本地仓库，给其他本地引用提供依赖。
 
 deploy -完成集成和发布工作，将最终包复制到远程仓库以便分享给其他开发人员。
 
@@ -92,9 +92,7 @@ site - 生成项目站点的文档。
 
 post-site - 执行需完成站点生成的工作，如站点部署的准备工作。
 
-site-deploy - 向制定的web服务器部署站点生成文件。 \[2\] 
+site-deploy - 向制定的web服务器部署站点生成文件。 \[2\]
 
-Maven生命周期参考：Apache Maven Project \[2\]  ，书籍《Maven In Action》
-
-
+Maven生命周期参考：Apache Maven Project \[2\] ，书籍《Maven In Action》
 

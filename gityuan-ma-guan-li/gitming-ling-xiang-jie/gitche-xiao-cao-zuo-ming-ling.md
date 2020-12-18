@@ -46,7 +46,7 @@
 >
 > \#
 
-就在 “Changes to be committed” 下面，括号中有提示，可以使用_**git reset HEAD &lt;file&gt;... **_的方式取消暂存。好吧，我们来试试取消暂存 benchmarks.rb 文件：
+就在 “Changes to be committed” 下面，括号中有提示，可以使用_**git reset HEAD &lt;file&gt;...**_ 的方式取消暂存。好吧，我们来试试取消暂存 benchmarks.rb 文件：
 
 > $ git reset HEAD benchmarks.rb
 >

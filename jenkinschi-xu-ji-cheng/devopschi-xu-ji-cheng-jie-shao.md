@@ -18,7 +18,7 @@ DevOps（英文Development和Operations的组合）是一组过程、方法与�
 
 DevOps这个新理念的出现，是为了应对IT环境中普遍面临的一些挑战。
 
-![](/assets/import-devops-01.png)
+![](../.gitbook/assets/import-devops-01.png)
 
 敏捷的出现缩小了上图所示的第一个隔阂，也就是商业需求和开发之间的隔阂，有效的加快了产品开发的周期和效率。那么这无疑为运营团队增加了很多压力。
 
@@ -36,7 +36,7 @@ DevOps这个新理念的出现，是为了应对IT环境中普遍面临的一些
 
 代码集成以后，当所有的单元测试通过，程序员A和程序员B就得到了一个绿色构建（green build）。这表明他们已经成功地集成在一起，代码正按照测试预期地在工作。然而，尽管集成代码能够成功地一起工作了，它仍未为生产做好准备，因为它没有在类似生产的环境中测试和工作。在下面持续交付部分你可以了解到持续集成后面发生了什么。
 
-![](/assets/import-devops-02.png)  
+![](../.gitbook/assets/import-devops-02.png)  
 考虑到实践持续集成，程序员A和程序员B必须频繁地登记主代码仓库、集成和测试他们的代码。通常一小时很多次，并且每天最少一次。
 
 持续集成的好处是，集成不再是个头疼事。软件在一直被编写和集成。在持续集成之前，集成发生在创建过程的结尾阶段，一次性完成，并且不知道要耗时多久。而现在持续集成，每天都融入到了工作方式当中。
@@ -44,7 +44,7 @@ DevOps这个新理念的出现，是为了应对IT环境中普遍面临的一些
 ### 持续交付（Continuous Delivery，CD）
 
 让我们说回到我们的两位开发人员，程序员A和程序员B。持续交付意味着每次程序员A或程序员B修改、整合和构建代码时，也同时在类似于生产环境中自动测试了这段代码。我们通常将这个在不同环境发布和测试的过程叫做部署流水线。通常部署流水线有一个开发环境，一个测试环境，一个准生产环境，但是这些阶段会根据不同的团队、产品和组织而变化。例如，Mingle团队有一个阶段叫做“纸杯蛋糕”的准生产环境，而Etsy的准生产环境叫做“公主”。  
-![](/assets/import-devopse-03.png)
+![](../.gitbook/assets/import-devopse-03.png)
 
 在不同的环境下，程序员A和程序员B写的代码被分别进行测试。当代码部署到生产环境它就开始了工作，这给予了他们更多的信心。并且只有当代码通过前一个环境的测试才会进入到下一个部署流水线的环境当中去。通过这种方式，程序员A和程序员B将会从每个环境中测试并得到新的反馈，如果有失败，他们也可以在代码被应用到生产环境之前更加容易地发现问题并且修正它。
 
@@ -52,7 +52,7 @@ DevOps这个新理念的出现，是为了应对IT环境中普遍面临的一些
 
 IBM DevOps[：https://www.ibm.com/developerworks/cn/devops/](https://blog.csdn.net/boonya/article/details/：https%3A//www.ibm.com/developerworks/cn/devops/)
 
-![](/assets/import-devops-04.png)
+![](../.gitbook/assets/import-devops-04.png)
 
 ### IBM DevOps 方法简介
 
@@ -95,7 +95,7 @@ Everything is Code，DevOps 也同样要通过技术工具链完成持续集成�
 * 日志管理：Logstash、CollectD、StatsD
 * 监控，警告&分析：Nagios、Ganglia、Sensu、zabbix、ICINGA、Graphite、Kibana
 
-![](/assets/import-devops-06.png)
+![](../.gitbook/assets/import-devops-06.png)
 
 顺便再分享一个[DevOps BookMarks](http://www.devopsbookmarks.com/)，涉及了DevOps方方面面的工具和内容，有兴趣可以去学习下。
 

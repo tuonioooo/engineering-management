@@ -8,7 +8,7 @@ maven project，特别是maven module项目默认情况下是是无法直接通�
 
 pom.xml tomcat插件配置\(此处用tomcat6，注意tomcat7的url跟tomcat6的不一样\)：
 
-```
+```text
 <plugin>
 <groupId>org.apache.tomcat.maven</groupId>
 <artifactId>tomcat6-maven-plugin</artifactId>
@@ -31,7 +31,7 @@ pom.xml tomcat插件配置\(此处用tomcat6，注意tomcat7的url跟tomcat6的�
 
 settings.xml代码如下，这个id需跟我们pom.xml配置的id一致：
 
-```
+```text
 </servers>
 　　<server>
 <id>tomcat</id>
@@ -43,7 +43,7 @@ settings.xml代码如下，这个id需跟我们pom.xml配置的id一致：
 
 settings.xml配置完后，就需给admin用户赋权了，这个在tomcat安装目录下的conf/tomcat-users.xml文件，赋权代码如下：
 
-```
+```text
 <role rolename="admin"/>
 <role rolename="admin-gui"/>
 <role rolename="manager"/>

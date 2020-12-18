@@ -2,5 +2,3 @@
 
 > find . -name ".git" \| xargs rm -Rf
 
-
-

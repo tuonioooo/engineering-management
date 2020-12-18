@@ -2,19 +2,19 @@
 
 **一，打开settings的plugins，点击查找CheckStyle-IDEA安装，如果查找不到，Browse repositories...**
 
-![](/assets/import-checkstyle-01.png)
+![](../../.gitbook/assets/import-checkstyle-01.png)
 
 **二，使用IDEA的插件生效**
 
-![](/assets/import-checkstyle-02.png)
+![](../../.gitbook/assets/import-checkstyle-02.png)
 
 **三、添加自己的配置文件，要检查的项目**
 
-![](/assets/import-checkstyle-03.png)
+![](../../.gitbook/assets/import-checkstyle-03.png)
 
 **四、将checkstyle.xml配置文件粘贴如下 ：**
 
-```
+```text
 <?xml version="1.0"?>
 <!DOCTYPE module PUBLIC
         "-//Puppy Crawl//DTD Check Configuration 1.3//EN"
@@ -256,5 +256,5 @@
 
 点击要check的文件，就会根据您配置的规范，提示出一系统的问题。
 
-![](/assets/import-checkstyle-04.png)
+![](../../.gitbook/assets/import-checkstyle-04.png)
 

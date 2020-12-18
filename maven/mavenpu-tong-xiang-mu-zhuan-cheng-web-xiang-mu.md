@@ -26,13 +26,13 @@ Add -&gt; Java Build Path Entries -&gt; Maven Dependencies -&gt; Finish
 
 完成后有:
 
-/src/main/webapp    /
+/src/main/webapp /
 
-/src/main/java      /WEB-INF/classes
+/src/main/java /WEB-INF/classes
 
 /src/main/resources /WEB-INF/classes
 
-Maven Dependencies  /WEB-INF/lib
+Maven Dependencies /WEB-INF/lib
 
 9.点击OK
 

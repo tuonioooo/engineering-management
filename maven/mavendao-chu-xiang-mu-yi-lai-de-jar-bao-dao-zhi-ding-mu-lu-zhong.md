@@ -1,10 +1,10 @@
 # maven导出项目依赖的jar包
 
-* ### 导出到默认目录 targed/dependency
+* **导出到默认目录 targed/dependency**
 
 执行如下命令：
 
-```
+```text
 mvn dependency:copy-dependencies
 ```
 
@@ -16,23 +16,21 @@ dependency:copy-dependencies后，点击运行，maven项目所依赖的jar包�
 
 ![](file:///C:/Users/tony/AppData/Local/Temp/enhtmlclip/Image%2815%29.png)
 
-* ### 导出jar到自定义目录中
+* **导出jar到自定义目录中**
 
 在maven项目下创建lib文件夹，执行如下命令：
 
-```
+```text
 mvn dependency:copy-dependencies -DoutputDirectory=lib
 ```
 
 maven项目所依赖的jar包都会复制到项目目录下的lib目录下
 
-* ### 设置依赖级别
+* **设置依赖级别**
 
 同时可以设置依赖级别，通常使用compile级别
 
-```
+```text
 mvn dependency:copy-dependencies -DoutputDirectory=lib   -DincludeScope=compile
 ```
-
-
 

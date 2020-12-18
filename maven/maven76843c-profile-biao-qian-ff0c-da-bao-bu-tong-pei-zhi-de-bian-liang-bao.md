@@ -1,6 +1,6 @@
 # maven的&lt;profile&gt;标签，打包不同配置的变量包
 
-```
+```text
 <profiles>
         <profile>
             <!-- 本地开发环境 -->
@@ -22,7 +22,7 @@
     </profiles>
 ```
 
-```
+```text
 <resources>
      <resource>
                 <directory>src/main/resources</directory>

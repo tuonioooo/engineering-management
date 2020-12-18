@@ -1,4 +1,4 @@
-# git分支管理 
+# git分支管理
 
 ## 参考文档：
 
@@ -7,6 +7,4 @@
 官方文档：[https://git-scm.com/doc](https://git-scm.com/doc)
 
 廖雪峰git教程：[https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
-
-
 

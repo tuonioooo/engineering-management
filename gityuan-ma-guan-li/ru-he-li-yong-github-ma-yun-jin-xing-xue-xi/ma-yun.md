@@ -1,6 +1,6 @@
 # 码云
 
-#### 使用GitHub时，国内的用户经常遇到的问题是访问速度太慢，有时候还会出现无法连接的情况（原因你懂的）。
+## 使用GitHub时，国内的用户经常遇到的问题是访问速度太慢，有时候还会出现无法连接的情况（原因你懂的）。
 
 如果我们希望体验Git飞一般的速度，可以使用国内的Git托管服务——[码云](https://gitee.com/)（[gitee.com](https://gitee.com/)）。
 
@@ -10,23 +10,23 @@
 
 使用码云和使用GitHub类似，我们在码云上注册账号并登录后，需要先上传自己的SSH公钥。选择右上角用户头像 -&gt; 菜单“修改资料”，然后选择“SSH公钥”，填写一个便于识别的标题，然后把用户主目录下的`.ssh/id_rsa.pub`文件的内容粘贴进去：
 
-![](https://cdn.liaoxuefeng.com/cdn/files/attachments/0015014623796132cd9d2a2bdef4efd800ffa0e1df42964000/l "gitee-add-ssh-key")
+![gitee-add-ssh-key](https://cdn.liaoxuefeng.com/cdn/files/attachments/0015014623796132cd9d2a2bdef4efd800ffa0e1df42964000/l)
 
 点击“确定”即可完成并看到刚才添加的Key：
 
-![](https://cdn.liaoxuefeng.com/cdn/files/attachments/0015014624998255334476dc4994c0ab6e6057be4c5c7fe000/l "gitee-key")
+![gitee-key](https://cdn.liaoxuefeng.com/cdn/files/attachments/0015014624998255334476dc4994c0ab6e6057be4c5c7fe000/l)
 
 如果我们已经有了一个本地的git仓库（例如，一个名为learngit的本地库），如何把它关联到码云的远程库上呢？
 
 首先，我们在码云上创建一个新的项目，选择右上角用户头像 -&gt; 菜单“控制面板”，然后点击“创建项目”：
 
-![](https://cdn.liaoxuefeng.com/cdn/files/attachments/00150146266854163b62c2574ae45569179a3d22b479a4b000/l "gitee-new-repo")
+![gitee-new-repo](https://cdn.liaoxuefeng.com/cdn/files/attachments/00150146266854163b62c2574ae45569179a3d22b479a4b000/l)
 
 项目名称最好与本地库保持一致：
 
 然后，我们在本地库上使用命令`git remote add`把它和码云的远程库关联：
 
-```
+```text
 git remote add origin git@gitee.com:liaoxuefeng/learngit.git
 ```
 
@@ -34,14 +34,14 @@ git remote add origin git@gitee.com:liaoxuefeng/learngit.git
 
 如果在使用命令`git remote add`时报错：
 
-```
+```text
 git remote add origin git@gitee.com:liaoxuefeng/learngit.git
 fatal: remote origin already exists.
 ```
 
 这说明本地库已经关联了一个名叫`origin`的远程库，此时，可以先用`git remote -v`查看远程库信息：
 
-```
+```text
 git remote -v
 origin    git@github.com:michaelliao/learngit.git (fetch)
 origin    git@github.com:michaelliao/learngit.git (push)
@@ -51,19 +51,19 @@ origin    git@github.com:michaelliao/learngit.git (push)
 
 我们可以删除已有的GitHub远程库：
 
-```
+```text
 git remote rm origin
 ```
 
 再关联码云的远程库（注意路径中需要填写正确的用户名）：
 
-```
+```text
 git remote add origin git@gitee.com:liaoxuefeng/learngit.git
 ```
 
 此时，我们再查看远程库信息：
 
-```
+```text
 git remote -v
 origin    git@gitee.com:liaoxuefeng/learngit.git (fetch)
 origin    git@gitee.com:liaoxuefeng/learngit.git (push）
@@ -79,13 +79,13 @@ origin    git@gitee.com:liaoxuefeng/learngit.git (push）
 
 仍然以`learngit`本地库为例，我们先删除已关联的名为`origin`的远程库：
 
-```
+```text
 git remote rm origin
 ```
 
 然后，先关联GitHub的远程库：
 
-```
+```text
 git remote add github git@github.com:michaelliao/learngit.git
 ```
 
@@ -93,7 +93,7 @@ git remote add github git@github.com:michaelliao/learngit.git
 
 接着，再关联码云的远程库：
 
-```
+```text
 git remote add gitee git@gitee.com:liaoxuefeng/learngit.git
 ```
 
@@ -101,7 +101,7 @@ git remote add gitee git@gitee.com:liaoxuefeng/learngit.git
 
 现在，我们用`git remote -v`查看远程库信息，可以看到两个远程库：
 
-```
+```text
 git remote -v
 gitee    git@gitee.com:liaoxuefeng/learngit.git (fetch)
 gitee    git@gitee.com:liaoxuefeng/learngit.git (push)
@@ -111,19 +111,19 @@ github    git@github.com:michaelliao/learngit.git (push)
 
 如果要推送到GitHub，使用命令：
 
-```
+```text
 git push github master
 ```
 
 如果要推送到码云，使用命令：
 
-```
+```text
 git push gitee master
 ```
 
 这样一来，我们的本地库就可以同时与多个远程库互相同步：
 
-```
+```text
 ┌─────────┐ ┌─────────┐
 │ GitHub  │ │  Gitee  │
 └─────────┘ └─────────┘

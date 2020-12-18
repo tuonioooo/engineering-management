@@ -8,73 +8,73 @@
 
 廖雪峰git教程：[https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
 
-* ## git版本控制命令
+* **git版本控制命令**
 
-> 1.git config --global user.name "daizhao"  建立用户\(在本机git库中建立一个用户命名为daizhao\)
+> 1.git config --global user.name "daizhao" 建立用户\(在本机git库中建立一个用户命名为daizhao\)
 >
-> 2.git config --global user.email "email"   建立邮箱........................................
+> 2.git config --global user.email "email" 建立邮箱........................................
 >
-> 3.git config --list                    查看你的配置信息
+> 3.git config --list 查看你的配置信息
 >
-> 4.cd /e/workspace                         进入当前的目录
+> 4.cd /e/workspace 进入当前的目录
 >
-> 5.ls                            查看当前目录下的文件
+> 5.ls 查看当前目录下的文件
 >
-> 6.vi ~/.ssh/config                  vi编辑器\(编辑ssh文件\)
+> 6.vi ~/.ssh/config vi编辑器\(编辑ssh文件\)
 >
-> 7.cat ~/.ssh/config                  显示当前的SSH配置文件中的信息
+> 7.cat ~/.ssh/config 显示当前的SSH配置文件中的信息
 >
-> TCPKeepAlive  yes
+> TCPKeepAlive yes
 >
 > ServerAliveInterval=30
 >
-> Host  git\(别名\)
+> Host git\(别名\)
 >
 > HostName 219.232.251.2
 >
-> Port  52010
+> Port 52010
 >
-> User  git
+> User git
 >
-> 8.cat ~/.ssh/id\_rsa                  查看文件
+> 8.cat ~/.ssh/id\_rsa 查看文件
 >
-> 9.cat ~/.ssh/id\_rsa.pub                  打开文件中取得密匙
+> 9.cat ~/.ssh/id\_rsa.pub 打开文件中取得密匙
 >
-> 10.git clone git@git:/opt/git/jinhonglun-erp.git  连接远程服务器下载项目
+> 10.git clone git@git:/opt/git/jinhonglun-erp.git 连接远程服务器下载项目
 >
-> 11.git add .                         添加所有文件的命令
+> 11.git add . 添加所有文件的命令
 >
-> 12 git add . 文件名                  添加指定文件的命令
+> 12 git add . 文件名 添加指定文件的命令
 >
-> 13.git status                       查看当前版本控制提交的状态
+> 13.git status 查看当前版本控制提交的状态
 >
-> 14.git commit -m "注释"                  提交文件命令，-m "添加注释"
+> 14.git commit -m "注释" 提交文件命令，-m "添加注释"
 >
-> 15.git pull origin master             从服务器当中更新一下操作
+> 15.git pull origin master 从服务器当中更新一下操作
 >
-> 16.git push origin master             将本机的版本控制，提交到服务器版本控制
+> 16.git push origin master 将本机的版本控制，提交到服务器版本控制
 >
-> 17.git rm -"文件名"                  删除一个指定的文件
+> 17.git rm -"文件名" 删除一个指定的文件
 >
-> 18.git checkout -b "分支名"             建立一个分支
+> 18.git checkout -b "分支名" 建立一个分支
 >
-> 19.git branch   -d "分支名"             删除一个分支\(必须切换到master主控制下，才可以删除分支\)
+> 19.git branch -d "分支名" 删除一个分支\(必须切换到master主控制下，才可以删除分支\)
 >
-> 20.git checkout "分支名"             变更当前的分支
+> 20.git checkout "分支名" 变更当前的分支
 >
-> 21.git merge  "分支名"                  合并分支的代码\(必须切换到master主控制下，才可以合并\)
+> 21.git merge "分支名" 合并分支的代码\(必须切换到master主控制下，才可以合并\)
 >
-> 22.git 合并冲突时，修改代码之后，需要重新的git add .  git commit -m 提交操作
+> 22.git 合并冲突时，修改代码之后，需要重新的git add . git commit -m 提交操作
 >
 > 23.linux下的，中止操作命令是：aborted/crtl+c
 >
 > 24.git checkout -tb bugfix origin/v1.0-bugfix 从服务器端v1.0-bugfix，到本地建立bugfix分支，每次提交时，就不需要git pull/push origin bugfix,直接git pull/push 即可
 >
-> 25.git checkout --track "本地分支名" origin/serverfix          跟踪远程端的服务器版本，并且下载到本地
+> 25.git checkout --track "本地分支名" origin/serverfix 跟踪远程端的服务器版本，并且下载到本地
 >
 > 26.git config remote.\[remoteName\].push \[localBranchName\]:\[remoteBranchName\] eg:git config remote.origin.push bugfix2:v1.0-bugfix ,切换push提交远程服务器的版本\(切当前项目下仅有一个分支可提交\[git pull/push\]\)
 >
-> 27.git remote show origin              显示本地与远程端对应的版本
+> 27.git remote show origin 显示本地与远程端对应的版本
 >
 > 28.fetch和pull的区别：fetch：仅仅是从远端服务器中，下载下来，并不合并你当前的分支代码；pull:是从远端服务器中，下载下来，合并你当前的分支代码；
 >
@@ -89,24 +89,21 @@
 > 注意事项：
 >
 > * 每次push之前，都要pull
->
 > * 在分支修改之后，需要添加和commit，才能合并
->
 > * staged状态之前存在四种文件：一个是冲突文件、修改文件、不在版本控制之内的文件、删除文件
->
 > * 提交分支的话，只能在当前的分支下才可以提交分支，如果切换到其他分支或者是主控制分支上，在去提交的话，就会遇到错误;
 >
-> 31.git push origin bugfix4:new\_feature              把本地分支的代码提交到远程仓库中，并同时在仓库中建立new\_feature分支
+> 31.git push origin bugfix4:new\_feature 把本地分支的代码提交到远程仓库中，并同时在仓库中建立new\_feature分支
 >
-> 32.git branch -r                                                      查看仓库的远程分支
+> 32.git branch -r 查看仓库的远程分支
 >
-> 33.git fetch origin new\_feature                            同步远程分支
+> 33.git fetch origin new\_feature 同步远程分支
 >
-> 34.git branch --track origin/new\_feature            将当前的分支跟踪到远程的分支下
+> 34.git branch --track origin/new\_feature 将当前的分支跟踪到远程的分支下
 >
-> 35.git push origin bugfix5:new\_feature              指定分支，提交指定的仓库
+> 35.git push origin bugfix5:new\_feature 指定分支，提交指定的仓库
 
-* ## 远程仓库相关命令
+* **远程仓库相关命令**
 
 > 检出仓库：$ git clone git://github.com/jquery/jquery.git
 >
@@ -122,7 +119,7 @@
 >
 > 推送远程仓库：$ git push \[remoteName\] \[localBranchName\]
 
-* ## **分支\(branch\)操作相关命令**
+* **分支\(branch\)操作相关命令**
 
 > 查看本地分支：$ git branch
 >
@@ -146,7 +143,7 @@
 >
 > 删除远程分支：$ git push origin :heads/\[name\]
 
-* ## **版本\(tag\)操作相关命令**
+* **版本\(tag\)操作相关命令**
 
 > 查看版本：$ git tag
 >
@@ -160,13 +157,13 @@
 >
 > 删除远程版本：$ git push origin :refs/tags/\[name\]
 
-* ## **子模块\(submodule\)相关操作命令**
+* **子模块\(submodule\)相关操作命令**
 
 > 添加子模块：$ git submodule add \[url\] \[path\]
 >
 > 如：$ git submodule add git://github.com/soberh/ui-libs.git src/main/webapp/ui-libs
 >
-> 初始化子模块：$ git submodule init  ----只在首次检出仓库时运行一次就行
+> 初始化子模块：$ git submodule init ----只在首次检出仓库时运行一次就行
 >
 > 更新子模块：$ git submodule update ----每次更新或切换分支后都需要运行一下
 >
@@ -180,11 +177,9 @@
 >
 > 4\) 手动删除子模块残留的目录
 
-* ## 忽略一些文件、文件夹不提交
+* **忽略一些文件、文件夹不提交**
 
 > 在仓库根目录下创建名称为“.gitignore”的文件，写入不需要的文件夹名或文件，每个元素占一行即可，如
 >
 > target
-
-
 

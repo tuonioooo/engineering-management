@@ -1,8 +1,8 @@
 # 开发常见问题汇总
 
-* ### **maven在POM.xml中配置plugin的忽略测试功能配置**
+* **maven在POM.xml中配置plugin的忽略测试功能配置**
 
-```
+```text
 <plugin>
     <groupId>org.apache.maven.plugins </groupId>
     <artifactId>maven-surefire-plugin </artifactId>
@@ -13,11 +13,11 @@
 </plugin>
 ```
 
-* ### **maven install 报错，出现找不到符号**
+* **maven install 报错，出现找不到符号**
 
 在编译插件中，添加&lt;encoding&gt;UTF-8&lt;/encoding&gt;
 
-```
+```text
 <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -33,11 +33,11 @@
             </plugin>
 ```
 
-* ### Maven  Java.OutOfMemory错误
+* **Maven  Java.OutOfMemory错误**
 
 当Maven项目很大，或者你运行诸如 mvn site 这样的命令的时候，maven运行需要很大的内存，在默认配置下，就可能遇到java的堆溢出。如：
 
-```
+```text
 [INFO] Building jar: /home/dl9pf/svn/mindquarry/mindquarry-jcr/mindquarry-jcr-changes/target/mindquarry-migration-with-dependencies.jar
 [INFO] ------------------------------------------------------------------------
 [ERROR] FATAL ERROR
@@ -84,7 +84,7 @@ OS name: "windows 2003" version: "5.2" arch: "x86" Family: "windows"
 
 我们看到，配置的Maven选项生效了，OutOfMemoryError也能得以相应的解决。
 
-**Linux环境中 **
+**Linux环境中** 
 
 也可以通过设置环境变量解决该问题， 如，编辑文件 /etc/profile 如下
 
@@ -102,7 +102,7 @@ m2eclipse中类似以上的方法都会失效，所幸m2eclipse提供了配置�
 
 这时会看到一个maven运行配置对话框，这里面其它的配置我不多解释了，为了解决内存溢出的问题，我们可以选择第二个TAB: JRE，然后在VM arguments中输入配置如：-Xms128m -Xmx512m。
 
-* ### 依赖冲突
+* **依赖冲突**
 
 解决方式：在依赖中排除有冲突的jar引用，比如：
 
@@ -126,21 +126,18 @@ m2eclipse中类似以上的方法都会失效，所幸m2eclipse提供了配置�
 >
 > &lt;/dependency&gt;
 
-* ### No compiler is provided in this environment. Perhaps you are running on a JRE rather than a JDK? 问题
+* **No compiler is provided in this environment. Perhaps you are running on a JRE rather than a JDK? 问题**
 
 解决方案：
 
 1. 下载java jdk，并安装java jdk。下载地址：[http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html)
-
 2. 在eclipse的菜单中，进入 Window &gt; Preferences &gt; Java &gt; Installed JREs &gt; Execution Environments，选择JavaSE-1.6, 在右侧选择jdk.
-
 3. 然后在maven菜单中使用 “update project ...”.
-
-4. ### Unable to locate the Javac Compiler in:   D:\Java\jre6..\lib\tools.jar
+4. **Unable to locate the Javac Compiler in:   D:\Java\jre6..\lib\tools.jar**
 
 一般是项目编译的版本不对，更换高一点的版本，build path
 
-* ### maven的缓存已损坏 相关问题（ The type org.springframework.context.ConfigurableApplicationContext cannot be resolved）
+* **maven的缓存已损坏 相关问题（ The type org.springframework.context.ConfigurableApplicationContext cannot be resolved）**
 
 [http://blog.csdn.net/fujunsfzh/article/details/72673775](http://blog.csdn.net/fujunsfzh/article/details/72673775)
 
@@ -162,7 +159,7 @@ m2eclipse中类似以上的方法都会失效，所幸m2eclipse提供了配置�
 
 它现在可以正常工作
 
-* ### 在POM配置Maven plugin提示错误“Plugin execution not covered by lifecycle configuration”的解决方案
+* **在POM配置Maven plugin提示错误“Plugin execution not covered by lifecycle configuration”的解决方案**
 
 eclipse在其POM文件的一处提示出错如下：
 
@@ -192,7 +189,7 @@ Plugin execution not covered by lifecycle configuration: org.apache.maven.plugin
 
 修改完成后，需在m2e配置处把“Update Maven projects on startup”选项勾上，并重启eclipse即可消除出错示。
 
-* ### 没有Project Facets的解决方法
+* **没有Project Facets的解决方法**
 
 解决步骤：
 
@@ -214,7 +211,7 @@ Plugin execution not covered by lifecycle configuration: org.apache.maven.plugin
 
 6、在左侧列表项目中点击选择“Project Facets”，在右侧选择“Dynamic Web Module”和"Java"，点击OK保存即可。
 
-* ### Maven web项目到tomcat服务器时，没有将lib下的jar复制过去的解决办法
+* **Maven web项目到tomcat服务器时，没有将lib下的jar复制过去的解决办法**
 
 解决办法如下：
 
@@ -224,7 +221,7 @@ Plugin execution not covered by lifecycle configuration: org.apache.maven.plugin
 
 再重新启动tomcat，启动成功！！
 
-* ### maven编译报错 -source 1.5 中不支持 lambda 表达式
+* **maven编译报错 -source 1.5 中不支持 lambda 表达式**
 
 奇怪的是我的 Jenkins 构建机器上只安装了 JDK 8，为什么还会说不支持 diamond 和 lambda 呢？
 
@@ -232,7 +229,7 @@ Plugin execution not covered by lifecycle configuration: org.apache.maven.plugin
 
 原来 Maven Compiler 插件默认会加 -source 1.5 及 -target 1.5 参数来编译（估计是为了兼容一些比较老的 [Linux](http://lib.csdn.net/base/linux) 服务器[操作系统](http://lib.csdn.net/base/operatingsystem)，它们通常只有 JDK 5），而我们的代码里使用了 JDK 7/8 的语法。解决办法在[这里](http://maven.apache.org/plugins/maven-compiler-plugin/examples/set-compiler-source-and-target.html)：
 
-```
+```text
 <project>
   [...]
   <build>
@@ -256,7 +253,7 @@ Plugin execution not covered by lifecycle configuration: org.apache.maven.plugin
 
 或
 
-```
+```text
 <project>
   [...]
   <properties>
@@ -267,11 +264,9 @@ Plugin execution not covered by lifecycle configuration: org.apache.maven.plugin
 </project>
 ```
 
-> ## Setting the -source and -target of the Java Compiler
+> ## Setting the -source and -target of the Java Compiler
 >
-> Sometimes when you may need to compile a certain project to a different version than what you are currently using. The javac can accept such command using -source and -target. The Compiler Plugin can also be configured to provide these options during compilation.
+> Sometimes when you may need to compile a certain project to a different version than what you are currently using. The javac can accept such command using -source and -target. The Compiler Plugin can also be configured to provide these options during compilation.
 >
 > For example, if you want to use the Java 8 language features \(-source 1.8\) and also want the compiled classes to be compatible with JVM 1.8 \(-target 1.8\), you can either add the two following properties, which are the default property names for the plugin parameters:
-
-
 

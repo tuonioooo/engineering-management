@@ -12,7 +12,7 @@ tomcat7-maven-plugin 插件官网：[http://tomcat.apache.org/maven-plugin.html]
 
 POM.xml 加入以下plugin
 
-```
+```text
 <plugin>
 <groupId>org.codehaus.mojo</groupId>
 <artifactId>tomcat-maven-plugin</artifactId>
@@ -27,11 +27,11 @@ POM.xml 加入以下plugin
 </plugin>
 ```
 
-> path  是访问应用的路径
+> path 是访问应用的路径
 >
 > port 是tomcat 的端口号
 >
-> uriEncoding  URL按UTF-8进行编码，这样就解决了中文参数乱码。
+> uriEncoding URL按UTF-8进行编码，这样就解决了中文参数乱码。
 >
 > Server 指定tomcat名称。
 
@@ -39,11 +39,11 @@ POM.xml 加入以下plugin
 
 如果Eclipse 安装了Maven插件，选 择pom.xml文件，击右键——&gt;选择 Run As——&gt; Maven build 。
 
-[![](file:///C:/Users/tony/AppData/Local/Temp/enhtmlclip/Image%2816%29.png "image")](http://static.oschina.net/uploads/img/201310/14145819_EQjC.png)
+[![image](file:///C:/Users/tony/AppData/Local/Temp/enhtmlclip/Image%2816%29.png)](http://static.oschina.net/uploads/img/201310/14145819_EQjC.png)
 
 如果是第一次运行，会弹出下面对话框。在Goals框加加入以下命令: tomcat:run
 
-## [![](file:///C:/Users/tony/AppData/Local/Temp/enhtmlclip/Image%2817%29.png "image")](http://static.oschina.net/uploads/img/201310/14145820_5Bqc.png)
+## [![image](file:///C:/Users/tony/AppData/Local/Temp/enhtmlclip/Image%2817%29.png)](http://static.oschina.net/uploads/img/201310/14145820_5Bqc.png)
 
 这样Tomcat 插件就可以运行。
 
@@ -62,7 +62,7 @@ POM.xml 加入以下plugin
 
 POM.xml 加入以下plugin
 
-```
+```text
 <plugin>
 <groupId>org.apache.tomcat.maven</groupId>
 <artifactId>tomcat7-maven-plugin</artifactId>

@@ -5,15 +5,10 @@
 对于本次旅行，您将需要：
 
 * 一台机器：
-
   * 256 MB的RAM，但推荐超过512 MB
-
   * 10 GB的驱动器空间（适用于Jenkins和Docker镜像）
-
 * 安装了以下软件：
-
   * Java 8（JRE或Java开发工具包（JDK）很好）
-
   * [Docker](https://docs.docker.com/)（导航到网站顶部的**获取Docker**以访问适合您平台的Docker下载，可以先不用下载）
 
 ## 下载Jenkins
@@ -28,19 +23,19 @@
 
 windows环境：
 
-```
+```text
 D:\worksp\yiibai.com> java -jar Jenkins.war
 ```
 
 Linux环境：
 
-```
+```text
 [root@god local]# java -jar jenkins.war &
 ```
 
 该命令后，各项任务将运行，其中一个是由名为 winstone 的嵌入式web服务器进行 war 文件提取。
 
-```
+```text
 七月 31, 2018 11:55:08 上午 jenkins.InitReactorRunner$1 onAttained
 信息: Started all plugins
 七月 31, 2018 11:55:08 上午 jenkins.InitReactorRunner$1 onAttained
@@ -71,7 +66,7 @@ Linux环境：
 
 ## jenkins安装war包遇到的问题
 
-1.Caused by: sun.security.validator.ValidatorException: PKIX path building failed:                                   sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+1.Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
 
 **参考：**
 
@@ -91,7 +86,7 @@ Linux环境：
 
 InstallCert.java
 
-```
+```text
 /*
  * Copyright 2006 Sun Microsystems, Inc.  All Rights Reserved.
  *
@@ -122,17 +117,17 @@ InstallCert.java
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
- 
+
 import java.io.*;
 import java.net.URL;
- 
+
 import java.security.*;
 import java.security.cert.*;
- 
+
 import javax.net.ssl.*;
- 
+
 public class InstallCert {
- 
+
     public static void main(String[] args) throws Exception {
     String host;
     int port;
@@ -147,7 +142,7 @@ public class InstallCert {
         System.out.println("Usage: java InstallCert <host>[:port] [passphrase]");
         return;
     }
- 
+
     File file = new File("jssecacerts");
     if (file.isFile() == false) {
         char SEP = File.separatorChar;
@@ -163,7 +158,7 @@ public class InstallCert {
     KeyStore ks = KeyStore.getInstance(KeyStore.getDefaultType());
     ks.load(in, passphrase);
     in.close();
- 
+
     SSLContext context = SSLContext.getInstance("TLS");
     TrustManagerFactory tmf =
         TrustManagerFactory.getInstance(TrustManagerFactory.getDefaultAlgorithm());
@@ -172,7 +167,7 @@ public class InstallCert {
     SavingTrustManager tm = new SavingTrustManager(defaultTrustManager);
     context.init(null, new TrustManager[] {tm}, null);
     SSLSocketFactory factory = context.getSocketFactory();
- 
+
     System.out.println("Opening connection to " + host + ":" + port + "...");
     SSLSocket socket = (SSLSocket)factory.createSocket(host, port);
     socket.setSoTimeout(10000);
@@ -186,16 +181,16 @@ public class InstallCert {
         System.out.println();
         e.printStackTrace(System.out);
     }
- 
+
     X509Certificate[] chain = tm.chain;
     if (chain == null) {
         System.out.println("Could not obtain server certificate chain");
         return;
     }
- 
+
     BufferedReader reader =
         new BufferedReader(new InputStreamReader(System.in));
- 
+
     System.out.println();
     System.out.println("Server sent " + chain.length + " certificate(s):");
     System.out.println();
@@ -212,7 +207,7 @@ public class InstallCert {
         System.out.println("   md5     " + toHexString(md5.digest()));
         System.out.println();
     }
- 
+
     System.out.println("Enter certificate to add to trusted keystore or 'q' to quit: [1]");
     String line = reader.readLine().trim();
     int k;
@@ -222,15 +217,15 @@ public class InstallCert {
         System.out.println("KeyStore not changed");
         return;
     }
- 
+
     X509Certificate cert = chain[k];
     String alias = host + "-" + (k + 1);
     ks.setCertificateEntry(alias, cert);
- 
+
     OutputStream out = new FileOutputStream("jssecacerts");
     ks.store(out, passphrase);
     out.close();
- 
+
     System.out.println();
     System.out.println(cert);
     System.out.println();
@@ -238,9 +233,9 @@ public class InstallCert {
         ("Added certificate to keystore 'jssecacerts' using alias '"
         + alias + "'");
     }
- 
+
     private static final char[] HEXDIGITS = "0123456789abcdef".toCharArray();
- 
+
     private static String toHexString(byte[] bytes) {
     StringBuilder sb = new StringBuilder(bytes.length * 3);
     for (int b : bytes) {
@@ -251,80 +246,79 @@ public class InstallCert {
     }
     return sb.toString();
     }
- 
+
     private static class SavingTrustManager implements X509TrustManager {
- 
+
     private final X509TrustManager tm;
     private X509Certificate[] chain;
- 
+
     SavingTrustManager(X509TrustManager tm) {
         this.tm = tm;
     }
- 
+
     public X509Certificate[] getAcceptedIssuers() {
         throw new UnsupportedOperationException();
     }
- 
+
     public void checkClientTrusted(X509Certificate[] chain, String authType)
         throws CertificateException {
         throw new UnsupportedOperationException();
     }
- 
+
     public void checkServerTrusted(X509Certificate[] chain, String authType)
         throws CertificateException {
         this.chain = chain;
         tm.checkServerTrusted(chain, authType);
     }
     }
- 
-}
 
+}
 ```
 
-编译InstallCert.java：javac InstallCert.java 
+编译InstallCert.java：javac InstallCert.java
 
-运行InstallCert.java：java InstallCert updates.jenkins.io 
+运行InstallCert.java：java InstallCert updates.jenkins.io
 
 或者通过其他开发工具进行编译运行
 
 运行输出：
 
-```
+```text
 Loading KeyStore jssecacerts...
 Opening connection to updates.jenkins.io:443...
 Starting SSL handshake...
 
 javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192)
-	at sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1949)
-	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:302)
-	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:296)
-	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1509)
-	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:216)
-	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:979)
-	at sun.security.ssl.Handshaker.process_record(Handshaker.java:914)
-	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1062)
-	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1375)
-	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1403)
-	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1387)
-	at com.master.InstallCert.main(InstallCert.java:75)
+    at sun.security.ssl.Alerts.getSSLException(Alerts.java:192)
+    at sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1949)
+    at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:302)
+    at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:296)
+    at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1509)
+    at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:216)
+    at sun.security.ssl.Handshaker.processLoop(Handshaker.java:979)
+    at sun.security.ssl.Handshaker.process_record(Handshaker.java:914)
+    at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1062)
+    at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1375)
+    at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1403)
+    at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1387)
+    at com.master.InstallCert.main(InstallCert.java:75)
 Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:387)
-	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:292)
-	at sun.security.validator.Validator.validate(Validator.java:260)
-	at sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:324)
-	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:229)
-	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:105)
-	at com.master.InstallCert$SavingTrustManager.checkServerTrusted(InstallCert.java:173)
-	at sun.security.ssl.AbstractTrustManagerWrapper.checkServerTrusted(SSLContextImpl.java:922)
-	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1491)
-	... 8 more
+    at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:387)
+    at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:292)
+    at sun.security.validator.Validator.validate(Validator.java:260)
+    at sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:324)
+    at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:229)
+    at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:105)
+    at com.master.InstallCert$SavingTrustManager.checkServerTrusted(InstallCert.java:173)
+    at sun.security.ssl.AbstractTrustManagerWrapper.checkServerTrusted(SSLContextImpl.java:922)
+    at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1491)
+    ... 8 more
 Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-	at sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:141)
-	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:126)
-	at java.security.cert.CertPathBuilder.build(CertPathBuilder.java:280)
-	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:382)
-	... 16 more
+    at sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:141)
+    at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:126)
+    at java.security.cert.CertPathBuilder.build(CertPathBuilder.java:280)
+    at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:382)
+    ... 16 more
 
 Server sent 2 certificate(s):
 
@@ -343,7 +337,7 @@ Enter certificate to add to trusted keystore or 'q' to quit: [1]
 
 输出控制台，输出1
 
-```
+```text
 [
 [
   Version: V3

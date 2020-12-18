@@ -12,7 +12,7 @@
 
 * 创建Maven的Web项目：
 
-```
+```text
 #这个命令使用的是默认的仓库地址配置文件（C:/tony/.m2/settings.xml），没有jar包会自动下载
 mvn archetype:create -DgroupId=packageName -DartifactId=webappName -DarchetypeArtifactId=maven-archetype-webapp
 
@@ -21,34 +21,22 @@ mvn archetype:create -s E:/.m2/settings.xml -DgroupId=packageName -DartifactId=w
 ```
 
 * 编译源代码：mvn compile
-
 * 编译测试代码：mvn test-compile
-
 * 运行测试：mvn test
-
 * 产生site：mvn site
-
 * 打包：mvn package
-
 * 在本地Repository中安装jar：mvn install
-
 * 清除产生的项目：mvn clean
-
 * 生成eclipse项目：mvn eclipse:eclipse
-
 * 生成idea项目：mvn idea:idea
-
 * 组合使用goal命令，如只打包不测试：mvn -Dtest package
-
 * 编译测试的内容：mvn test-compile
-
 * 只打jar包: mvn jar:jar
-
 * 只测试而不编译，也不测试编译：mvn test -skipping compile -skipping test-compile
 
   \( -skipping 的灵活运用，当然也可以用于其他组合命令\)
 
-* 清除eclipse的一些系统设置:  mvn eclipse:clean
+* 清除eclipse的一些系统设置: mvn eclipse:clean
 
 > ps：
 >
@@ -71,11 +59,10 @@ mvn archetype:create -s E:/.m2/settings.xml -DgroupId=packageName -DartifactId=w
 * mvn test-compile    编译项目测试代码。 。
 * mvn integration-test     在集成测试可以运行的环境中处理和发布包。
 * mvn verify        运行任何检查，验证包是否有效且达到质量标准。
-* mvn generate-sources    产生应用需要的任何额外的源代码，如xdoclet。
-
+* mvn generate-sources 产生应用需要的任何额外的源代码，如xdoclet。
 * 在应用程序用使用多个存储库
 
-```
+```text
 <repositories>    
     <repository>      
         <id>Ibiblio</id>      
@@ -90,13 +77,13 @@ mvn archetype:create -s E:/.m2/settings.xml -DgroupId=packageName -DartifactId=w
 </repositories>
 ```
 
-```
+```text
 mvn deploy:deploy-file -DgroupId=com -DartifactId=client -Dversion=0.1.0 -Dpackaging=jar -Dfile=d:\client-0.1.0.jar -DrepositoryId=maven-repository-inner -Durl=ftp://xxxxxxx/opt/maven/repository/
 ```
 
 * 发布第三方Jar到本地库中：
 
-```
+```text
 mvn install:install-file -DgroupId=com -DartifactId=client -Dversion=0.1.0 -Dpackaging=jar -Dfile=d:\client-0.1.0.jar -DdownloadSources=true -DdownloadJavadocs=true
 ```
 
@@ -107,7 +94,7 @@ mvn install:install-file -DgroupId=com -DartifactId=client -Dversion=0.1.0 -Dpac
 * mvn help:effective-pom 看这个“有效的 \(effective\)”POM，它暴露了 Maven的默认设置
 * mvn archetype:create -DgroupId=org.sonatype.mavenbook.ch03 -DartifactId=simple -DpackageName=org.sonatype.mavenbook 创建Maven的普通java项目，在命令行使用Maven Archetype 插件
 * mvn exec:java -Dexec.mainClass=org.sonatype.mavenbook.weather.Main Exec 插件让我们能够在不往 classpath 载入适当的依赖的情况下，运行这个程序
-* **mvn dependency:resolve **打印出已解决依赖的列表
+* **mvn dependency:resolve** 打印出已解决依赖的列表
 * **mvn dependency:tree** 打印整个依赖树
 * mvn install -X 想要查看完整的依赖踪迹，包含那些因为冲突或者其它原因而被拒绝引入的构件，打开 Maven 的调试标记运行
 * **mvn install -Dmaven.test.skip=true** 给任何目标添加maven.test.skip 属性就能跳过测试
@@ -116,6 +103,4 @@ mvn install:install-file -DgroupId=com -DartifactId=client -Dversion=0.1.0 -Dpac
 * mvn compile 编译你的项目
 * mvn clean install 删除再编译
 * mvn hibernate3:hbm2ddl 使用 Hibernate3 插件构造数据库
-
-
 

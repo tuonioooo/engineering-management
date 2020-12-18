@@ -8,7 +8,7 @@
 
 %TOMCAT7\_PATH%/conf/tomcat-users.xml
 
-```
+```text
 <?xml version='1.0' encoding='utf-8'?>
 <tomcat-users>
 
@@ -25,7 +25,7 @@
 
 %MAVEN\_PATH%/conf/settings.xml
 
-```
+```text
 <?xml version="1.0" encoding="UTF-8"?>
 <settings ...>
 <servers>
@@ -45,7 +45,7 @@
 
 pom.xml
 
-```
+```text
 <plugin>
 <groupId>org.apache.tomcat.maven</groupId>
 <artifactId>tomcat7-maven-plugin</artifactId>
@@ -66,7 +66,7 @@ pom.xml
 
 以下的命令是用来操纵Tomcat WAR文件。
 
-```
+```text
 mvn tomcat7:deploy
 mvn tomcat7:undeploy
 mvn tomcat7:redeploy
@@ -74,7 +74,7 @@ mvn tomcat7:redeploy
 
 示例
 
-```
+```text
 > mvn tomcat7:deploy
 
 ...
@@ -101,7 +101,7 @@ Uploaded: http://localhost:8080/manager/text/deploy?path=%2FyiibaiWebApp&update=
 
 %TOMCAT6\_PATH%/conf/tomcat-users.xml
 
-```
+```text
 <?xml version='1.0' encoding='utf-8'?>
 <tomcat-users>
 
@@ -116,7 +116,7 @@ Uploaded: http://localhost:8080/manager/text/deploy?path=%2FyiibaiWebApp&update=
 
 %MAVEN\_PATH%/conf/settings.xml
 
-```
+```text
 <?xml version="1.0" encoding="UTF-8"?>
 <settings ...>
 <servers>
@@ -134,7 +134,7 @@ Uploaded: http://localhost:8080/manager/text/deploy?path=%2FyiibaiWebApp&update=
 
 pom.xml
 
-```
+```text
 <plugin>
 <groupId>org.apache.tomcat.maven</groupId>
 <artifactId>tomcat6-maven-plugin</artifactId>
@@ -149,7 +149,7 @@ pom.xml
 
 2.4 发布到Tomcat
 
-```
+```text
 mvn tomcat6:deploy
 mvn tomcat6:undeploy
 mvn tomcat6:redeploy
@@ -157,7 +157,7 @@ mvn tomcat6:redeploy
 
 示例
 
-```
+```text
 > mvn tomcat6:deploy
 
 ...
@@ -173,6 +173,4 @@ Uploaded: http://localhost:8080/manager/deploy?path=%2FyiibaiWebApp (13925 KB at
 [INFO] Final Memory: 30M/308M
 [INFO] ------------------------------------------------------------------------
 ```
-
-
 

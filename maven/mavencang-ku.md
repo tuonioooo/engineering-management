@@ -2,11 +2,11 @@
 
 ## 公共仓库
 
-[http://repo1.maven.org/maven2/ ](http://repo1.maven.org/maven2/ )
+[http://repo1.maven.org/maven2/ ](http://repo1.maven.org/maven2/%20)
 
-[http://repository.jboss.com/maven2/ ](http://repository.jboss.com/maven2/ )
+[http://repository.jboss.com/maven2/ ](http://repository.jboss.com/maven2/%20)
 
-[http://repository.sonatype.org/content/groups/public/ ](http://repository.sonatype.org/content/groups/public/ )
+[http://repository.sonatype.org/content/groups/public/ ](http://repository.sonatype.org/content/groups/public/%20)
 
 [http://maven.ibiblio.org/maven2/](http://maven.ibiblio.org/maven2/)
 
@@ -18,7 +18,7 @@
 
 [http://search.maven.org/](http://search.maven.org/)
 
-[http://mvnrepository.com/](http://mvnrepository.com/)      常用
+[http://mvnrepository.com/](http://mvnrepository.com/) 常用
 
-[http://central.maven.org/maven2](http://central.maven.org/maven2)  常用
+[http://central.maven.org/maven2](http://central.maven.org/maven2) 常用
 
