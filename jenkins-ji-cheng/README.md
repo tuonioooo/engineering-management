@@ -1,4 +1,4 @@
-# Jenkins持续集成
+# Jenkins教程
 
 * [DevOps持续集成介绍](devopschi-xu-ji-cheng-jie-shao.md) 
 * [Jenkins环境构建](./jenkinshuan-jing-gou-jian/README.md) 
