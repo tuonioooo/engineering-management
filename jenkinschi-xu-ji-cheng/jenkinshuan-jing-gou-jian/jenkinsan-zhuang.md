@@ -13,11 +13,24 @@
 
 ## 下载Jenkins
 
-对于Jenkins官方网站是Jenkins。如果点击给出的链接，就可以访问 [Jenkins官方网站](https://jenkins-ci.org/)的首页了，如下图所示。
+[Jenkins官方网站](https://www.jenkins.io)如下图所示：
 
-![](file:///C:\Users\tony\AppData\Roaming\Tencent\Users\596807862\QQ\WinTemp\RichOle\9$%29$34JEHINBBZ@_GE7`_ZB.png)点击链接下载Jenkins.war 文件，这里选择的是最新版本。如下图所示：
+![](../../assets/jenkins_1667032980100.jpg)
 
-![](file:///C:\Users\tony\AppData\Roaming\Tencent\Users\596807862\QQ\WinTemp\RichOle\19KX{IR{NZ3176`Q4WWYQ$1.png)
+点击download，如下图所示：
+
+![](../../assets/jenkins_1667033304395.jpg)
+
+这里选择的是支持Java8的版本，通过Past releases 链接 查看，如图所示：
+
+![](../../assets/jenkins_1667034156940.jpg)
+
+![](../../assets/jenkins_1001.png)
+
+```
+$ wget http://mirrors.tuna.tsinghua.edu.cn/jenkins/war-stable/2.346.1/jenkins.war
+```
+> 复制链接后，采用`http`协议 wget下载war包
 
 ## 启动Jenkins
 
@@ -63,6 +76,33 @@ Linux环境：
 七月 31, 2018 11:55:14 上午 hudson.WebAppMain$3 run
 信息: Jenkins is fully up and running
 ```
+war包命令进阶
+
+```
+#提供war包命令使用规则
+java -jar jenkins.war --help 
+#示例1：指定端口号
+java -jar jenkins.war --httpPort=8081
+#示例2：指定输出日志文件位置
+java -jar jenkins.war --httpPort=8081 --logfile=/home/jenkins/log/jenkins.log &
+#示例2：指定访问前缀
+java -jar jenkins.war --httpPort=8081 --logfile=/home/jenkins/log/jenkins.log --prefix=/jenkins
+```
+> 说明：当你指定端口号时，需要记得开通防火墙哟执行如下代码(PS: 貌似docker挂载宿主端口貌似自动打开，省去这步操作的麻烦)
+> `firewall-cmd --zone=public --add-port=8080/tcp --permanent`
+> `firewall-cmd --reload`
+
+
+配置插件站点地址
+
+![](../../assets/jenkins_1667031462762.jpg)
+
+配置后，需要重启，否则不生效
+
+> 说明： 配置插件站点地址，是为了防止国外站点链接超时或者下载插件缓慢，这里采用是
+> `http://mirrors.tuna.tsinghua.edu.cn/jenkins/updates/current/update-center.json` 清华大学镜像地址
+> 切记是`http`协议格式
+> 上面页面访问路径是：系统管理（Manage Jenkins）--》插件管理（Manage Plugins）--》高级
 
 ## jenkins安装war包遇到的问题
 
