@@ -81,13 +81,14 @@
 > * `Jenkins Location` 用于配置jenkins访问URL
 > * `环境变量`  配置好键值对 在构建项目时 可以 用 `${Key}` 形式使用变量 `key就是变量名`
 > * `Publish over SSH` 如：  
->    Passphrase: **********（key的密码不是必须的）  
+>    Passphrase: **********（是SSH全局连接时的登录密码）  
 >    Path to key: /root/.ssh/id_rsa key (文件私钥的路径不是必须的)
 > * `SSH Servers`  
 >    Name: 名称  
      Hostname: 主机Ip  
      Username: 主机用户名  
-     Remote Directory: 连接主机的目录 
+     Remote Directory: 连接主机的目录   
+     点高级，勾选 `Use password authentication, or use a different key`，可以配置不同SSH Servers登录的密码，如果没有可以忽略
   
 ### windows系统配置
 
@@ -103,8 +104,18 @@
 ![](../assets/jenkins_1667054663706.jpg)
 
 > 配置图说明：
-> * `maven配置` 用于配置maven的配置文件
-> * `maven 新增maven` 配置maven的主目录 `/usr/local/apache-maven-3.6.1` 
+> * `maven配置`   
+    1、手动配置：   
+    &ensp;&ensp;a.宿主主机需要准备maven配置环境;  
+    &ensp;&ensp;b.手动设置 `Maven 配置` 默认settings文件位置;  
+    &ensp;&ensp;c.手动设置 `maven安装`  配置maven的主目录 `/usr/local/apache-maven-3.6.1`。   
+    2、自动安装：  
+>   &ensp;&ensp; `maven安装` -> `新增maven` 指定版本后，勾选自动安装，jenkins在部署Java项目时会自动在 `/root/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/` 目录下下载指定版本的maven
+> * `jdk配置`  
+    1、Linux系统直接部署jenkins.war 此种情况，不需要配置jdk（宿主主机已经提前部署好java环境才能运行war包）       
+    2、docker部署jenkins镜像  
+    &ensp;&ensp;a. 手动配置  此种情况需要宿主主机准备Java配置环境，启动容器时挂载宿主主机Jdk目录，在 `新增JDK` 映射容器java主目录即可（如果jenkins自带的jdk版本与应用版本兼容也可以不用设置）  
+    &ensp;&ensp;b. 自动配置  此种情况宿主主机没有java环境且jenkins自带的版本与开发版本不一致，可以 在 `新增JDK` 勾选 自动安装，选择对应匹配的版本，现在需要登录Oracle鉴权       
 > * 其他配置默认即可
 
 ### windows 全局工具配置
