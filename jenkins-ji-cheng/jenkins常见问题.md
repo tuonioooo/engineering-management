@@ -19,3 +19,8 @@ https://www.cnblogs.com/weifeng1463/p/9109317.html
 ## jenkins编译报错：Cannot run program "mvn" (in directory "/var/lib/jenkins/workspace/mall"): error=2, No such file or directory
 
 https://www.oschina.net/question/1756518_2182111
+
+## ERROR: Exception when publishing, exception message [Permission denied]
+
+1.操作jenkins的用户 没有权限
+2.操作jenkins的用户 操作的文件 在移动或者覆盖 目标文件时，目标文件的权限用户 居然是root 用户 权限太大导致的
