@@ -65,5 +65,5 @@ https://www.oschina.net/question/1756518_2182111
 
 ## ERROR: Exception when publishing, exception message [Permission denied]
 
-1.操作jenkins的用户 没有权限
+1.操作jenkins的用户 没有权限  
 2.操作jenkins的用户 操作的文件 在移动或者覆盖 目标文件时，目标文件的权限用户 居然是root 用户 权限太大导致的
